@@ -1881,13 +1881,7 @@ div img:nth-of-type(even) { float: right; }   //справа
 </rich_text>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="menu &lt;ul&gt;&lt;li&gt;&lt;a&gt;" prog_lang="custom-colors" readonly="False" tags="" unique_id="43">
-			<rich_text>Примеры: </rich_text>
-			<rich_text link="webs http://css.maxdesign.com.au/listutorial/">http://css.maxdesign.com.au/listutorial/</rich_text>
-			<rich_text>
-
-генератор http://www.accessify.com/tools-and-wizards/developer-tools/list-o-matic/
-
-&lt;ul class=&quot;nav&quot;&gt;
+			<rich_text>&lt;ul class=&quot;nav&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;news.html&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;reviews.html&quot;&gt;Reviews&lt;/a&gt;&lt;/li&gt;
@@ -1913,9 +1907,7 @@ ul.nav a {
    line-height: 1.25em;
 }</rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="горизонтальное меню" prog_lang="custom-colors" readonly="False" tags="" unique_id="44">
-				<rich_text>
-
-преимуще­ство — при использовании inline и inline-block панель навигации можно центрировать	
+				<rich_text>преимуще­ство — при использовании inline и inline-block панель навигации можно центрировать	
 
 	
 1.Inline	
