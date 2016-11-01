@@ -1,0 +1,92 @@
+body {
+}
+
+.wrapper {
+  width: 950px;
+  height: 485px;
+  margin: auto;
+  padding-top: 48px;
+  padding-bottom: 46px;
+  background: hsla(60, 20%, 70%, 0.5);
+  /* зачистка float */
+  /*position: relative;
+  overflow: hidden;*/
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.box {
+  border-radius: 4px;
+}
+
+.left,
+.right {
+  width: 31.5789%;  /*  300px;  */
+  height: 401px;
+  margin-top: 35px;
+}
+
+.left {
+  background: #ff0;
+  float: right;
+}
+
+.right {
+  float: left;
+  background: #0ff;
+}
+
+.center {
+  width: 32.6316%;   /* 310px  */
+  height: 432px;
+  background: #f0f;
+  margin: 0 20px;
+  /*margin: 3px 2.1052% 0;*/
+  float: right;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+/*
+.add {
+  width: 31.5789%;
+  height: 401px;
+  margin-top: 35px;
+  background: #3dd;
+  clear: both;
+}*/
+
+
+/*
+.units {
+  height: 197px;
+  background: #f0f0f0;
+  border-bottom: 1px solid #000;
+}*/
+/*
+footer {
+  height: 94px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #eb4f4e;
+}
+
+header {
+  height: 109px;
+}
+
+.center > header {
+  height: 141px;
+}*/

@@ -415,6 +415,9 @@ JavaScript
 				<rich_text scale="h2" style="italic">How Do You Feel About JavaScript?&quot;</rich_text>
 				<rich_text foreground="#ffffa5a50000" scale="h2" weight="heavy">&lt;/a&gt;</rich_text>
 			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="form" prog_lang="custom-colors" readonly="False" tags="" unique_id="45">
+				<rich_text link="webs http://html5book.ru/html5-forms/">http://html5book.ru/html5-forms/</rich_text>
+			</node>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CSS" prog_lang="custom-colors" readonly="False" tags="" unique_id="9">
@@ -1572,7 +1575,22 @@ vertical-align: unset;</rich_text>
 				</node>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="floating" prog_lang="custom-colors" readonly="False" tags="" unique_id="24">
-				<rich_text></rich_text>
+				<rich_text>Зачистка.
+
+Нижний сосед:
+clear: both;
+
+Контенер:
+  position: relative;
+  overflow: hidden;
+  
+  или
+  
+.clearfix::after {
+  content: &quot;&quot;;
+  clear: both;
+  display: block;
+}</rich_text>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="position" prog_lang="custom-colors" readonly="False" tags="" unique_id="25">
 				<rich_text foreground="#ffff00000000" scale="h2" weight="heavy">Абсолютное:</rich_text>
@@ -1619,6 +1637,39 @@ margin, padding, border работают, </rich_text>
 </rich_text>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="z-index" prog_lang="custom-colors" readonly="False" tags="" unique_id="31">
 					<rich_text link="webs https://habrahabr.ru/post/166435/">https://habrahabr.ru/post/166435/</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text background="#ffffff" foreground="#222222">Любой элемент в HTML документе может быть либо на переднем, либо на заднем плане.</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text background="#ffffff" foreground="#222222">порядок наложения равен порядку следования элементов в HTML</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text background="#ffffff" foreground="#222222">Если вы явно указываете позиционирование элементам (и их детям): absolute или relative 
+то такие элементы будут перекрывать собой элементы без явно заданного свойства позиционирования.</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text background="#ffffff" foreground="#222222">z-index задан</rich_text>
+					<rich_text>: 
+</rich_text>
+					<rich_text background="#ffffff" foreground="#222222">z-index учитывается только на явно позиционированных элементах</rich_text>
+					<rich_text>
+</rich_text>
+					<rich_text background="#ffffff" foreground="#222222">элементы с большим z-index будут находиться выше элементов с меньшим z-index с учетом контекста налжения </rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text background="#ffffff" foreground="#222222">Новый контекст может быть сформирован в следующих случаях:</rich_text>
+					<rich_text foreground="#222222">
+• Если элемент – корневой элемент документа ( </rich_text>
+					<rich_text>элемент) - 
+• Если элемент позиционирован не статически и его значение z-index не равно auto
+• Если элемент имеет прозрачность менее 1
+</rich_text>
 				</node>
 			</node>
 		</node>
@@ -1930,13 +1981,192 @@ ul.nav a {
 	
 2.Float
 
-u 	 l.nav {
-	 overflow: hidden;
+ul.nav {
+   position: relative;  // зачистка
+	 overflow: hidden;   // зачистка
 },
 
 .nav li { float: left; }
 
 ul.nav a { display: block; }</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="выпадающее меню" prog_lang="custom-colors" readonly="False" tags="" unique_id="46">
+				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="html" prog_lang="custom-colors" readonly="False" tags="" unique_id="47">
+					<rich_text>&lt;div class = &quot;wrapper&quot;&gt;
+    &lt;h1&gt;Выпадающее меню&lt;/h1&gt;
+  &lt;ul class=&quot;menu&quot;&gt;
+      &lt;li class=&quot;menu__item&quot;&gt;
+        &lt;a class=&quot;menu__link&quot; href=#&gt;Menu 1  &amp;#9660;&lt;/a&gt;
+        &lt;ul class=&quot;submenu&quot;&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 1&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 1&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 1&lt;/a&gt;
+              &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;menu__item&quot;&gt;
+        &lt;a class=&quot;menu__link&quot; href=#&gt;Menu 2  &amp;#9660;&lt;/a&gt;
+        &lt;ul class=&quot;submenu&quot;&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 2&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 2&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 2&lt;/a&gt;
+              &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;menu__item&quot;&gt;
+        &lt;a class=&quot;menu__link&quot; href=#&gt;Menu 3  &amp;#9660;&lt;/a&gt;
+          &lt;ul class=&quot;submenu&quot;&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 3&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 3&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;submenu__item&quot;&gt;
+                &lt;a class=&quot;submenu__link&quot; href=#&gt;Sudmenu 3&lt;/a&gt;
+              &lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;menu__item&quot;&gt;
+        &lt;a class=&quot;menu__link&quot; href=#&gt;Menu 4&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;menu__item&quot;&gt;
+        &lt;a class=&quot;menu__link&quot; href=#&gt;Menu 5&lt;/a&gt;
+      &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/div&gt;</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="css" prog_lang="custom-colors" readonly="False" tags="" unique_id="48">
+					<rich_text>body {
+    font: 20px Arial, sans-serif;
+}
+
+.wrapper {
+  width: 800px;
+  height: 100vh;
+  margin: auto;
+  background: hsla(90, 60%, 40%, 0.2);  
+  /* 90-цвет,60-уровень серого, 40-яркость, 0,2 - прозрачность  */
+  border: 1px solid transparent;       /* лечим margin-collaps */
+}
+
+
+h1 {
+  font-size: 2.25em;
+  text-align: center;
+  margin: 50px;
+}
+/* ===================================    MENU   =============================*/
+/* =======================================  UL ===============================*/
+        /* ================= ГАБАРИТЫ ПОЛОЖЕНИЕ ГРАНИЦЫ ФОН ВСЕГО МЕНЮ =======*/
+ul.menu {
+    margin: auto;                    /* отцентрируем как пример позиционирования  блока   */
+    width: 750px;                    /* отцентрируем как пример позиционирования блока    */
+/*    list-style: none;   */          /* убираем точки-маркеры   */
+    background-color: red;        /* задаем цвет фону меню  */
+    border: 5px solid hsla( 200, 80%, 30%, 0.1);           /* задаем цвет границе всего меню  */
+    box-shadow: 5px 5px 5px hsla( 200, 0%, 0%, 0.5);  /* задаем тень всего меню  */
+}
+
+/*зачищаем края. Без этого блока будут проблемы с нижними соседями по потоку */
+ul.menu:after {
+    display: block;
+    content: ' ';
+    clear: both;
+}
+/* ====================================  LI  =================================*/
+  /* =============== ГАБАРИТЫ ПОЛОЖЕНИЕ ГРАНИЦЫ ФОН КНОПКИ МЕНЮ  =============*/
+/*  Зададим точку отсчета для  абсолютного позиционирования  от левого верхнего угла UL */
+li.menu__item {
+    float: left;                 /* Выстроим в ряд.
+                                     Можно и  right - поменяется направление  */
+    position: relative;     /*Если убрать это свойство, то блоки будут
+                                      позиционироваться по левому верхнему краю body */
+    width: 150px;           /* зададим ширину кнопки  */
+    height: 45px;
+    box-sizing: border-box;                /* включим в расчет ширины кнопки также бордеры*/
+    border-left: 5px solid maroon;     /* зададим левый бордер */
+}
+
+
+
+/* ===============================  A  ====================================== */
+/* ========== ОБЛАСТЬ КЛИКА = ГАБАРИТЫ ГРАНИЦЫ  ФОН ТЕКСТ КНОПКИ МЕНЮ  ====== */
+
+a.menu__link {
+    display: block;                       /* блочному элементу можно задать размеры */
+    padding: 10px;                      /* паддинг ссылки -кликабелен                  */
+    color: white;                           /* цвет текста                                */
+    text-decoration: none;           /*  убираем по умолчанию подчеркивание ссылки  */
+}
+
+
+a.menu__link:hover {
+    background-color: yellow;      /* изменение оформления  - фон*/
+    color: black;                            /* цвет текста  */
+}
+
+/* ===========================  SUBMENU  UL ================================= */
+/* ================= ГАБАРИТЫ ПОЛОЖЕНИЕ ГРАНИЦЫ ФОН ВСЕГО МЕНЮ ============= */
+
+ul.submenu {
+    display: none;  /*по умолчанию поля подменю - есть, но не отображаются */
+    position: absolute;
+    width: 120px;
+    top: 43px;
+    left: 0;
+    /*background-color: white;*/
+    border: 1px solid red;
+    box-shadow: 4px 4px 4px hsla( 200, 0%, 0%, 0.6);
+}
+
+ /* Элемент не обязательный, для страховки */
+/*li.submenu__item {
+    display: block;
+}*/
+/* ===============================     SUBMENU  A     ======================================== */
+  /* ========== ОБЛАСТЬ КЛИКА = ГАБАРИТЫ ГРАНИЦЫ  ФОН ТЕКСТ КНОПКИ МЕНЮ  ==================== */
+a.submenu__link {
+    display: block;        /* обязательно */
+/* внешний вид  */
+    padding: 10px;
+    color: white;
+    background-color: darkred;
+    text-decoration: none; /* убираем подчеркивание у ссылки */
+}
+
+a.submenu__link:hover {
+    text-decoration: underline; /*при наведении на ссылку в подменю - появляется подчеркивание*/
+}
+
+/* =============================   SWITCH ON: SUBMENU  UL ==================================== */
+/*при наведении на элемент списка верхнего урвня li:hover - меню проявляется*/
+ul.menu &gt; li.menu__item:hover &gt; ul.submenu {
+    display: block;
+}
+
+
+/*Задания:
+1. Поменять цвет меню.
+2. Поменять подчеркивание ссылки - сделать &quot;зачеркивание&quot;
+3. Сдвинуть место появления выпадающего меню на 15 пикселей вправо
+4. Заменить цвет, фона верхнего меню при наведении на синий.
+5. Сделать изменение фона при наведение на пункты меню (выпадающих элементов).
+6*. Изменить порядок пунктов меню  --- только в CSS!!!
+*/
+</rich_text>
+				</node>
 			</node>
 		</node>
 	</node>

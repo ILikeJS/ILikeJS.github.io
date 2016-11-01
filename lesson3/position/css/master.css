@@ -1,0 +1,62 @@
+/* низкий старт         Повышенная сложность - влияние родительского блока */
+html {
+  /*height: 100%;*/
+}
+/* влияние родительского блока */
+body {
+  background: lightblue;
+  /*position: relative;*/
+}
+
+h1 {
+  margin-bottom: 50px;
+  color: red;
+  text-transform: uppercase;
+}
+
+.kid-text {
+  color: red;
+}
+
+.House {   /* РЕГИСТР!!!!!!!!!!!!!!!!!!!!! */
+  position: relative;
+  margin-left: 360px;
+  padding-top: 5px;
+  color: #fff;
+}
+.wrapper {
+/* 1 - Точка отсчета */
+  /*position: relative;*/
+  width: 1200px;
+  height: 2000px;
+  margin: 0 auto;
+  background: url(../img/house.png)  no-repeat;
+}
+
+.kid {
+  margin-left: 320px;
+  margin-top: 200px;
+  /*font-size: 36px;*/
+}
+
+.carlson {
+  position: absolute;
+/* старт */
+top: 10px;
+left: 150px;
+z-index: 100;
+
+
+  /* справа */                /* 2 - Полет  */
+  top: 10px;
+  left: 975px;
+
+
+}
+
+.f-bock {
+  position: fixed;
+  top: 50px;
+  right: 200px;
+  z-index: 1;
+}

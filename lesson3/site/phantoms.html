@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phantoms</title>
+  <style media="screen">
+    .wrapper {
+      width: 800px;
+      height: 800px;
+      background: lightgreen;
+      margin: auto;
+    }
+    .parent {
+      width: 400px;
+      height: 400px;
+      margin: 25px auto;
+      background: lightgreen;
+      border: 1px solid transparent;
+    }
+    .child {
+      width: 350px;
+      height: 250px;
+      margin: 25px auto;
+      background: #b8b8b8;
+      border: 1px solid transparent;
+    }
+    p {
+      text-align: center;
+      height: 325px;
+      margin-top: 120px;
+      font-size: 18px;
+    }
+.out {
+  background: rgba(255,255,255,.4);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255,255,255,.4);
+}
+.in {
+    display: block;
+  background: rgba(0,0,0,.4);
+  padding: 10px 50px;
+  border: 1px solid #080;
+}
+/*
+.out:hover::before {
+  content: '   Фантом   ';
+}
+.out:hover::after {
+  content: '   Фантом   ';
+}
+*/
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <div class="child">
+        <p>
+          <span class="out"><span class="in">Ой! Кто здесь?..</span></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

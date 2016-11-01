@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+    <link rel="stylesheet" type="text/css" href="https://yui-s.yahooapis.com/2.9.0/build/reset/reset-min.css">
+    <link rel="stylesheet" href="css/style-inline.css">
+</head>
+
+<body>
+  <h1 style="color: red;">inline-block Снаружи строка, внутри блок</h1>
+  <h1>wrapper width= 950px</h1>
+  <h2 style="color: blue;">какой margin-left и margin-right выбрать для center?</h2>
+    <div class="wrapper">
+        <div class="box left">
+            <header>
+                <h1>LEFT</h1>
+                <p>width= 300px</p>
+            </header>
+            <div class="units">
+                <ul>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
+
+            <footer>
+
+            </footer>
+        </div>
+        <div class="box center">
+            <header>
+                <h1>center</h1>
+                <p>width= 310px</p>
+            </header>
+            <div class="units">
+                <ul>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
+            <footer>
+
+            </footer>
+        </div>
+        <div class="box right">
+            <header>
+                <h1>right</h1>
+                <p>width= 300px</p>
+            </header>
+            <div class="units">
+                <ul>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
+            <footer>
+
+            </footer>
+        </div>
+        <p>font-size body = 16px</p>
+    </div>
+    <!-- <h1>Ответ: (950 - 300 - 20 - 4 - 310 - 4 - 20 - 300)px = -8px</h1> -->
+    <!-- <h1>ПРОБЕЛ = 1/4 FONT-SIZE = 16/4 = 4px </h1> -->
+    <!-- <h1 style="color: red;">УДАЛИТЬ ПРОБЕЛ!!! </h1> -->
+</body>
+
+</html>

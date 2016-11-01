@@ -1,0 +1,25 @@
+.wrapper {
+  width: 950px;
+  height: 485px;
+  margin: auto;
+  padding-top: 48px;
+  padding-bottom: 46px;
+  background: hsla(60, 20%, 70%, 0.5);
+}
+
+form {
+  width: 500px;
+  height: 200px;
+  background: lightblue;
+}
+
+input {
+  width: 200px;
+  display: block;
+}
+div.btn {
+  margin-top: 100px;
+  width: 500px;
+  height: 200px;
+  background: lightgreen;
+}

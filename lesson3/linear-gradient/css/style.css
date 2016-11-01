@@ -1,0 +1,20 @@
+body {
+  background-color: darkgreen;
+}
+
+.wrapper {
+  width: 70%;
+  background: hsla(180, 50%, 50%, 0.1);
+}
+
+div.box {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(225deg,
+    rgba(255,255,255,1) 0%,
+    rgba(19,205,226,1) 84%,
+    rgba(18,138,167,1) 85%,
+    rgba(18,138,167,1) 100%);
+  /*box-shadow: inset 5px 5px 2px 3px hsla(360, 50%, 0%, 0.3);*/
+  box-shadow: 5px 5px 2px 3px hsla(100, 50%, 0%, 0.5);
+}

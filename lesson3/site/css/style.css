@@ -1,0 +1,143 @@
+body {
+ background: #282C34;
+ font-family: Bariol, Arial, Ubuntu, sans-serif;
+}
+
+.wrapper {
+  width: 950px;
+  height: 485px;
+  margin: auto;
+  padding-top: 48px;
+  padding-bottom: 46px;
+  background: hsla(60, 0%, 0%, 0.5);
+  font-size: 0px;
+}
+
+.box {
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.left,
+.right {
+  width: 31.5789%;
+  height: 404px;
+  margin-top: 35px;
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+}
+
+.center {
+  width: 32.6316%;
+  height: 435px;
+  margin: 4px 2.1052% 0;
+  display: inline-block;
+  background: #fff;
+}
+
+.units {
+  height: 200px;
+  background: #f0f0f0;
+  /*border-bottom: 1px solid #000;*/
+}
+
+footer {
+  height: 95px;
+  border-top: 1px solid #fff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #eb4f4e;
+}
+
+header {
+  height: 112px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.center > header {
+  height: 143px;
+}
+
+h1,
+.text__header {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+}
+h1 {
+  color: #616161;
+  font-size: 40px;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+.text__header {
+  padding: 20px 15px;
+  color: #eb4f4e;
+  font-size: 20px;
+  line-height: 25px;
+}
+.center h1 {
+  color: #eb4f4e;
+}
+.center p {
+  	color: #232324;
+}
+.left footer,
+.right footer {
+  background-color: #616161;
+}
+
+ul {
+
+}
+li{
+  box-sizing: border-box;
+  text-align: center;
+  color: #616161;
+	font-size: 20px;
+	font-weight: 400;
+  /* 200px /4 = 50*/
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #fff;
+}
+.text__footer {
+  height: 95px;
+  line-height: 95px;
+  color: #fff;
+  font-family: "Myriad Pro";
+  display: inline-block;
+  vertical-align: middle;
+}
+.price::before {
+  content: "$";
+  font-size: 32px;
+  font-weight: 600;
+  vertical-align: top;
+}
+.price {
+  padding-left: 30px;
+  font-size: 64px;
+  font-weight: 700;
+}
+.price::after  {
+  content: "/mo";
+  font-size: 20px;
+  font-weight: 400;
+}
+.order {
+  display: inline-block;
+  width: 95px;
+  height: 34px;
+  margin-left: 35px;
+  margin-top: -35px;
+  border-radius: 2px;
+  vertical-align: middle;
+  line-height: 34px;
+  background: #fff;
+  color: #616161;
+  text-align: center;
+  text-decoration: none;
+}
