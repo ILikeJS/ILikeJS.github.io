@@ -3252,6 +3252,21 @@ Font Squirrel  </rich_text>
 Google Fonts  </rich_text>
 						<rich_text link="webs http://www.google.com/webfonts">www.google.com/webfonts</rich_text>
 					</node>
+					<node custom_icon_id="0" foreground="" is_bold="False" name="значки вместо изображений" prog_lang="custom-colors" readonly="False" tags="" unique_id="74">
+						<rich_text link="webs http://css-tricks.com/flat-icons-icon-fonts/,">http://css-tricks.com/flat-icons-icon-fonts/,</rich_text>
+						<rich_text> 
+
+</rich_text>
+						<rich_text link="webs https://css-tricks.com/html-for-icon-font-usage/">https://css-tricks.com/html-for-icon-font-usage/</rich_text>
+						<rich_text>
+
+</rich_text>
+						<rich_text link="webs http://css-tricks.com/examples/IconFont/">http://css-tricks.com/examples/IconFont/</rich_text>
+						<rich_text>
+
+</rich_text>
+						<rich_text link="webs http://fontawesome.io/">http://fontawesome.io/</rich_text>
+					</node>
 					<node custom_icon_id="0" foreground="" is_bold="False" name="tag и выбор фонта браузером" prog_lang="custom-colors" readonly="False" tags="" unique_id="75">
 						<rich_text weight="heavy">НЕ ДЛЯ IE8</rich_text>
 						<rich_text>
@@ -3333,21 +3348,6 @@ font-style: italic;</rich_text>
 						<rich_text>
 }</rich_text>
 					</node>
-				</node>
-				<node custom_icon_id="0" foreground="" is_bold="False" name="значки вместо изображений" prog_lang="custom-colors" readonly="False" tags="" unique_id="74">
-					<rich_text link="webs http://css-tricks.com/flat-icons-icon-fonts/,">http://css-tricks.com/flat-icons-icon-fonts/,</rich_text>
-					<rich_text> 
-
-</rich_text>
-					<rich_text link="webs https://css-tricks.com/html-for-icon-font-usage/">https://css-tricks.com/html-for-icon-font-usage/</rich_text>
-					<rich_text>
-
-</rich_text>
-					<rich_text link="webs http://css-tricks.com/examples/IconFont/">http://css-tricks.com/examples/IconFont/</rich_text>
-					<rich_text>
-
-</rich_text>
-					<rich_text link="webs http://fontawesome.io/">http://fontawesome.io/</rich_text>
 				</node>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="форматирование символов" prog_lang="custom-colors" readonly="False" tags="" unique_id="78">
@@ -4070,151 +4070,7 @@ local     фон фиксируется в отношении содержани
 			<rich_text>    - Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.
 </rich_text>
 			<rich_text weight="heavy">contain</rich_text>
-			<rich_text> - Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.
-</rich_text>
-			<rich_text foreground="#708090">/* Ключевые слова */</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> cover</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> contain</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-
-</rich_text>
-			<rich_text foreground="#708090">/* Указано одно значение - ширина изображения, */</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#708090">/* высота в таком случае устанавливается в auto */</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> </rich_text>
-			<rich_text foreground="#990055">50%</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> </rich_text>
-			<rich_text foreground="#990055">3</rich_text>
-			<rich_text>em</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> </rich_text>
-			<rich_text foreground="#990055">12</rich_text>
-			<rich_text>px</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> auto</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-
-</rich_text>
-			<rich_text foreground="#708090">/* Указаны два значения - */</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#708090">/* ширина и высота соответственно */</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> </rich_text>
-			<rich_text foreground="#990055">50%</rich_text>
-			<rich_text> auto</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> </rich_text>
-			<rich_text foreground="#990055">3</rich_text>
-			<rich_text>em </rich_text>
-			<rich_text foreground="#990055">25%</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> auto </rich_text>
-			<rich_text foreground="#990055">6</rich_text>
-			<rich_text>px</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> auto auto</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-
-</rich_text>
-			<rich_text foreground="#708090">/* Значения для нескольких фонов */</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#708090">/* Не путайте такую запись с background-size: auto auto */</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> auto, auto</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> </rich_text>
-			<rich_text foreground="#990055">50%</rich_text>
-			<rich_text>, </rich_text>
-			<rich_text foreground="#990055">25%</rich_text>
-			<rich_text>, </rich_text>
-			<rich_text foreground="#990055">25%</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> </rich_text>
-			<rich_text foreground="#990055">6</rich_text>
-			<rich_text>px, auto, contain</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-
-</rich_text>
-			<rich_text foreground="#708090">/* Глобальные значения */</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> inherit</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> initial</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
-			<rich_text foreground="#990055">background-size</rich_text>
-			<rich_text foreground="#999999">:</rich_text>
-			<rich_text> unset</rich_text>
-			<rich_text foreground="#999999">;</rich_text>
-			<rich_text>
-</rich_text>
+			<rich_text> - Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.</rich_text>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Color" prog_lang="custom-colors" readonly="False" tags="" unique_id="76">
 			<rich_text link="webs https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">https://developer.mozilla.org/en-US/docs/Web/CSS/color_value</rich_text>

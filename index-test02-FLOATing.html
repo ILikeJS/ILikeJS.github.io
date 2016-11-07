@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tests of positioning schemes ...</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+
+        /* A tiny version of 'CSS Reset' */
+        html, body, div, span, h1, h2, p {
+            margin: 0;
+           	padding: 0;
+           	border: 0;
+
+           	font-size: 100%;
+           	font: inherit;
+           	vertical-align: baseline;
+        }
+
+        .wrapper_core {
+            width: 960px;
+            border-left: 1px solid blue;
+            border-right: 1px solid blue;
+            margin: 0 auto;
+            margin-top: 0px;
+            padding-top: 10px;
+
+            background-color:  lightgreen;
+        }
+
+        .flobox {  /* FloBox stands for Floating Box */
+            float: left;
+
+            width: 50px;
+            height: 50px;
+            padding: 12px;
+            border: 1px solid green;
+
+            background-color: rgb(200, 40, 90);
+
+            text-align: center;
+        }
+
+        .flobox-high {
+            float: left;
+
+            width: 50px;
+            height: 170px;
+            padding: 12px;
+            border: 1px solid green;
+
+            background-color: rgb(40, 170, 90);
+
+            text-align: center;
+        }
+
+        .flobox-CR {
+            clear: both;
+
+            width: 50px;
+            height: 50px;
+            padding: 12px;
+            border: 1px dotted orange;
+
+            background-color: rgba(123, 205, 149, 0.74);
+
+            text-align: center;
+        }
+
+        .flobox-margin {
+            float: left;
+
+            width: 50px;
+            height: 50px;
+            padding: 12px;
+            border: 1px solid green;
+            /* !!!!!! MARGING-test*/
+            margin-top: 90px;
+
+            background-color: rgb(70, 140, 140);
+
+            font-size: 0.85em;
+            text-align: center;
+        }
+
+        .flobox-margin2 {
+            float: left;
+
+            width: 50px;
+            height: 50px;
+            padding: 12px;
+            border: 1px solid green;
+            /* !!!!!! MARGING-test*/
+            margin-top: 90px;
+            margin-left: 14px;
+
+            overflow: hidden;    /* just to clip the container */
+
+            background-color: rgb(70, 140, 140);
+
+            font-size: 0.85em;
+            text-align: center;
+        }
+
+
+        /* narrow */
+        .container {
+            width: 152px;
+
+            border: 1px solid green;
+            margin-top: 2em;
+
+            background-color: cyan;
+        }
+
+        /* wide */
+        .container2 {
+            width: 228px;
+
+            border: 1px solid green;
+            margin-top: 2em;
+
+            background-color: lime;
+        }
+
+        span.nb {
+            background-color: rgb(40, 30, 240);
+            color: white;
+        }
+
+        .description {
+            padding: 4px 4em;
+            width: 60%;
+            border-radius: 4px;
+            border: 1px solid orange;
+            margin: 1.2em auto;
+
+            background-color: yellow;
+            color: rgb(0, 32, 232);
+
+            font: 1em/1.2 Verdana;
+        }
+
+        .description:first-child {
+            margin-top: 0px;
+        }
+
+        .descr_list {
+          width: 650px;
+          padding: 4px;
+          margin: 0 auto;
+          background-color: rgb(33, 237, 66);
+
+          color: green;
+          text-indent: 4em;
+
+/*          list-style: decimal;*/
+          list-style-type: decimal;
+          list-style-position: inside;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper_core">
+
+  <p class="description">
+    Here is an example of CSS technology, called "FLOAT"-ing.
+
+    <ol class="descr_list">
+      <li>There are 8 rectangles. All rectangles are numbered.</li>
+      <li> 7 of them are FLOAT-ed.
+      <li>The 8th one is not floated, it is CLEAR-ed to be in NORMAL FLOW !</li>
+      <li>The rectangle number 2 is longer by height than others.</li>
+      <li>Each rectangle goes one by another.</li>
+      <li>There are 3 containers where I locate all rectangles.</li>
+      <li>Those containers differ by their WIDTH-size !</li>
+      <li>There are also 2 tests of FLOATing where the 5th rectangle either TOP-margined or TOP&Left margined.</li>
+      <li><span class="nb">Let's look at them as they are located!</span></li>
+    </ol>
+  </p>
+
+    <p class="description">There are 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span></p>
+    <p class="flobox">50x50 <span class="nb">01</span></p>
+    <p class="flobox-high">50x170 <span class="nb">02</span></p>
+    <p class="flobox">50x50 <span class="nb">03</span></p>
+    <p class="flobox">50x50 <span class="nb">04</span></p>
+    <p class="flobox">50x50 <span class="nb">05</span></p>
+    <p class="flobox">50x50 <span class="nb">06</span></p>
+    <p class="flobox">50x50 <span class="nb">07</span></p>
+    <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+
+    <p class="description">There is a NARROW Container with 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it</p>
+    <div class="container">    <!-- narrow -->
+        <p class="flobox">50x50 <span class="nb">01</span></p>
+        <p class="flobox-high">50x170 <span class="nb">02</span></p>
+        <p class="flobox">50x50 <span class="nb">03</span></p>
+        <p class="flobox">50x50 <span class="nb">04</span></p>
+        <p class="flobox">50x50 <span class="nb">05</span></p>
+        <p class="flobox">50x50 <span class="nb">06</span></p>
+        <p class="flobox">50x50 <span class="nb">07</span></p>
+        <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+    </div>
+
+    <p class="description">There is a rather WIDE Container with 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it</p>
+    <div class="container2"> <!-- wide -->
+        <p class="flobox">50x50 <span class="nb">01</span></p>
+        <p class="flobox-high">50x170 <span class="nb">02</span></p>
+        <p class="flobox">50x50 <span class="nb">03</span></p>
+        <p class="flobox">50x50 <span class="nb">04</span></p>
+        <p class="flobox">50x50 <span class="nb">05</span></p>
+        <p class="flobox">50x50 <span class="nb">06</span></p>
+        <p class="flobox">50x50 <span class="nb">07</span></p>
+        <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+    </div>
+
+<!-- ************ MARGIN TOP ********************** -->
+<p class="description">There are 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it. <span class="nb">The 5th Rect is TOP-margined !</span></p>
+<br>
+    <p class="flobox">50x50 <span class="nb">01</span></p>
+    <p class="flobox-high">50x170 <span class="nb">02</span></p>
+    <p class="flobox">50x50 <span class="nb">03</span></p>
+    <p class="flobox">50x50 <span class="nb">04</span></p>
+    <p class="flobox-margin">50x50 w TOP-Margin 90px <span class="nb">05</span></p>
+    <p class="flobox">50x50 <span class="nb">06</span></p>
+    <p class="flobox">50x50 <span class="nb">07</span></p>
+    <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+
+<!-- ********************************** -->
+<p class="description">There is a NARROW Container with 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it. <span class="nb">The 5th Rect is TOP-margined !</span></p>
+<br>
+<div class="container">
+    <p class="flobox">50x50 <span class="nb">01</span></p>
+    <p class="flobox-high">50x170 <span class="nb">02</span></p>
+    <p class="flobox">50x50 <span class="nb">03</span></p>
+    <p class="flobox">50x50 <span class="nb">04</span></p>
+    <p class="flobox-margin">50x50 w TOP-Margin 90px <span class="nb">05</span></p>
+    <p class="flobox">50x50 <span class="nb">06</span></p>
+    <p class="flobox">50x50 <span class="nb">07</span></p>
+    <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+</div>
+
+<!-- ********************************** -->
+<p class="description">There is a rather WIDE Container with 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it. <span class="nb">The 5th Rect is TOP-margined !</span></p>
+<br>
+<div class="container2">
+    <p class="flobox">50x50 <span class="nb">01</span></p>
+    <p class="flobox-high">50x170 <span class="nb">02</span></p>
+    <p class="flobox">50x50 <span class="nb">03</span></p>
+    <p class="flobox">50x50 <span class="nb">04</span></p>
+    <p class="flobox-margin">50x50 w TOP-Margin 90px <span class="nb">05</span></p>
+    <p class="flobox">50x50 <span class="nb">06</span></p>
+    <p class="flobox">50x50 <span class="nb">07</span></p>
+    <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+</div>
+
+
+<!-- ************ MARGIN TOP + LEFT ********************** -->
+<p class="description">There are 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it. <span class="nb">The 5th Rect is TOP,Left-margined !</span></p>
+<br>
+<p class="flobox">50x50 <span class="nb">01</span></p>
+<p class="flobox-high">50x170 <span class="nb">02</span></p>
+<p class="flobox">50x50 <span class="nb">03</span></p>
+<p class="flobox">50x50 <span class="nb">04</span></p>
+<p class="flobox-margin2">50x50 w TOP-Margin Top,Left 90/14px <span class="nb">05</span></p>
+<p class="flobox">50x50 <span class="nb">06</span></p>
+<p class="flobox">50x50 <span class="nb">07</span></p>
+<p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+
+<!-- ********************************** -->
+<p class="description">There is a NARROW Container with 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it. <span class="nb">The 5th Rect is TOP,Left-margined !</span></p>
+<br>
+<div class="container">
+    <p class="flobox">50x50 <span class="nb">01</span></p>
+    <p class="flobox-high">50x170 <span class="nb">02</span></p>
+    <p class="flobox">50x50 <span class="nb">03</span></p>
+    <p class="flobox">50x50 <span class="nb">04</span></p>
+    <p class="flobox-margin2">50x50 w TOP-Margin Top,Left 90/14px <span class="nb">05</span></p>
+    <p class="flobox">50x50 <span class="nb">06</span></p>
+    <p class="flobox">50x50 <span class="nb">07</span></p>
+    <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+</div>
+
+<!-- ********************************** -->
+<p class="description">There is a rather WIDE Container with 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it. <span class="nb">The 5th Rect is TOP,Left-margined !</span></p>
+<br>
+<div class="container2">
+    <p class="flobox">50x50 <span class="nb">01</span></p>
+    <p class="flobox-high">50x170 <span class="nb">02</span></p>
+    <p class="flobox">50x50 <span class="nb">03</span></p>
+    <p class="flobox">50x50 <span class="nb">04</span></p>
+    <p class="flobox-margin2">50x50 w TOP-Margin Top,Left 90/14px <span class="nb">05</span></p>
+    <p class="flobox">50x50 <span class="nb">06</span></p>
+    <p class="flobox">50x50 <span class="nb">07</span></p>
+    <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+</div>
+
+
+<!-- ****************************************************** -->
+<div class="container2">
+    Hello, World :)
+    <div class="container">
+        The CSS is <span class="nb">FUN :) </span>!!!!!
+    </div>
+    Let's LOOK AGAIN what FLOATing is !
+    <div class="container">
+        Here <span class="nb">We GO :) </span>!!!!!
+    </div>
+</div>
+
+<p class="description">There are 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span></p>
+<p class="flobox">50x50 <span class="nb">01</span></p>
+<p class="flobox-high">50x170 <span class="nb">02</span></p>
+<p class="flobox">50x50 <span class="nb">03</span></p>
+<p class="flobox">50x50 <span class="nb">04</span></p>
+<p class="flobox">50x50 <span class="nb">05</span></p>
+<p class="flobox">50x50 <span class="nb">06</span></p>
+<p class="flobox">50x50 <span class="nb">07</span></p>
+<p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+
+<p class="description">There is a NARROW Container with 7 FLOAT-ed rectangles and one with <span class="nb">CLEAR</span> in it</p>
+<div class="container">    <!-- narrow -->
+    <p class="flobox">50x50 <span class="nb">01</span></p>
+    <p class="flobox-high">50x170 <span class="nb">02</span></p>
+    <p class="flobox">50x50 <span class="nb">03</span></p>
+    <p class="flobox">50x50 <span class="nb">04</span></p>
+    <p class="flobox">50x50 <span class="nb">05</span></p>
+    <p class="flobox">50x50 <span class="nb">06</span></p>
+    <p class="flobox">50x50 <span class="nb">07</span></p>
+    <p class="flobox-CR">50x50 with CR <span class="nb">08</span></p>
+</div>
+
+<div class="container2">
+    ... As You can see EVERYTHING<span class="nb">goes the SAME WAY</span> as it should be !!!!
+</div>
+
+</div> <!-- eof wrapper_core -->
+</body>
