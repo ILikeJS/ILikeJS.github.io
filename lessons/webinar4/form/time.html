@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Time</title>
+    <style media="screen">
+        .wrapper {
+            width: 800px;
+            height: 800px;
+            margin: auto;
+            background: hsla(225, 50%, 50%, 0.3);
+            ;
+        }
+        form {
+          margin: 50px;
+          border: 1px solid blue;
+        }
+        input {
+          display: block;
+        }
+        .black {
+          width: 615px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form name="test-form" action="">
+            <h2>Data & Time</h2>
+            <input type="data" name="data" valuе="2016-11-08">
+            <input type="time" name="time" value="20:35:45">
+            <input type="datetime" name="datetime" value="">
+            <input type="datetime-locale" name="locale" value="">
+            <input type="month" name="month" value="">
+            <input type="week" name="week" value="">
+            <input type="submit" value="submit">
+        </form>
+        <form name="test-form" action="">
+          <h2>Digits</h2>
+          <label>
+            <input type="number" name="number" min="1" max="5">
+            Загадай число от 1 до 5
+          </label>
+          <input type="submit" value="submit">
+        </form>
+        <form name="test-form" action="">
+          <img src="black10.jpg" alt="">
+            <label>
+              <input type="range" name="range" min="1" max="10" step="1" class="black">
+              Выберите от 1 до 10
+           </label>
+          <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>

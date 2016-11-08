@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select</title>
+    <style media="screen">
+        .wrapper {
+            width: 800px;
+            height: 800px;
+            margin: auto;
+            background: hsla(225, 50%, 50%, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="#" method="get" id="fr">
+            <input type="submit" name="name" value="submit">
+        </form>
+        <div class="middle" style="height=100px;">
+          <h1>Форма связана с select по id</h1>
+        </div>
+           <select name="select" form="fr" multiple size="5">
+              <option value="value1">Value 1</option>
+              <option value="value2" >Value 2</option>
+              <option value="value4">Value 3</option>
+              <option value="value5">Value 4</option>
+              <option value="value6">Value 5</option>
+              <option value="value7">Value 6</option>
+              <option value="value8">Value 7</option>
+              <option value="value9">Value 9</option>
+              <option value="value10">Value 10</option>
+              <option value="value11">Value 11</option>
+              <option value="value12">Value 12</option>
+        </select>
+        <h2>Атрибут multiple при помощи Ctrl позволяет выбрать несколько элементов</h2>
+    </div>
+</body>
+
+</html>

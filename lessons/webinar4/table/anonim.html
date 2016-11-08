@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anonim</title>
+    <style>
+        body {
+            background: hsla(120, 87%, 65%, 0.1);
+        }
+
+        .wrapper {
+            /* центрируем */
+            margin: auto;
+            width: 800px;
+            background: hsla(120, 50%, 50%, 0.5);
+            box-shadow: 2px 0px 2px 2px hsla(360, 0%, 0%, 0.2);
+            /* предотвращаем margin-collapse */
+            border: 0.01px solid transparent;
+        }
+
+        table {
+            /* центрируем  и делаем верхний/нижний отступ в 30px*/
+            margin: 30px auto;
+            /* необходимо разделить ячейки перед тем, как задать отступ  */
+            border-collapse: separate;
+            /* border-spacing: horizontal, vertical */
+            border-spacing: 5px 1em;
+            /* border-spacing: horizontal & vertical */
+            border-spacing: 1.5em;
+            /* border всей таблицы */
+            border: 2px solid hsla(120, 60%, 60%, 1);
+            background: hsla(180, 80%, 80%, 0.2);
+        }
+
+        td,
+        th {
+            padding: 2px;
+            border: 1px solid hsla(120, 40%, 40%, 0.8);
+            border-radius: 1.5em;
+        }
+
+        caption {
+            caption-side: bottom;
+        }
+
+        .bg-yellow {
+            background: yellow;
+            border-top: 4px solid hsla(120, 40%, 40%, 0.8);
+            border-right: 4px dashed hsla(120, 40%, 40%, 0.8);
+            border-bottom: 4px solid hsla(120, 40%, 40%, 0.8);
+            border-left: 4px dashed hsla(120, 40%, 40%, 0.8);
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="wrapper"> -->
+    <tr><td>Test</td></tr>
+    <!-- </div> -->
+</body>
+
+</html>

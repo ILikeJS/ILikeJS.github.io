@@ -688,13 +688,13 @@ c l i xlabel for=&quot;email&quot;&gt;Email :&lt;/label&gt;
 &lt;optgroup&gt;...&lt;/optgroup&gt;</rich_text>
 			</node>
 		</node>
-	</node>
-	<node custom_icon_id="0" foreground="" is_bold="False" name="PHP" prog_lang="custom-colors" readonly="False" tags="" unique_id="84">
-		<rich_text>
-</rich_text>
-		<rich_text link="webs http://php.net/manual/ru/langref.php">http://php.net/manual/ru/langref.php</rich_text>
-		<rich_text>
-</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="спецсимволы " prog_lang="custom-colors" readonly="False" tags="" unique_id="85">
+			<rich_text>&gt;       &amp;gt;
+&lt;       &amp;lt;
+&amp;       &amp;amp;
+&quot;        &amp;quot;
+'        &amp;apos;</rich_text>
+		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CSS" prog_lang="custom-colors" readonly="False" tags="" unique_id="9">
 		<rich_text>
@@ -3252,21 +3252,6 @@ Font Squirrel  </rich_text>
 Google Fonts  </rich_text>
 						<rich_text link="webs http://www.google.com/webfonts">www.google.com/webfonts</rich_text>
 					</node>
-					<node custom_icon_id="0" foreground="" is_bold="False" name="значки вместо изображений" prog_lang="custom-colors" readonly="False" tags="" unique_id="74">
-						<rich_text link="webs http://css-tricks.com/flat-icons-icon-fonts/,">http://css-tricks.com/flat-icons-icon-fonts/,</rich_text>
-						<rich_text> 
-
-</rich_text>
-						<rich_text link="webs https://css-tricks.com/html-for-icon-font-usage/">https://css-tricks.com/html-for-icon-font-usage/</rich_text>
-						<rich_text>
-
-</rich_text>
-						<rich_text link="webs http://css-tricks.com/examples/IconFont/">http://css-tricks.com/examples/IconFont/</rich_text>
-						<rich_text>
-
-</rich_text>
-						<rich_text link="webs http://fontawesome.io/">http://fontawesome.io/</rich_text>
-					</node>
 					<node custom_icon_id="0" foreground="" is_bold="False" name="tag и выбор фонта браузером" prog_lang="custom-colors" readonly="False" tags="" unique_id="75">
 						<rich_text weight="heavy">НЕ ДЛЯ IE8</rich_text>
 						<rich_text>
@@ -3348,6 +3333,21 @@ font-style: italic;</rich_text>
 						<rich_text>
 }</rich_text>
 					</node>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="значки вместо изображений" prog_lang="custom-colors" readonly="False" tags="" unique_id="74">
+					<rich_text link="webs http://css-tricks.com/flat-icons-icon-fonts/,">http://css-tricks.com/flat-icons-icon-fonts/,</rich_text>
+					<rich_text> 
+
+</rich_text>
+					<rich_text link="webs https://css-tricks.com/html-for-icon-font-usage/">https://css-tricks.com/html-for-icon-font-usage/</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text link="webs http://css-tricks.com/examples/IconFont/">http://css-tricks.com/examples/IconFont/</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text link="webs http://fontawesome.io/">http://fontawesome.io/</rich_text>
 				</node>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="форматирование символов" prog_lang="custom-colors" readonly="False" tags="" unique_id="78">
@@ -4720,6 +4720,84 @@ h1 </rich_text>
 			<rich_text background="#f6f6f6" foreground="#141414" weight="heavy">полиморфизм</rich_text>
 			<rich_text background="#f6f6f6" foreground="#141414"> - способность функции обрабатывать разные типы данных одинаковым способом 
 Т.е. это возможность обращаться с наследниками одинаковым образом</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="PHP" prog_lang="custom-colors" readonly="False" tags="" unique_id="84">
+		<rich_text>
+</rich_text>
+		<rich_text link="webs http://php.net/manual/ru/langref.php">http://php.net/manual/ru/langref.php</rich_text>
+		<rich_text>
+
+
+
+</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Массив $_Request" prog_lang="custom-colors" readonly="False" tags="" unique_id="86">
+			<rich_text scale="h2"> Массив $_Request
+
+</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">Массив PHP $_Request предоставляет ценную помощь при сборе передаваемой на сервер информации </rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">формы</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">, помещая ее в структуру для удобной обработки сценарием. Массив $_Request перехватывает строку имен/значений, </rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">разбирает строку на имена и соответствующие значения</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2"> и </rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">помещает</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2"> эту информацию </rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">в ассоциативный массив</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">, индексированный </rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">соответствующими именами полей формы</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">. PHP предоставляет также массивы $_POST и $_GET, однако массив $_REQUEST часто является лучшим выбором, особенно в ситуациях, когда данные отправляются с удаленного сайта и неизвестно, какой метод используется — GET или POST.</rich_text>
+			<rich_text foreground="#000000" scale="h2">
+
+</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">Когда значения данных оказываются в массиве $_Request, их можно легко использовать по их именам, применяя следующий синтаксис:</rich_text>
+			<rich_text foreground="#000000" scale="h2">
+</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">$_Request['</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">FName</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">']=&quot;John&quot;</rich_text>
+			<rich_text foreground="#000000" scale="h2">
+</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">$_Request['</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">LName</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">']=&quot;Doe&quot;</rich_text>
+			<rich_text foreground="#000000" scale="h2">
+</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">$_Request['</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">Account</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">'] указывает на значение, введенное в поле Password; </rich_text>
+			<rich_text foreground="#000000" scale="h2">
+</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">$_Request['</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">SubmitButton</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">'] — значение, связанное с кнопкой </rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">Submit</rich_text>
+			<rich_text background="#ffffff" foreground="#000000" scale="h2">. </rich_text>
+			<rich_text>
+
+
+HTML
+    &lt;label&gt;&lt;input type=&quot;text&quot; name=&quot;</rich_text>
+			<rich_text weight="heavy">FName</rich_text>
+			<rich_text>&quot;&gt;</rich_text>
+			<rich_text foreground="#222222">Enter your name</rich_text>
+			<rich_text>&lt;/label&gt;
+    &lt;label&gt;&lt;input type=&quot;text&quot; name=&quot;</rich_text>
+			<rich_text weight="heavy">LName</rich_text>
+			<rich_text>&quot;&gt;</rich_text>
+			<rich_text foreground="#222222">Enter your</rich_text>
+			<rich_text> last name??&lt;/label&gt;
+    &lt;label&gt;&lt;input type=&quot;password&quot; name=&quot;</rich_text>
+			<rich_text weight="heavy">password</rich_text>
+			<rich_text>&quot;&gt;Input Password&lt;/label&gt;
+    &lt;label&gt;&lt;input type=&quot;submit&quot;  value=&quot;</rich_text>
+			<rich_text weight="heavy">submit</rich_text>
+			<rich_text>&quot;&gt;Submit&lt;/label&gt;
+
+    
+    
+
+пример работы html + PHP + SQL </rich_text>
+			<rich_text link="webs http://www.ul-li.ru/post.php?num=213">http://www.ul-li.ru/post.php?num=213</rich_text>
 		</node>
 	</node>
 </cherrytree>

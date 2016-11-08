@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkbox</title>
+    <style media="screen">
+        .wrapper {
+            width: 800px;
+            height: 800px;
+            margin: auto;
+            background: hsla(225, 50%, 50%, 0.3);
+        }
+
+        label {
+            display: block;
+            margin: 10px;
+        }
+
+        form {
+            margin-top: 50px;
+        }
+
+        p {
+            font-style: 20px;
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        label {
+            text-indent: 20px;
+        }
+
+        span {
+            margin-left: 30px;
+        }
+
+        input {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- *************** NAME МОГУТ БЫТЬ ОДИНАКОВЫЕ ИЛИ РАЗНЫЕ ***************** -->
+        <form action="#" method="get">
+            <label><input type="checkbox" name="ganre" value="rock"  checked><span>Rock</span></label>
+            <label><input type="checkbox" name="ganre" value="folk" ><span>Folk</span></label>
+            <label><input type="checkbox" name="ganre1" value="jazz" ><span>Jazz</span></label>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+
+        <!-- *************** NAME ДОЛЖНЫ БЫТЬ ОДИНАКОВЫЕ ******************** -->
+        <form action="#" method="get">
+            <label><input type="radio" name="color" value="red" checked><span>red</span></label>
+            <label><input type="radio" name="color" value="yellow"><span>yellow</span></label>
+            <label><input type="radio" name="color" value="green"><span>green</span></label>
+            <label><input type="radio" name="color" value="green"><span>1green</span></label>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+
+    <!-- *************** NAME ДОЛЖНЫ БЫТЬ РАЗНЫЕ ******************** -->
+    <form action="#" method="get">
+        <p>placeholder покажет подсказку, например ниже это placeholder="Elvis Presley"</p>
+        <label><input type="text" name="ganre" placeholder="Elvis Presley" ><span>Ваше имя?</span></label>
+        <label><input type="text" name="ganre1" placeholder="Rock&Roll" ><span>Ваш любимый жанр музыки?</span></label>
+        <p>maxlength огриничивает число знаков</p>
+        <label><input type="text" name="credite-card" placeholder="111 222 " maxlength="6"><span>Ваш номер кредитной карты 6 цифр</span></label>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+  </div>
+    </div>
+</body>
+
+</html>

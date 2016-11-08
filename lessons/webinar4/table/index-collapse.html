@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Сollapse</title>
+  <style>
+      body {
+        background: hsla(120, 87%, 65%, 0.1);
+      }
+      .wrapper {
+        /* центрируем */
+        margin: auto;
+        width: 800px;
+        background: hsla(120, 50%, 50%, 0.5);
+        box-shadow: 2px 0px 2px 2px hsla(360, 0%, 0%, 0.2);
+        /* предотвращаем margin-collapse */
+        border: 0.01px solid transparent;
+      }
+      table {
+        /* центрируем  и делаем верхний/нижний отступ в 30px*/
+        margin: 30px auto;
+        /* необходимо разделить ячейки перед тем, как задать отступ  */
+        border-collapse: collapse;
+
+        /* border всей таблицы */
+        border: 10px solid hsla(120, 60%, 60%, 1);
+
+        background: hsla(180, 80%, 80%, 0.2);
+      }
+        td, th {
+          padding: 2px;
+          border: 1px solid hsla(120, 40%, 40%, 0.8);
+          border-radius: 1.5em;
+      }
+      caption {
+        caption-side:bottom;
+        font-size: 24px;
+        font-style: oblique;
+      }
+      tr {
+        /* работает при border-collapse: collapse; */
+        border: 2px solid  hsla(120, 80%, 80%, 1);
+      }
+      .bg-yellow {
+        /* будет проигнорировано, т.к. применяется только к table */
+        border-spacing: 2.5em;
+        /* применяется только к ячейке */
+        background: yellow;
+        border-top: 4px solid hsla(120, 40%, 40%, 0.8);
+        border-right: 4px dashed hsla(120, 40%, 40%, 0.8);
+        border-bottom: 4px solid hsla(120, 40%, 40%, 0.8);
+        border-left: 4px dashed hsla(120, 40%, 40%, 0.8);
+        border-radius: 0;
+        /* центрируем содержимое */
+        text-align:right;
+        vertical-align: top;
+        height: 60px;
+        width: 250px;
+      }
+      td {
+        empty-cells: hide;
+      }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <table>
+      <caption>Пояснение - caption необязательный тег</caption>
+        <tr class="строка1 заголовки-столбцов">
+            <th>Заголовок первого столбца</th>
+            <th class="bg-yellow">Заголовок второго столбца</th>
+            <th>Заголовок третьего столбца</th>
+        </tr>
+        <tr class="строка2">
+            <td>Ячейка 1-го столбца</td>
+            <td>Ячейка 2-го столбца</td>
+            <td>Ячейка 3-го столбца</td>
+        </tr>
+        <tr class="строка3">
+            <td>Ячейка 1-го столбца</td>
+            <td>Ячейка 2-го столбца</td>
+            <td></td>
+        </tr>
+        <tr class="строка4">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>
