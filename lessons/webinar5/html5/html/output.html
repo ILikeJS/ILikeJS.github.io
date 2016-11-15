@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Output</h1>
+        <form oninput="result.value=(em.value*100).toFixed(2)">
+            <p>Введите значение в em:
+                <input type="number" name="em" autofocus></p>
+            <p>Значение в %: <output name="result">0</output><span>%</span></p>
+        </form>
+    </div>
+</body>
+
+</html>

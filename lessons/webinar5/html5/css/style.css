@@ -1,0 +1,60 @@
+.wrapper {
+          width: 900px;
+          height: 1200px;
+          margin: auto;
+          padding: 30px 20px 20px 15px;
+          background: hsla(225, 50%, 50%, 0.2);
+          box-shadow: 2px 2px 5px 5px hsla(360, 0%, 0%, 0.2);
+          position: relative;
+      }
+      h1,
+      h2,
+      h3 {
+          text-align: center;
+          color: darkblue;
+          margin: 30px 20px;
+          text-transform: capitalize;
+      }
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+output {
+  margin-left: 210px;
+}
+
+p,
+ul,
+span {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+b {
+  font-weight: bold; 
+}
+
+code {
+  display: block;
+  background: hsla(120, 40%, 40%, 0.2);
+  font-size: 24px;
+  font-family: monospace;
+  margin: 20px;
+  padding: 10px;
+}
+
+picture {
+  margin: 20px;
+}

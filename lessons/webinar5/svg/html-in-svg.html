@@ -1,0 +1,31 @@
+
+<?xml version="1.0" standalone="yes"?>
+<svg xmlns = "http://www.w3.org/2000/svg"
+         width="850" height="800"
+         viewBox="0 0 850 800"
+		  xmlns:xlink="http://www.w3.org/1999/xlink"
+		  style="fill: blue; border: 1px dashed blue;">
+	<defs>
+     <title>Html file inside SVG</title>
+	  <!--http://svg-art.ru  -->
+	 <linearGradient id="MyGradient"
+	                  x1="0%"   y1="0%"
+                    x2="100%" y2="50%"
+                    spreadMethod="pad">
+        <stop offset="5%" stop-color="dodgerblue" />
+        <stop offset="95%" stop-color="#E1F0FF" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width = "850px"  height="800px" fill="url(#MyGradient)" />
+     <text x="12" y="34" style="font-family: Arial; fill:green; font-size: 14px; ">"Hello, FE7"</text>
+  <g transform="translate(130, 0) rotate(15)">
+     <foreignObject x="10" y="0" width="850" height="800">
+       <body xmlns="http://www.w3.org/1999/xhtml">
+	      <p>This is a live and working website. Use the mouse!</p>
+        <iframe src="http://focus.ua" style="width:700px;height:700px">
+        </iframe>
+      </body>
+    </foreignObject>
+  </g>
+
+</svg>

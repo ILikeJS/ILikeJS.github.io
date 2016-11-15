@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+    <style media="screen">
+        .wrapper {
+            width: 900px;
+            /*height: 1200px;*/
+            margin: auto;
+            background: hsla(225, 50%, 50%, 0.2);
+            box-shadow: 2px 2px 5px 5px hsla(360, 0%, 0%, 0.2);
+            position: relative;
+        }
+
+        h1 {
+            color: maroon;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-top: 70px;
+            text-align: justify;;
+        }
+
+        .svg1 {
+            position: absolute;
+            top: 450px;
+            left: 330px;
+        }
+        .svg0 {
+            position: absolute;
+            top: 240px;
+            left: 330px;
+        }
+
+        .left-p {
+            width: 50%;
+            float: left;
+        }
+
+        .right-p {
+            width: 50%;
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .wrap-p {
+          padding: 0 20px;
+        }
+        button {
+          float: right;
+          margin-top: 100px;
+          margin-right: 200px;
+        }
+          button:hover {
+
+          }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper ">
+        <svg width="200" height="200" class="svg0">
+          <line x1="20" y1="13" x2="200" y2="105" stroke-width="2" stroke="black"/>
+        </svg>
+        <svg width="200" height="200" class="svg1">
+          <line x1="20" y1="105" x2="200" y2="15" stroke-width="2" stroke="black"/>
+        </svg>
+        <h1>SVG могут иметь position: absolute;</h1>
+        <div class="wrap-p clearfix">
+            <p class="left-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        <div class="wrap-p clearfix">
+            <p class="right-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="wrap-p clearfix">
+            <p class="left-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

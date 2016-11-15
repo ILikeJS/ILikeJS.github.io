@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+    <style media="screen">
+      .wrapper {
+        width: 1200px;
+        /*height: 1200px;*/
+        margin: auto;
+        background: hsla(225, 50%, 50%, 0.2);
+        box-shadow: 2px 2px 5px 5px hsla(360, 0%, 0%, 0.2);
+      }
+      table {
+        width: 600px;
+        margin: 50px auto;
+        border-collapse: separate;
+        border-spacing: 5px 1em;
+      }
+      h1, h2 {
+        color: maroon;
+      }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+      <svg width="500" height="500">
+        <rect x="95" y="95" width="250" height="250" style="fill:red; stroke:none"/>
+        <rect x="0" y="340" width="500" height="50" style="fill:green; stroke:none"/>
+        <path  d="M 400 100 L 200 10 L50 100 Z " style="fill:maroon; stroke:none"/>
+        <circle cx="450" cy="50" r="40"  style="fill:yellow; stroke:none" />
+      </svg>
+
+
+      <img src="svg.png" alt="png" width="520" style="vertical-align: top; padding-top: 8px;">
+
+      <h2 style="text-align: left;">
+        &lt;rect x="95" y="95" width="250" height="250" style="fill:red; stroke:none"&gt; </h2>
+
+        <h2 style="text-align: left;">
+          &lt;rect x="0" y="340" width="500" height="50" style="fill:green; stroke:none"&gt; </h2>
+
+        <h2 style="text-align: left;">
+        &lt;path  d="M 400 100 L 200 10 L50 100 Z " style="fill:maroon; stroke:none"&gt; </h2>
+        <h2 style="text-align: left;">
+        &lt;circle cx="450" cy="50" r="40"  style="fill:yellow; stroke:none"&gt;</h2>
+
+
+      <table>
+        <caption>
+          Пример создания элемента PATH
+        </caption>
+        <tr>
+            <th>Command</th>
+            <th>Meaning</th>
+            <th>Parameters</th>
+        </tr>
+            <tr>
+                <td>M</td>
+                <td>Establish origin at point specified </td>
+                <td>Two parameters giving absolute (x,y) current position</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>Straight line path from current position to point specified
+                </td>
+                <td>Two parameters giving absolute (x,y) position of the line end point which becomes the current position.</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>Horizontal line path from current position to point specified
+                </td>
+                <td>Single parameter giving absolute Xcoordinate of the line end point. The Ycoordinate is the same as that of the previous current position. The new point becomes the current position.</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>Vertical line path from current position to point specified
+                </td>
+                <td>Single parameter giving absolute Ycoordinate of the line end point. The Xcoordinate is the same as that of the previous current position. The new point becomes the current position.</td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td>Straight line back to original Move origin</td>
+                <td>No parameters.</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>

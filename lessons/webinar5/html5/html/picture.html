@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Picture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>picture</h1>
+        <p>Новый элемент picture, решает следующие задачи: </p>
+        <p>Ретина, т.е. экраны с плотностью точек на дюйм 150 и выше, на которых обычное изображение выглядит размыто Адаптивность/</p>
+        <p>Задача изменения размеров изображения согласно вашим правилам, прописанным в дизайне в зависимости от размера вьюпорта.</p>
+        <p>Формат, возможность использовать современные форматы, такие как WebP, если они поддерживаются браузером</p>
+        <p>Кадрирование или Художественные цели. Обрезка маловажных частей изображения, при показе на устройствах с меньшим экраном.</p>
+
+        <code>
+           &lt;picture&gt;
+             &lt;source <br>
+              srcset="<список URL c дескрипторами>"<br>
+             [sizes="<ваши размеры в зависимости от раскладки>"]<br>
+             [media="<медиавыражение>"]<br>
+             [type="<mime/type>"]<br>
+           &gt;<br>
+           &lt;source ...&gt;<br>
+            ...<br>
+            &lt;img src="image.jpg" alt="My image"<br>
+              [srcset="<список URL с дескрипторами>"]<br>
+              [sizes="<ваши размеры в зависимости от раскладки>"]><br>
+           &lt;/picture&gt;
+        </code>
+
+        <picture>
+            <img
+               src="../img/HTML5_Logo_64.png"
+               srcset="../img/HTML5_Logo.svg 3x, ../img/HTML5_Logo_128.png 2x"
+               width="256" height="256"
+               alt="HTML5" >
+        </picture>
+
+
+        <h2>A RESPONSIVE IMAGE POLYFILL</h2>
+        <a href="https://scottjehl.github.io/picturefill/"><span>The picture element,
+          srcset and sizes attributes, and associated features allow web
+          developers to deliver an appropriate image to every user depending
+          on a variety of conditions like screen size, viewport size, screen
+          resolution, and more. Picturefill enables support for the picture
+          element and associated features in browsers that do not yet
+          support them, so you can start using them today!</span></a>
+    </div>
+</body>
+
+</html>

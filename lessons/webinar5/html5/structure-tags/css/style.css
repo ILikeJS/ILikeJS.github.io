@@ -1,0 +1,90 @@
+body {
+  background: hsla(225, 40%, 40%, 0.1);
+}
+
+header {
+  width: 800px;
+  margin: auto;
+  background: hsla(45, 40%, 40%, 0.2);
+  text-align: center;
+}
+
+main {
+  width: 800px;
+  margin: 20px auto;
+  background: hsla(90, 40%, 40%, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+footer {
+  width: 800px;
+  margin: 20px auto;
+  background: hsla(135, 40%, 40%, 0.2);
+}
+
+footer > h2,
+footer > p,
+footer > ul,
+footer > ul > li  {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+nav {
+    background: hsla(100, 40%, 40%, 0.2);
+    /*height: 35px;*/
+    margin: 10px auto;
+}
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+aside {
+  width: 20%;
+  height: 600px;
+  float: left;
+  background: hsla(110, 40%, 40%, 0.2);
+  text-align: center;
+}
+
+section.right {
+  width: 76%;
+  height: 600px;
+  float: right;
+  margin-right: 2%;
+  background: hsla(120, 40%, 40%, 0.2);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+article.bloggerAnna {
+  width: 49%;
+  height: 500px;
+  float: right;
+  background: hsla(120, 40%, 40%, 0.2);
+}
+
+article.bloggerBoris {
+  width: 49%;
+  height: 500px;
+  float: left;
+  background: hsla(120, 40%, 40%, 0.2);
+}
+
+.art-section {
+  background: hsla(120, 30%, 30%, 0.2);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;;
+  color: darkblue;
+}

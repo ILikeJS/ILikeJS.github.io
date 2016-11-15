@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FILTER</title>
+    <style media="screen">
+        .wrapper {
+            width: 900px;
+            /*height: 1200px;*/
+            margin: auto;
+            background: hsla(225, 50%, 50%, 0.2);
+            box-shadow: 2px 2px 5px 5px hsla(360, 0%, 0%, 0.2);
+            position: relative;
+        }
+
+        h2,h3 {
+            text-align: center;
+            color: darkblue;
+        }
+        .no-filter:hover {
+          filter: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper ">
+        <h2>Простой фильтр размытия</h2>
+        <div class="svg-wrap">
+          <svg width="0" height="0" viewbox="0 0 0 0">
+            <defs>
+               <filter id="circleFilter">
+                 <feGaussianBlur stdDeviation="10"/>
+               </filter>
+               <filter id="fotoFiltr">
+                 <feGaussianBlur stdDeviation="3"/>
+               </filter>
+               
+               <filter id="fotoSepia">
+                 <feColorMatrix  type="saturate" values="0"></feColorMatrix>
+               </filter>
+
+               <filter id="fotoBoth">
+                 <feGaussianBlur in="SourceGraphic" result="a1" stddeviation="3" />
+                 <feColorMatrix in="a1" type="saturate" values="0"></feColorMatrix>
+               </filter>
+
+             </defs>
+          </svg>
+          <svg width="400" height="300" viewbox="0 0 400 300">
+            <circle cx="200" cy="150" fill="#3498db" r="80" />
+          </svg>
+          <svg width="400" height="300" viewbox="0 0 400 300" class="gauss">
+           <circle cx="200" cy="150" fill="#3498db" filter="url(#circleFilter)" r="80"  class="no-filter" />
+        </svg>
+        </div>
+        <h2>фильтры к изображениям</h2>
+        <div class="svg-wrap">
+            <svg width="400" height="300" viewbox="0 0 400 300">
+           <image width="100%" height="100%" xlink:href="bg5.jpg" />
+        </svg>
+            <svg width="400" height="300" viewbox="0 0 400 300" >
+            <image width="100%" height="100%" xlink:href="bg5.jpg" filter="url(#fotoFiltr)"  class="no-filter"/>
+        </svg>
+        </div>
+        <h2>Комплексные SVG-фильтры</h2>
+        <h3>Результат, полученный после применения одного фильтра, может являться источником изображения для другого фильтра и т.д.</h3>
+        <svg width="400" height="300" viewbox="0 0 400 300">
+          <image filter="url(#fotoSepia)" xlink:href="bg5.jpg" width="100%" height="100%" class="no-filter"/>
+        </svg>
+        <svg width="400" height="300" viewbox="0 0 400 300">
+          <image filter="url(#fotoBoth)" xlink:href="bg5.jpg" width="100%" height="100%" class="no-filter"/>
+        </svg>
+    </div>
+</body>
+
+</html>

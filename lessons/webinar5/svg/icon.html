@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sprite</title>
+    <style media="screen">
+        .wrapper {
+            width: 900px;
+            height: 1200px;
+            margin: auto;
+            background: hsla(225, 50%, 50%, 0.2);
+            box-shadow: 2px 2px 5px 5px hsla(360, 0%, 0%, 0.2);
+            position: relative;
+        }
+
+        h1,
+        p {
+            text-align: center;
+            color: darkblue;
+            padding: 20px;
+        }
+
+        .red {
+            color: red;
+        }
+        .blue {
+            color: lightblue;
+        }
+        .green:hover {
+          color: green;
+          cursor: pointer;
+        }
+        .blue:hover {
+          color: blue;
+        }
+        .social:hover {
+          cursor: pointer;
+          background-color: yellow;
+        }
+        /*.icon {
+          width: 20px !important;
+        }*/
+
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.8.0/evil-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/evil-icons/1.8.0/evil-icons.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+      <h1>Simple and clean SVG icon pack with the code to support Rails, Sprockets, Node.js, Gulp, Grunt and CDN.</h1>
+      <p><a href="http://evil-icons.io/">Посмотреть иконки</a></p>
+        <div data-icon="ei-archive"></div>
+        <p data-icon="ei-chart" data-size="s"></p>
+        <span data-icon="ei-check" data-size="m" ></span>
+        <div data-icon="ei-spinner" data-size="m"></div>
+        <div data-icon="ei-cart" data-size="l" class="red"></div>
+            <div data-icon='ei-search' data-size="l" class="blue green"></div>
+            <div data-icon='ei-arrow-right' data-size="m" class="green"></div>
+            <div data-icon='ei-envelope' data-size="l" data-class="custom-class" class="green"></div>
+        <h1>Social</h1>
+        <div class="soc-wrap">
+          <span data-icon='ei-sc-facebook' data-size='l' class="social"></span>
+          <span data-icon='ei-sc-github' data-size='l' class="social"></span>
+          <span data-icon='ei-sc-google-plus' data-size='l' class="social"></span>
+          <span data-icon='ei-sc-skype' data-size='l' class="social"></span>
+          <span data-icon='ei-sc-twitter' data-size='l' class="social"></span>
+          <span data-icon='ei-sc-vk' data-size='l' class="social"  ></span>
+        </div>
+    </div>
+</body>
+
+</html>
