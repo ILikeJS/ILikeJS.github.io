@@ -14,7 +14,9 @@ body {
 p.text {
 float:left;
 width:60%;
-line-height: 50px;
+padding: 20px 10px;
+box-sizing: border-box;
+line-height: 1.2em;
 font-size: 25px;
 background: hsla(200, 60%, 40%, 0.2);
 }

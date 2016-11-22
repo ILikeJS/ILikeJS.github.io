@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>@media Liquid design</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+  <header>
+    <h1>Simple @media rules</h1>
+    <p>
+      .box_text&nbsp;{<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;float: left;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;margin: 20px 2%;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;width: 29%;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;height: 100px;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;background-color: green;<br>
+      }<br>
+    </p>
+  </header>
+    <div class="container">
+      <div class="box_text">
+        @media (max-width: 1000px)&nbsp;{<br>
+        &nbsp;&nbsp;.box_text{ <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;width: 46%; <br>
+        &nbsp;&nbsp;}<br>
+      }
+    </div>
+      <div class="box_text">BOX 2</div>
+      <div class="box_text">        @media (max-width: 500px)&nbsp;{<br>
+              &nbsp;&nbsp;.box_text&nbsp;{ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;width: 96%; <br>
+              &nbsp;&nbsp;}<br>
+            }</div>
+      <div class="box_text">BOX 4</div>
+      <div class="box_text">BOX 5</div>
+      <div class="box_text">BOX 6</div>
+    </div>
+
+  <footer>
+    <span>
+      Copyright (c) 2016 Copyright Holder All Rights Reserved.
+    </span>
+  </footer>
+
+  </div>
+</body>
+</html>

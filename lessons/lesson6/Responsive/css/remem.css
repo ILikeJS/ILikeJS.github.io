@@ -1,9 +1,5 @@
 html {
-  font-size: 62.5%;
-}
-
-body {
-    background: hsla(225, 10%, 10%, 0.1);
+  font-size: 100%;
 }
 
 .wrapper {
@@ -14,6 +10,30 @@ body {
     border: 10px solid hsla(225, 50%, 90%, 1);
 }
 
+h1.rem {
+   font-size: 1.5rem;
+}
+
+a.rem-link {
+  font-size: 1.25rem;
+}
+
+h1.em {
+   font-size: 1.5em;
+}
+
+a.em-link {
+  font-size: 0.833333333333em;
+}
+
+div.boxing {
+  margin-top: 2rem;
+}
+/*
+body {
+background: hsla(225, 10%, 10%, 0.1);
+}*/
+/*
 @media screen and (min-width:1024px) and (max-width: 1279px) {
   .min-width_1280p {
     display: none;
@@ -78,4 +98,4 @@ body {
         width: 25%;
         padding: 2%;
     }
-}
+}*/

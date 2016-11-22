@@ -1,0 +1,86 @@
+.wrapper {
+    /*width: 960px;*/
+    width: 90%;
+    height: 1200px;
+    margin: auto;
+    background: hsla(225, 50%, 50%, 0.2);
+    border: 10px solid hsla(225, 50%, 90%, 1);
+    font-size: 0;
+}
+
+.grid-1at12 {
+  width: 69px;
+  margin-left: 12px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid #888;
+  background: #555;
+  display: inline-block;
+}
+
+.grid1 {
+  width: 7.1875%;
+  margin-left: 1.25%;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  background: #999;
+  display: inline-block;
+}
+
+div.first {
+  margin-left: 0;
+}
+
+main {
+  height: 200px;
+  background: #b0b;
+  float: left;
+}
+aside {
+  margin-left: 1.25%;
+  height: 200px;
+  background: #bb0;
+  float: left;
+}
+
+article, section {
+  height: 200px;
+  float: left;
+  margin-left: 1.25%;
+}
+
+article {
+  background: #0bb;
+}
+section {
+  background: #0b0;
+}
+article:first-of-type , section:first-of-type{
+  margin-left: 0;
+}
+
+.grid10percent {
+  /*   width: calc(7.1875% * 10 + 1.25%*9); 71.875% + 11.25% = 83.125%  */
+  width: 83.125%;
+}
+
+.grid8percent {
+  /*   width: calc(7.1875% * 8 + 1.25%*7); 57.5% + 8.75% = 66.25%  */
+  width: 66.25%;
+}
+
+.grid6percent {
+  /*  width: calc(7.1875% * 6 + 1.25%*5);  43.125% + 6.25% = 49.375% */
+  width: 49.375%;
+}
+
+.grid4percent {
+  /*  width: calc(7.1875% * 4 + 1.25%*3);  28.75% + 3.75% = 32.5% */
+  width: 32.5%;
+}
+
+.grid2percent {
+  /*  width: calc(7.1875% * 2 + 1.25%*1);  14.375% + 1.25% = 15.625% */
+  width: 15.625%;
+}

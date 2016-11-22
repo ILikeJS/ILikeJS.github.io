@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REM EM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <link rel="stylesheet" href="../css/remem.css">
+    <script type="text/javascript" src="../js/sizeWindow.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+      <h1 class="rem">Размер заголовка должен быть 24px, в ссылки - 20px;</h1>
+      <h1 class="rem">target ÷ context = result</h1>
+      <div class="boxing">
+        <h1 class="rem">Расчет размера текста REM <a href="">ссылка</a></h1>
+        <p class="rem-link">html{font-size: 100%;} т.е. 16px</p>
+        <p class="rem-link">h1 зададим 1.5rem = 16 * 1.5 = 24px</p>
+        <p class="rem-link">Ссылка находится внутри блока заголовка. <br>
+          target = 20<br>
+          context = 16<br>
+          result = 20/16=1.25<br>
+          Ссылке задаем 1.25rem, т.к. % берется от font-size &lt;HTML>&gt; </p>
+      </div>
+      <div class="boxing">
+        <h1 class="em">Расчет размера текста EM <a href="">ссылка</a></h1>
+        <p class="em-link">html{font-size: 100%;} т.е. 16px</p>
+        <p class="em-link">h1 зададим 1.5em = 16 * 1.5 = 24px</p>
+        <p class="em-link">
+          Ссылка находится внутри блока заголовка.<br>
+          target = 20<br>
+          context = 24<br>
+          result = 20/24=0.8333333333333333<br>
+          Ссылке задаем 0.8333333333333333em, т.к. % берется от font-size &lt;H1>&gt; </p>
+        </p>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 100px;
+  background-color: orange;
+}
+.container{
+  position: relative;
+  overflow: hidden;
+}
+.sidebar{
+  position: absolute;
+  width: 295px;
+  background-color: yellow;
+  top:0;
+  left:5px;
+}
+main{
+  background-color: green;
+  margin-left: 305px;
+  margin-right: 5px;
+}
+footer{
+  clear: both;
+  background-color: #454545;
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+h1, h2{
+  text-align: center;
+}

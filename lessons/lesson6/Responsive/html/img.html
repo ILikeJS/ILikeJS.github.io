@@ -11,11 +11,27 @@
 
 <body>
     <div class="wrapper">
-        <p class="text">Wrapper:   width: 70%; margin: auto;
-            border: 10px  height: 1200px; <br>
-            p.text: width:60%; float:left;<br>
-            div.img-wrap: width:40%; float:right; <br>
-            img.responsive: <b>max-width: 100%;<b>height: auto;
+        <p class="text">
+          Простая %-ая зависимость размера изображения от размера контейнера.<br>
+          <p cla>
+          .wrapper&nbsp;{<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;width: 70%; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;height: 1200px; <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;margin: auto;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;border: 10px  <br>
+          }<br>
+            p.text&nbsp;{<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;float:left;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;width:60%;<br>
+             }<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;div.img-wrap&nbsp;{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;width:40%;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;float:right; <br>
+          }<br>
+            img.responsive&nbsp;{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  max-width: 100%;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  height: auto;<br>
+             }<br>
         </p>
         <div class="img-wrap">
             <img alt="robots image" class="responsive" src="../img/robot.jpg">

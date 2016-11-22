@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  position: relative;
+  overflow: hidden;
+}
+header{
+  height: 100px;
+  background-color: orange;
+}
+.box_text{
+  float: left;
+  margin: 20px 2%;
+  width: 29%;
+  height: 100px;
+  background-color: green;
+  border: 20px solid red;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media (max-width: 1000px){
+  .box_text{
+    width: 46%;
+  }
+}
+@media (max-width: 500px){
+  .box_text{
+    width: 96%;
+  }
+}
+footer{
+  clear: both;
+  background-color: #454545;
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+h1, h2{
+  text-align: center;
+}
