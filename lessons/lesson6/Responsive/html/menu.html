@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <link rel="stylesheet" href="../css/menu.css">
+    <script type="text/javascript" src="../js/sizeWindow.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="small-menu">
+          <h2>Вариант внешнего вида для мобильного меню</h2>
+          <form>
+              <select name="URL" onchange="window.location.href=this.form.
+                URL.options[this.form.URL.selectedIndex].value">
+                <option value="blog.html">My Blog</option>
+                <option value="home.html">My Home Page</option>
+                <option value="tutorials.html">My Tutorials</option>
+            </select>
+          </form>
+        </div>
+        <h2 class="large-header">Вариант внешнего вида для десктопного меню</h2>
+        <h2 class="middle-header">Вариант внешнего вида для меню планшета</h2>
+        <div class="large-menu">
+            <ul>
+                <li class="first_li">
+                    <a class="visible_link" href="">My Blog</a>
+                </li>
+                <li class="other_li">
+                    <a class="hidden_link" href="">My Home Page</a>
+                </li>
+                <li class="other_li">
+                    <a class="hidden_link" href="">My Tutorials</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+           <p>Lorem ipsum dolor sit amet, consectetur
+             adipisicing elit. Maiores voluptatibus,
+             expedita in maxime. Mollitia recusandae,
+             facilis est. Molestias sunt fugit, dolore
+             beatae possimus expedita eius placeat tenetur
+             voluptate quaerat quam.</p>
+       </div>
+    </div>
+</body>
+
+</html>

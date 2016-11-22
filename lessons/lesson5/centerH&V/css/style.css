@@ -1,0 +1,30 @@
+
+body {
+  background: hsla(225, 10%, 10%, 0.1);
+  height: 100%;
+}
+
+.wrapper {
+  width: 960px;
+  height: 100vh;
+  margin: auto;
+  background: hsla(225, 50%, 50%, 0.2);
+}
+
+.box {
+  background: hsla(225, 50%, 50%, 0.9);
+  color: #fff;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left:  calc(-500px/2);  /* box.width/2 = 500/2 = 250 */
+  margin-top: calc(-300px/2);    /* box.height/2 = 300/2 = 150 */
+}
+
+h1 {
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}

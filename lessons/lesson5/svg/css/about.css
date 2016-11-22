@@ -1,0 +1,41 @@
+.wrapper {
+    width: 900px;
+    /*height: 1200px;*/
+    margin: auto;
+    background: hsla(225, 50%, 50%, 0.2);
+    box-shadow: 2px 2px 5px 5px hsla(360, 0%, 0%, 0.2);
+}
+
+table {
+    width: 600px;
+    margin: 50px auto;
+    border-collapse: separate;
+    border-spacing: 5px 1em;
+}
+
+h1,
+h2 {
+    color: maroon;
+}
+
+a {
+    text-decoration: none;
+    fill: maroon;
+}
+
+a:focus,
+a:active,
+a:hover {
+    text-decoration: underline;
+    fill: green;
+    color: #00cc00;
+}
+a > text {
+  fill: maroon;
+}
+a > text:hover {
+  fill: red;
+}
+svg {
+  border: 2px dotted blue;
+}

@@ -1,0 +1,150 @@
+body {
+  background: hsla(225, 10%, 10%, 0.1);
+  font-size: 18px;
+  font-family: sans-serif;
+  color: darkblue;
+}
+
+.wrapper {
+  width: 70%;
+  height: 1200px;
+  margin: auto;
+  background: hsla(225, 50%, 50%, 0.2);
+  border: 10px solid hsla(225, 50%, 90%, 1);
+}
+
+h2 {
+  margin: 50px auto;
+  font-size: 26px;
+  text-align: center;
+}
+
+p,
+form {
+  padding: 20px 25px;
+}
+
+ul {
+  margin: 20px;
+  height: 40px;
+  line-height: 40px;
+  background: hsla(225, 50%, 50%, 0.3);
+}
+
+li {
+   display: inline-block;
+   margin-left: 50px;
+}
+
+a,
+select {
+  color: darkblue;
+  font-size: 18px;
+}
+
+form {
+  width: 160px;
+  display: block;
+  margin: auto;
+}
+
+select {
+    height: 40px;
+    width: 160px;
+    text-indent: 10px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 160px;
+  text-align: center;
+  border-left: 1px solid hsla(225, 50%, 50%, .0);
+  border-right: 1px solid hsla(225, 50%, 50%, .0);
+}
+
+a:hover {
+  background: hsla(225, 50%, 50%, 0.5);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+/*      add responsive for menu   */
+@media screen and ( max-width: 800px ) {
+.small-menu {
+  display:inline;
+}
+
+.large-header, .middle-header {
+  display:none;
+}
+
+.large-menu {
+  display:none;
+}
+}
+
+@media screen and ( min-width: 801px ) and ( max-width: 1024px ) {
+
+.small-menu {
+  display:none;
+}
+.large-header { display: none; }
+.middle-header { display: inline; }
+
+.large-menu {
+  display: block;
+  visibility: hidden;
+  width: 160px;
+  height: 126px;
+  /*background: none;*/
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -80px;
+  background: hsla(225, 50%, 50%, 0.3);
+  z-index: 10;
+}
+.content {
+  margin-top: calc(126px + 150px);
+}
+
+ul, li {
+  display: block;
+  width: 160px;
+  margin: auto;
+}
+
+a {
+  border: 1px  solid hsla(225, 50%, 50%, .0);
+}
+
+.large-menu:hover {
+  visibility: visible;
+  transition: visibility 0s linear 0.3s;
+}
+
+.first_li {
+   visibility: visible;
+   background: hsla(225, 50%, 50%, 0.3);
+}
+
+a {
+  border-top: 1px  solid hsla(225, 50%, 50%, .0);
+  border-bottom: 1px  solid hsla(225, 50%, 50%, .0);
+}
+
+a:hover {
+  background: hsla(225, 50%, 50%, 0.5);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+}
+@media screen and ( min-width: 1025px ) {
+  .small-menu { display:none; }.
+  .large-menu { display:inline; }
+  .middle-header { display:none; }
+  .large-header { display:inline; }
+  }
