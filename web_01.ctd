@@ -3144,6 +3144,9 @@ justify
 					<rich_text weight="heavy">text-align может изменять</rich_text>
 					<rich_text> эти значения  !!!</rich_text>
 				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="выравнивание" prog_lang="custom-colors" readonly="False" tags="" unique_id="137">
+					<rich_text link="webs http://frontender.info/centering-css-complete-guide/">http://frontender.info/centering-css-complete-guide/</rich_text>
+				</node>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="высота" prog_lang="custom-colors" readonly="False" tags="" unique_id="29">
 				<rich_text scale="h2">1) </rich_text>
@@ -3192,7 +3195,7 @@ justify
 </rich_text>
 				<rich_text scale="h2">4) </rich_text>
 				<rich_text foreground="#ffff00000000" scale="h2" weight="heavy">height</rich_text>
-				<rich_text scale="h2"> родителя определяет ширину всего видимого блока элемента </rich_text>
+				<rich_text scale="h2"> родителя определяет высоту всего видимого блока элемента </rich_text>
 				<rich_text scale="h2" underline="single">в нормальном потоке</rich_text>
 				<rich_text scale="h2">
 (</rich_text>
@@ -3360,8 +3363,12 @@ h1 {margin-top: 28px;}
 					<rich_text link="webs https://developer.mozilla.org/en/docs/Web/CSS/vertical-align">https://developer.mozilla.org/en/docs/Web/CSS/vertical-align</rich_text>
 					<rich_text>
 
-inline
-table-cell elements. 
+</rich_text>
+					<rich_text background="#dde4e9" foreground="#3b3c40" weight="heavy">Применяется к</rich_text>
+					<rich_text> </rich_text>
+					<rich_text background="#dde4e9" foreground="#3b3c40">строчным элементам и ячейкам таблиц. 
+Это также применяется к</rich_text>
+					<rich_text>
  </rich_text>
 					<rich_text link="webs https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter">::first-letter</rich_text>
 					<rich_text> 
@@ -3369,8 +3376,13 @@ table-cell elements.
 					<rich_text link="webs https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line">::first-line</rich_text>
 					<rich_text>
 
+</rich_text>
+					<rich_text weight="heavy">% </rich_text>
+					<rich_text>- относятся к line-height самого элемента
 
-/* keyword values */
+/* </rich_text>
+					<rich_text weight="heavy">keyword</rich_text>
+					<rich_text> values */
 vertical-align: baseline;
 vertical-align: sub;
 vertical-align: super;
@@ -3380,11 +3392,15 @@ vertical-align: middle;
 vertical-align: top;
 vertical-align: bottom;
 
-/* &lt;length&gt; values */
+/* &lt;</rich_text>
+					<rich_text weight="heavy">length</rich_text>
+					<rich_text>&gt; values */
 vertical-align: 10em;
 vertical-align: 4px;
 
-/* &lt;percentage&gt; values */
+/* &lt;</rich_text>
+					<rich_text weight="heavy">percentage</rich_text>
+					<rich_text>&gt; values */
 vertical-align: 20%;
 
 /* Global values */
@@ -3445,6 +3461,7 @@ vertical-align: unset;</rich_text>
 					<rich_text>
 
 </rich_text>
+					<rich_text link="webs http://frontender.info/centering-css-complete-guide/">http://frontender.info/centering-css-complete-guide/</rich_text>
 				</node>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="floating" prog_lang="custom-colors" readonly="False" tags="" unique_id="24">
@@ -3771,6 +3788,28 @@ div img:nth-of-type(even) { float: right; }   //справа
 			<rich_text> integrity=&quot;sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=&quot; crossorigin=&quot;anonymous&quot; /&gt;
 
 </rich_text>
+			<rich_text foreground="#00000000ffff" scale="h2" weight="heavy">Normalize.css </rich_text>
+			<rich_text>
+является альтернативой CSS Reset
+Николас Галахер, @necolas и Джонатан Нил, @jon_neal.
+подробно о разнице с reset здесь: </rich_text>
+			<rich_text link="webs https://webformyself.com/css-reset-ili-normalize/">https://webformyself.com/css-reset-ili-normalize/</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#00000000ffff" scale="h3" style="italic" weight="heavy">CDN</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text link="webs https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#00000000ffff" scale="h3" style="italic" weight="heavy">CDN MIN</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text link="webs https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css</rich_text>
+			<rich_text>
+</rich_text>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="menu &lt;ul&gt;&lt;li&gt;&lt;a&gt;" prog_lang="custom-colors" readonly="False" tags="" unique_id="43">
 			<rich_text>Примеры: </rich_text>
@@ -4080,6 +4119,16 @@ font-size  -
 				<encoded_png char_offset="0">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</encoded_png>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="text-indent" prog_lang="custom-colors" readonly="False" tags="" unique_id="41">
 					<rich_text></rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="типографика" prog_lang="custom-colors" readonly="False" tags="" unique_id="146">
+					<rich_text link="webs http://infogra.ru/typography/3-pravila-tipografiki-dlya-nedizajnerov">http://infogra.ru/typography/3-pravila-tipografiki-dlya-nedizajnerov</rich_text>
+					<rich_text>
+
+• ﻿ в строке должно находится не более 65-75 символов (размер шрифта * 30 ~= 65-70 симоволам // width: 10px*30=300px; font-size: 10px; или 0,625em * 30 =  18,75em
+•  ﻿межстрочный интервал стоит устанавливать как 120% от размера текста или 1,2 единицы.
+• ﻿ отступ между параграфами стоит делать равным размеру основного текста,
+• ﻿ заголовок — обычно составляет 180–200% от размера основного шрифта, 
+• ﻿ подзаголовок — 130–150% от размера основного шрифта</rich_text>
 				</node>
 			</node>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="терминология Unicode" prog_lang="custom-colors" readonly="False" tags="" unique_id="53">
@@ -6029,7 +6078,7 @@ img.responsive { </rich_text>
 				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">height: auto; </rich_text>
 				<rich_text foreground="#a5a52a2a2a2a">}
 </rich_text>
-				<node custom_icon_id="0" foreground="" is_bold="False" name="меню мобоильное/десктоп" prog_lang="custom-colors" readonly="False" tags="" unique_id="129">
+				<node custom_icon_id="0" foreground="" is_bold="False" name="меню мбоильное/десктоп" prog_lang="custom-colors" readonly="False" tags="" unique_id="129">
 					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">&lt;ul </rich_text>
 					<rich_text foreground="#a5a52a2a2a2a">calss=&quot;</rich_text>
 					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">large-menu</rich_text>
@@ -6144,9 +6193,8 @@ height: auto;
 
 </rich_text>
 					<rich_text weight="heavy">Бордер</rich_text>
-					<rich_text> не использует % поэтому для учета ширины бордеров используют один их методов:
-• обернуть блок в обертку, задав бордеры фиксированными, а паддинг + width - в % 
-• установив box-sizing: border-box. 
+					<rich_text> не использует % поэтому для учета ширины бордеров необходимо обернуть блок в обертку, 
+задав бордеры фиксированными, а паддинг + width - в % и установив box-sizing: border-box. 
 Обертка же должна быть только в %. </rich_text>
 				</node>
 			</node>
@@ -6596,6 +6644,540 @@ CSS
 			<rich_text></rich_text>
 		</node>
 	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Bootstrap4" prog_lang="custom-colors" readonly="False" tags="" unique_id="138">
+		<rich_text>Как подключиться:
+(на русском) </rich_text>
+		<rich_text link="webs http://bootstrap-4.ru/getting-started/introduction/">http://bootstrap-4.ru/getting-started/introduction/</rich_text>
+		<rich_text>
+( English )      </rich_text>
+		<rich_text link="webs http://v4-alpha.getbootstrap.com/getting-started/download/">http://v4-alpha.getbootstrap.com/getting-started/download/</rich_text>
+		<rich_text>
+
+Bootstrap использует </rich_text>
+		<rich_text weight="heavy">EM</rich_text>
+		<rich_text> or REM для определения большинства размеров,
+</rich_text>
+		<rich_text weight="heavy">px</rich_text>
+		<rich_text> используются для точек смены медиаправил и  container widths. 
+Потому что width viewport определятеся только в  pixels и не зависит от font-size (REM или EM).
+
+
+
+</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Grid System" prog_lang="custom-colors" readonly="False" tags="" unique_id="139">
+			<rich_text scale="h3" weight="heavy">﻿Bootstrap V4</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text weight="heavy">Необходимые элементы верстки grid:</rich_text>
+			<rich_text>
+блок-контейнер :                       </rich_text>
+			<rich_text foreground="#2f6f9f">&lt;div</rich_text>
+			<rich_text> </rich_text>
+			<rich_text foreground="#4f9fcf">class=</rich_text>
+			<rich_text foreground="#d44950">&quot;container&quot;</rich_text>
+			<rich_text foreground="#2f6f9f">&gt;</rich_text>
+			<rich_text>
+блок-контейнер для колонок :  </rich_text>
+			<rich_text foreground="#2f6f9f">&lt;div</rich_text>
+			<rich_text> </rich_text>
+			<rich_text foreground="#4f9fcf">class=</rich_text>
+			<rich_text foreground="#d44950">&quot;row&quot;</rich_text>
+			<rich_text foreground="#2f6f9f">&gt;</rich_text>
+			<rich_text>
+блоки-контейнеры колонок :     </rich_text>
+			<rich_text foreground="#2f6f9f">&lt;div</rich_text>
+			<rich_text> </rich_text>
+			<rich_text foreground="#4f9fcf">class=</rich_text>
+			<rich_text foreground="#d44950">&quot;col-...-...&quot;</rich_text>
+			<rich_text foreground="#2f6f9f">&gt;</rich_text>
+			<rich_text>
+    где необходимо задать размер экрана xs/sm/md/lg/xl
+    и ширину колонки в диапазоне 1-12
+
+</rich_text>
+			<rich_text weight="heavy">container</rich_text>
+			<rich_text> - базовый элемент НЕОБХОДИМ когда используется grid:
+      
+•  </rich_text>
+			<rich_text foreground="#d44950">&quot;container&quot;</rich_text>
+			<rich_text>             fixed-width      // </rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">max-width</rich_text>
+			<rich_text> изменяется в каждом @media - breakpoint
+•  </rich_text>
+			<rich_text foreground="#d44950">&quot;container-fluid&quot;</rich_text>
+			<rich_text>      fluid-width       // </rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">width: 100%</rich_text>
+			<rich_text>: занимает всю ширину экрана
+
+</rich_text>
+			<rich_text weight="heavy">Ширина контейнера:</rich_text>
+			<rich_text> //@media - breakpoint
+sm: 540px;  // 576
+md: 720px;  // 768
+lg:   960px;  // 992
+xl:   1140px; // 1200
+
+
+</rich_text>
+			<rich_text weight="heavy">row</rich_text>
+			<rich_text>
+число колонок - 12
+gutter width - 30px (по 15px с каждой строны колонки)
+
+• .col-xs-   (extra small) — для мобильных телефонов, &lt;576px
+• .col-sm-  (small) — для планшетов, ≥576px&lt;768
+• .col-md-  (middle) — для десктопов,≥768px&lt;992
+• .col-lg-    (large) — для больших экранов, ≥992px&lt;1200
+• .col-xl-    (extra large) - для самых широких экранов
+
+</rich_text>
+			<rich_text weight="heavy">Отступы</rich_text>
+			<rich_text> на заданное число колонок:
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.offset-md-*</rich_text>
+			<rich_text> 
+
+</rich_text>
+			<rich_text weight="heavy">Смена порядка</rich_text>
+			<rich_text> отображения ячеек:
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">﻿-pull-</rich_text>
+			<rich_text>  &amp;</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> ﻿-push-</rich_text>
+			<rich_text>
+
+
+</rich_text>
+			<rich_text weight="heavy">Вложенный элемент</rich_text>
+			<rich_text> должен занять 100% высоты или ширины родительского </rich_text>
+			<rich_text weight="heavy">grid</rich_text>
+			<rich_text>
+ </rich_text>
+			<rich_text foreground="#4f9fcf">class=</rich_text>
+			<rich_text foreground="#d44950">&quot;w-100 h-100&quot;</rich_text>
+			<rich_text>  или одно значение </rich_text>
+			<rich_text foreground="#4f9fcf">class=</rich_text>
+			<rich_text foreground="#d44950">&quot;w-100&quot;</rich_text>
+			<rich_text> 
+
+</rich_text>
+			<rich_text weight="heavy">Спрятать блок по медиазапросу:</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-*-up</rich_text>
+			<rich_text>       // медиазапрос в этой </rich_text>
+			<rich_text background="#ffffff" foreground="#373a3c" weight="heavy">breakpoint</rich_text>
+			<rich_text> или большем
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-*-down</rich_text>
+			<rich_text>   // медиазапрос в этой </rich_text>
+			<rich_text background="#ffffff" foreground="#373a3c" weight="heavy">breakpoint</rich_text>
+			<rich_text> или меньшем
+
+Адаптивная верстка: - ﻿классы можно комбинировать
+
+Замена:
+Эти данные находятся в sass файле “переменные” и их можно изменять
+</rich_text>
+			<rich_text link="webs https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss">https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss</rich_text>
+			<rich_text>
+</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name=" 3-х колонки - пример" prog_lang="custom-colors" readonly="False" tags="" unique_id="141">
+				<rich_text background="#adadd8d8e6e6">  ТРИ КОЛОНКИ  </rich_text>
+				<rich_text>         </rich_text>
+				<rich_text background="#adadd8d8e6e6">  ТРИ КОЛОНКИ  </rich_text>
+				<rich_text>             </rich_text>
+				<rich_text background="#adadd8d8e6e6">  ТРИ КОЛОНКИ   </rich_text>
+				<rich_text>
+  
+  
+ </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;div</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#4f9fcf">class=</rich_text>
+				<rich_text foreground="#d44950">&quot;container&quot;</rich_text>
+				<rich_text foreground="#2f6f9f">&gt;</rich_text>
+				<rich_text>
+  </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;div</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#4f9fcf">class=</rich_text>
+				<rich_text foreground="#d44950">&quot;row&quot;</rich_text>
+				<rich_text foreground="#2f6f9f">&gt;</rich_text>
+				<rich_text>
+    </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;div</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#4f9fcf">class=</rich_text>
+				<rich_text foreground="#d44950">&quot;col-sm-4&quot;</rich_text>
+				<rich_text foreground="#2f6f9f">&gt;</rich_text>
+				<rich_text>
+      ТРИ КОЛОНКИ
+    </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;/div&gt;</rich_text>
+				<rich_text>
+    </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;div</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#4f9fcf">class=</rich_text>
+				<rich_text foreground="#d44950">&quot;col-sm-4&quot;</rich_text>
+				<rich_text foreground="#2f6f9f">&gt;</rich_text>
+				<rich_text>
+      ТРИ КОЛОНКИ
+    </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;/div&gt;</rich_text>
+				<rich_text>
+    </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;div</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#4f9fcf">class=</rich_text>
+				<rich_text foreground="#d44950">&quot;col-sm-4&quot;</rich_text>
+				<rich_text foreground="#2f6f9f">&gt;</rich_text>
+				<rich_text>
+      ТРИ КОЛОНКИ
+    </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;/div&gt;</rich_text>
+				<rich_text>
+  </rich_text>
+				<rich_text foreground="#2f6f9f">&lt;/div&gt;</rich_text>
+				<rich_text>
+</rich_text>
+				<rich_text foreground="#2f6f9f">&lt;/div&gt;</rich_text>
+				<rich_text> </rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Variables" prog_lang="custom-colors" readonly="False" tags="" unique_id="140">
+				<rich_text foreground="#003333">$grid-columns</rich_text>
+				<rich_text>:      </rich_text>
+				<rich_text foreground="#ff6600">12</rich_text>
+				<rich_text>;
+</rich_text>
+				<rich_text foreground="#003333">$grid-gutter-width-base</rich_text>
+				<rich_text>: </rich_text>
+				<rich_text foreground="#ff6600">30px</rich_text>
+				<rich_text>;
+
+</rich_text>
+				<rich_text foreground="#003333">$grid-gutter-widths</rich_text>
+				<rich_text>: (
+  xs</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#003333">$grid-gutter-width-base</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">30px</rich_text>
+				<rich_text>
+  sm</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#003333">$grid-gutter-width-base</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">30px</rich_text>
+				<rich_text>
+  md</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#003333">$grid-gutter-width-base</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">30px</rich_text>
+				<rich_text>
+  lg</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#003333">$grid-gutter-width-base</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">30px</rich_text>
+				<rich_text>
+  xl</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#003333">$grid-gutter-width-base</rich_text>
+				<rich_text>  </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">30px</rich_text>
+				<rich_text>
+)
+
+</rich_text>
+				<rich_text foreground="#003333">$grid-breakpoints</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> (
+  </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> Extra small screen </rich_text>
+				<rich_text foreground="#555555">/</rich_text>
+				<rich_text> phone
+  xs</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">0</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text>
+  </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> Small screen </rich_text>
+				<rich_text foreground="#555555">/</rich_text>
+				<rich_text> phone
+  sm</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">576px</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text>
+  </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> Medium screen </rich_text>
+				<rich_text foreground="#555555">/</rich_text>
+				<rich_text> tablet
+  md</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">768px</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text>
+  </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> Large screen </rich_text>
+				<rich_text foreground="#555555">/</rich_text>
+				<rich_text> desktop
+  lg</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">992px</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text>
+  </rich_text>
+				<rich_text foreground="#555555">//</rich_text>
+				<rich_text> Extra </rich_text>
+				<rich_text foreground="#336666">large</rich_text>
+				<rich_text> screen </rich_text>
+				<rich_text foreground="#555555">/</rich_text>
+				<rich_text> wide desktop
+  xl</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">1200px</rich_text>
+				<rich_text>
+);
+
+</rich_text>
+				<rich_text foreground="#003333">$container-max-widths</rich_text>
+				<rich_text>: (
+  sm</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">540px</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text>
+  md</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">720px</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text>
+  lg</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">960px</rich_text>
+				<rich_text foreground="#555555">,</rich_text>
+				<rich_text>
+  xl</rich_text>
+				<rich_text foreground="#555555">:</rich_text>
+				<rich_text> </rich_text>
+				<rich_text foreground="#ff6600">1140px</rich_text>
+				<rich_text>
+);</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="hide" prog_lang="custom-colors" readonly="False" tags="" unique_id="142">
+				<rich_text>down
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-xs-down</rich_text>
+				<rich_text>    Hidden xs
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-sm-down</rich_text>
+				<rich_text>   Hidden xs + sm
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-md-down</rich_text>
+				<rich_text>   Hidden xs + sm + md
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-lg-down</rich_text>
+				<rich_text>     Hidden xs + sm + md + lg
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-xl-down</rich_text>
+				<rich_text>     Hidden all
+
+up
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-xs-up</rich_text>
+				<rich_text>        Hidden all
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-sm-up</rich_text>
+				<rich_text>       Hidden sm + md + lg + xs
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-md-up</rich_text>
+				<rich_text>       Hidden md + lg + xs
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-lg-up</rich_text>
+				<rich_text>         Hidden lg + xs
+</rich_text>
+				<rich_text background="#f7f7f9" foreground="#bd4147">.hidden-xl-up</rich_text>
+				<rich_text>         Hidden xs
+
+
+</rich_text>
+				<rich_text link="webs http://v4-alpha.getbootstrap.com/layout/responsive-utilities/">http://v4-alpha.getbootstrap.com/layout/responsive-utilities/</rich_text>
+				<rich_text>
+
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="pull &amp; push" prog_lang="custom-colors" readonly="False" tags="" unique_id="145">
+				<rich_text>﻿Поменять блоки местами
+
+&lt;div class=&quot;row&quot;&gt; 
+  &lt;div class=&quot;col-sm-4 col-sm-</rich_text>
+				<rich_text weight="heavy">push</rich_text>
+				<rich_text>-8&quot;&gt;.col-sm-4 .col-sm-</rich_text>
+				<rich_text weight="heavy">push</rich_text>
+				<rich_text>-8&lt;/div&gt; 
+  &lt;div class=&quot;col-sm-8 col-sm-</rich_text>
+				<rich_text weight="heavy">pull</rich_text>
+				<rich_text>-4&quot;&gt;.col-sm-8 .col-sm-</rich_text>
+				<rich_text weight="heavy">pull</rich_text>
+				<rich_text>-4&lt;/div&gt; 
+&lt;/div&gt;</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Typography" prog_lang="custom-colors" readonly="False" tags="" unique_id="143">
+			<rich_text scale="h2">Native font stack</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#999999">// Safari for OS X and iOS </rich_text>
+			<rich_text>  </rich_text>
+			<rich_text foreground="#2f6f9f">-apple-system</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#999999">// Chrome for OS X</rich_text>
+			<rich_text>              </rich_text>
+			<rich_text foreground="#2f6f9f">BlinkMacSystemFont</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#999999">// Windows</rich_text>
+			<rich_text>                  </rich_text>
+			<rich_text foreground="#cc3300">&quot;Segoe UI&quot;</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#999999">// Android</rich_text>
+			<rich_text>                    </rich_text>
+			<rich_text foreground="#cc3300">&quot;Roboto&quot;</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#999999">// Basic web fallback</rich_text>
+			<rich_text>  </rich_text>
+			<rich_text foreground="#cc3300">&quot;Helvetica Neue&quot;</rich_text>
+			<rich_text foreground="#555555">,</rich_text>
+			<rich_text> </rich_text>
+			<rich_text foreground="#2f6f9f">Arial</rich_text>
+			<rich_text foreground="#555555">,</rich_text>
+			<rich_text> </rich_text>
+			<rich_text foreground="#2f6f9f">sans-serif</rich_text>
+			<rich_text> </rich_text>
+			<rich_text foreground="#555555">!</rich_text>
+			<rich_text foreground="#2f6f9f">default</rich_text>
+			<rich_text foreground="#555555">;</rich_text>
+			<rich_text>
+
+font-size = 16px; // 1em //  1rem  // 100%
+
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">h1</rich_text>
+			<rich_text> { 
+margin-top</rich_text>
+			<rich_text background="#ffffff" foreground="#373a3c"> </rich_text>
+			<rich_text>0;
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">margin-bottom: .5rem</rich_text>
+			<rich_text>;
+}
+
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">p, ul, ol, dl </rich_text>
+			<rich_text>{
+margin-top</rich_text>
+			<rich_text background="#ffffff" foreground="#373a3c"> </rich_text>
+			<rich_text>0;
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">margin-bottom: 1rem</rich_text>
+			<rich_text>;
+}</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Navbar" prog_lang="custom-colors" readonly="False" tags="" unique_id="144">
+			<rich_text background="#ffffff" foreground="#373a3c" scale="h2" weight="heavy">navbar</rich_text>
+			<rich_text scale="h2"> - </rich_text>
+			<rich_text>это обертка для лого, навигации и других элементов.
+
+</rich_text>
+			<rich_text weight="heavy">ul       &gt;         li         &gt;     a 
+.navs  &gt; .nav-items  &gt; .nav-link</rich_text>
+			<rich_text>
+
+
+</rich_text>
+			<rich_text weight="heavy">требутся:</rich_text>
+			<rich_text>
+•  </rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.navbar</rich_text>
+			<rich_text>
+•  color scheme
+
+по умолчанию:  </rich_text>
+			<rich_text background="#ffffff" foreground="#373a3c" weight="heavy">fluid</rich_text>
+			<rich_text> 
+
+положение на странице:
+Full width:          </rich_text>
+			<rich_text foreground="#d44950">navbar-full</rich_text>
+			<rich_text>
+Fixed top:          </rich_text>
+			<rich_text foreground="#d44950">navbar-fixed-top</rich_text>
+			<rich_text>
+Fixed bottom:    </rich_text>
+			<rich_text foreground="#d44950">navbar-fixed-bottom</rich_text>
+			<rich_text>
+
+Поддерживаемые элементы:
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.navbar-brand</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.navbar-nav</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.navbar-toggler</rich_text>
+			<rich_text> - 
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.float-</rich_text>
+			<rich_text>                - создание инлайновых форм для контента
+</rich_text>
+			<rich_text background="#f7f7f9" foreground="#bd4147">.navbar-text</rich_text>
+			<rich_text>      - вертикально центрированный текст</rich_text>
+		</node>
+	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="Editors" prog_lang="custom-colors" readonly="False" tags="" unique_id="7">
 		<rich_text></rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="emmet" prog_lang="custom-colors" readonly="False" tags="" unique_id="8">
@@ -7019,6 +7601,9 @@ csselite.com/
 </rich_text>
 		<rich_text link="webs https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/">https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/</rich_text>
 		<rich_text>
+</rich_text>
+		<rich_text link="webs http://frontender.info/centering-css-complete-guide/">http://frontender.info/</rich_text>
+		<rich_text>
 
 форум
 </rich_text>
@@ -7162,91 +7747,730 @@ h1 </rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="PHP" prog_lang="custom-colors" readonly="False" tags="" unique_id="84">
+		<rich_text>Необходимый минимум знаний для верстки.
+
+1) Код php записывается между знаков </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">&lt;?php</rich_text>
+		<rich_text>  код  </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">?&gt;</rich_text>
 		<rich_text>
+
+2) Переменные записываюся через $
 </rich_text>
-		<rich_text link="webs http://php.net/manual/ru/langref.php">http://php.net/manual/ru/langref.php</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">$a = 2;
+$b = $a * 3;</rich_text>
 		<rich_text>
 
+3) Вывод в html может быть оформлен так:
+</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">&lt;?php</rich_text>
+		<rich_text>
+•   </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">echo '</rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;p&gt;текст&lt;/p&gt;</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">';</rich_text>
+		<rich_text>                 // текст в кавычках
+•   </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">echo </rich_text>
+		<rich_text foreground="#ffffa5a50000" weight="heavy">$a</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">;</rich_text>
+		<rich_text>                                       // переменная
+•   </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">echo '</rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;p&gt;текст&lt;/p&gt;</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">', </rich_text>
+		<rich_text foreground="#ffffa5a50000" weight="heavy">$a</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">;</rich_text>
+		<rich_text>          // запятая
+•   </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">echo '</rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;p&gt;текст&lt;/p&gt;</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">'.</rich_text>
+		<rich_text foreground="#ffffa5a50000" weight="heavy">$a</rich_text>
+		<rich_text foreground="#ffffa5a50000"> </rich_text>
+		<rich_text>           //  конкатенация строк, никаких &quot;+&quot;!!!!
+•   </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">echo '</rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;p&gt;текст =</rich_text>
+		<rich_text> </rich_text>
+		<rich_text foreground="#ffffa5a50000" weight="heavy">$a</rich_text>
+		<rich_text> </rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;/p&gt;</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">';</rich_text>
+		<rich_text>      // переменную можно вставить так
+•   </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">echo '</rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;p&gt;текст =</rich_text>
+		<rich_text> </rich_text>
+		<rich_text foreground="#ffffa5a50000" weight="heavy">{$a}</rich_text>
+		<rich_text> </rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;/p&gt;</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">';</rich_text>
+		<rich_text> // но лучше вставлять в фиг-х скобках
+•    </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">echo &lt;&lt;&lt;my_var                    </rich_text>
+		<rich_text>// вводим переменную (любую) начала и конца внедрения текста - my_var</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;h1&gt;Это Heredoc и все что между  попадет в html&lt;h1&gt;</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;p&gt;в том числе и </rich_text>
+		<rich_text foreground="#ffffa5a50000" weight="heavy">{$a}</rich_text>
+		<rich_text foreground="#0303aaaa2828" weight="heavy">&lt;/p&gt;</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+my_var;
 
 
 </rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Массив $_Request" prog_lang="custom-colors" readonly="False" tags="" unique_id="86">
-			<rich_text scale="h2"> Массив $_Request
+		<rich_text weight="heavy">Учебник PHP:</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" link="webs http://php.net/manual/ru/langref.php" weight="heavy">http://php.net/manual/ru/langref.php</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
 
 </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">Массив PHP $_Request предоставляет ценную помощь при сборе передаваемой на сервер информации </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">формы</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">, помещая ее в структуру для удобной обработки сценарием. Массив $_Request перехватывает строку имен/значений, </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">разбирает строку на имена и соответствующие значения</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2"> и </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">помещает</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2"> эту информацию </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">в ассоциативный массив</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">, индексированный </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">соответствующими именами полей формы</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">. PHP предоставляет также массивы $_POST и $_GET, однако массив $_REQUEST часто является лучшим выбором, особенно в ситуациях, когда данные отправляются с удаленного сайта и неизвестно, какой метод используется — GET или POST.</rich_text>
-			<rich_text foreground="#000000" scale="h2">
+		<rich_text>
 
 </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">Когда значения данных оказываются в массиве $_Request, их можно легко использовать по их именам, применяя следующий синтаксис:</rich_text>
-			<rich_text foreground="#000000" scale="h2">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="forms" prog_lang="custom-colors" readonly="False" tags="" unique_id="152">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="регистрация" prog_lang="custom-colors" readonly="False" tags="" unique_id="89">
+				<rich_text link="webs http://www.ul-li.ru/post.php?num=213">http://www.ul-li.ru/post.php?num=213</rich_text>
+				<rich_text>
+
+
+
 </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">$_Request['</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">FName</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">']=&quot;John&quot;</rich_text>
-			<rich_text foreground="#000000" scale="h2">
+				<rich_text scale="h1">Пишем авторизацию пользователя на PHP</rich_text>
+				<rich_text>
 </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">$_Request['</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">LName</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">']=&quot;Doe&quot;</rich_text>
-			<rich_text foreground="#000000" scale="h2">
+				<rich_text link="webs http://true-coder.ru/php/pishem-avtorizaciyu-na-php.html#more-336">http://true-coder.ru/php/pishem-avtorizaciyu-na-php.html#more-336</rich_text>
+				<rich_text>
+
+
 </rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">$_Request['</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2" weight="heavy">Account</rich_text>
-			<rich_text background="#ffffff" foreground="#000000" scale="h2">'] указывает на значение, введенное в поле Password; </rich_text>
-			<rich_text>
+				<rich_text scale="h1">Пишем регистрацию на PHP и JavaScript — Часть 1: PHP</rich_text>
+				<rich_text>
+</rich_text>
+				<rich_text link="webs http://true-coder.ru/php/pishem-registraciyu-na-php-i-javascript-chast-1-php.html#more-163">http://true-coder.ru/php/pishem-registraciyu-na-php-i-javascript-chast-1-php.html#more-163</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Массив $_Request" prog_lang="custom-colors" readonly="False" tags="" unique_id="86">
+				<rich_text scale="h2"> Массив $_Request
+</rich_text>
+				<rich_text>
+Массив PHP $_Request предоставляет ценную помощь при сборе передаваемой на сервер информации формы, помещая ее в структуру для удобной обработки сценарием. Массив $_Request перехватывает строку имен/значений, разбирает строку на имена и соответствующие значения и помещает эту информацию в ассоциативный массив, индексированный соответствующими именами полей формы. PHP предоставляет также массивы $_POST и $_GET, однако массив $_REQUEST часто является лучшим выбором, особенно в ситуациях, когда данные отправляются с удаленного сайта и неизвестно, какой метод используется — GET или POST.
+
+Когда значения данных оказываются в массиве $_Request, их можно легко использовать по их именам, применяя следующий синтаксис:
+$_Request['FName']=&quot;John&quot;
+$_Request['LName']=&quot;Doe&quot;
+$_Request['Account'] указывает на значение, введенное в поле Password; 
 
 
 HTML
     &lt;label&gt;&lt;input type=&quot;text&quot; name=&quot;</rich_text>
-			<rich_text weight="heavy">FName</rich_text>
-			<rich_text>&quot;&gt;</rich_text>
-			<rich_text foreground="#222222">Enter your name</rich_text>
-			<rich_text>&lt;/label&gt;
+				<rich_text weight="heavy">FName</rich_text>
+				<rich_text>&quot;&gt;</rich_text>
+				<rich_text foreground="#222222">Enter your name</rich_text>
+				<rich_text>&lt;/label&gt;
     &lt;label&gt;&lt;input type=&quot;text&quot; name=&quot;</rich_text>
-			<rich_text weight="heavy">LName</rich_text>
-			<rich_text>&quot;&gt;</rich_text>
-			<rich_text foreground="#222222">Enter your</rich_text>
-			<rich_text> last name??&lt;/label&gt;
+				<rich_text weight="heavy">LName</rich_text>
+				<rich_text>&quot;&gt;</rich_text>
+				<rich_text foreground="#222222">Enter your</rich_text>
+				<rich_text> last name??&lt;/label&gt;
     &lt;label&gt;&lt;input type=&quot;password&quot; name=&quot;</rich_text>
-			<rich_text weight="heavy">password</rich_text>
-			<rich_text>&quot;&gt;Input Password&lt;/label&gt;
+				<rich_text weight="heavy">password</rich_text>
+				<rich_text>&quot;&gt;Input Password&lt;/label&gt;
 
     
     
 
 пример работы html + PHP + SQL </rich_text>
-			<rich_text link="webs http://www.ul-li.ru/post.php?num=213">http://www.ul-li.ru/post.php?num=213</rich_text>
+				<rich_text link="webs http://www.ul-li.ru/post.php?num=213">http://www.ul-li.ru/post.php?num=213</rich_text>
+			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="регистрация" prog_lang="custom-colors" readonly="False" tags="" unique_id="89">
-			<rich_text link="webs http://www.ul-li.ru/post.php?num=213">http://www.ul-li.ru/post.php?num=213</rich_text>
-			<rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="WP" prog_lang="custom-colors" readonly="False" tags="" unique_id="148">
+		<rich_text>Созданиие своей темы.
+</rich_text>
+		<rich_text link="webs https://codex.wordpress.org/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D1%82%D0%B5%D0%BC">https://codex.wordpress.org/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D1%82%D0%B5%D0%BC</rich_text>
+		<rich_text>
+
+Нужен сервер (локальный или на хостинге).
+Установка WordPress локально (для созданий и настройки своей темы из готового html+css+js ).
+
+Пример локального подключения с помощью XAMPP 
+
+Устанока XAMPP
+</rich_text>
+		<rich_text link="webs https://premium.wpmudev.org/blog/setting-up-xampp/">https://premium.wpmudev.org/blog/setting-up-xampp/</rich_text>
+		<rich_text>
+!!! skype и xampp работают на одном порту - 80. Смените порт 
+в контрольной панели XAMPP: Config (Apache) → apache(httpd.conf) ищем и заменяем Listen 80 на Listen 8080 (или другой номер)
+
+
+Установка WordPress
+1)скачать wp </rich_text>
+		<rich_text link="webs https://wordpress.org/download/">https://wordpress.org/download/</rich_text>
+		<rich_text>
+2)создать в папке xampp/htdocs/ папку проекта для wp сайта - например mywp
+3)запустить панель xampp и включить apache и MySQL
+4)открыть </rich_text>
+		<rich_text link="webs http://localhost:8080/phpmyadmin/">http://localhost:8080/phpmyadmin/</rich_text>
+		<rich_text>
+5)кликнуть по “Базы данных” и в input под “</rich_text>
+		<rich_text justification="left"></rich_text>
+		<rich_text> Создать базу данных” вписать имя, например wp, затем клик по “Создать”
+/* для реального проекта надо указать параметры базы данных, которые созданы на хостинге */
+6)закрываем окно </rich_text>
+		<rich_text link="webs http://localhost:8080/phpmyadmin/">http://localhost:8080/phpmyadmin/</rich_text>
+		<rich_text> и переходим в папку xampp/htdocs/mywp и открываем файл wp-config-sample.php
+7)делаем замену и сохраняем файл:
+/** The name of the database for WordPress */
+define('DB_NAME', 'wp');
+/** MySQL database username */
+define('DB_USER', 'root');
+/** MySQL database password */
+define('DB_PASSWORD', '');
+8)открыть </rich_text>
+		<rich_text link="webs http://localhost:8080/mywp/">http://localhost:8080/mywp/</rich_text>
+		<rich_text>
+выбрать язык, запустить установку и в ответ на предложение ввести данные базы данных
+вписать: wp, root и пустой пароль. Запустить установку и подождать некоторое время.
+9)Ввести данные о сайте, например:
+Название сайта: Create theme for the WP
+Имя пользователя : admin
+Пароль: _admin-2016:12:06
+Ваш e-mail: test@gmail.com
+10)по завершению будет доступно 2 окна - одно для управления контентом и второе - сам сайт
+
+Подключение темы
+1)берем любую тему (свою или например эту - </rich_text>
+		<rich_text link="webs http://v4-alpha.getbootstrap.com/examples/blog/">http://v4-alpha.getbootstrap.com/examples/blog/</rich_text>
+		<rich_text>
+ с гитхаба  </rich_text>
+		<rich_text link="webs https://github.com/twbs/bootstrap/tree/v4-dev/docs/examples/blog">https://github.com/twbs/bootstrap/tree/v4-dev/docs/examples/blog</rich_text>
+		<rich_text>
+ копируем два файла : </rich_text>
+		<rich_text link="webs https://github.com/twbs/bootstrap/blob/v4-dev/docs/examples/blog/blog.css">blog.css</rich_text>
+		<rich_text> и </rich_text>
+		<rich_text link="webs https://github.com/twbs/bootstrap/blob/v4-dev/docs/examples/blog/index.html">index.html</rich_text>
+		<rich_text>  
+2) переходим в эту папку </rich_text>
+		<rich_text foreground="#00000000ffff">mywp/wp-content/themes</rich_text>
+		<rich_text> , рядом с папками twentyfifteen, twentyfourteen, twentythirteen и файлом index.php
+3) создаем папку с названием нашей темы, например </rich_text>
+		<rich_text foreground="#00000000ffff" weight="heavy">mytheme</rich_text>
+		<rich_text> и заходим в нее
+4) создаем файл </rich_text>
+		<rich_text foreground="#00000000ffff" weight="heavy">style.css</rich_text>
+		<rich_text> и создаем в нем описание темы (см. вложение)
+5) копирум файлы с гитхаба
+6) переименовываем гитхабовский </rich_text>
+		<rich_text foreground="#00000000ffff">index.html</rich_text>
+		<rich_text> в </rich_text>
+		<rich_text foreground="#00000000ffff">index.php</rich_text>
+		<rich_text>
+7) заходим в админ-панель WordPress “Внешний вид” → “Темы” (Appearance → Themes)
+8) активируем нашу тему и переходим на страницу сайта </rich_text>
+		<rich_text link="webs http://localhost:8080/mywp/">http://localhost:8080/mywp/</rich_text>
+		<rich_text>
+9) сравниваем 
+</rich_text>
+		<rich_text link="webs http://v4-alpha.getbootstrap.com/examples/blog/">http://v4-alpha.getbootstrap.com/examples/blog/</rich_text>
+		<rich_text>  и </rich_text>
+		<rich_text link="webs http://localhost:8080/mywp/">http://localhost:8080/mywp/</rich_text>
+		<rich_text>
+не подключен </rich_text>
+		<rich_text foreground="#00000000ffff" weight="heavy">blog.css</rich_text>
+		<rich_text> !
+
+10) Внимание! Требуются минимальные знания PHP (см раздел PHP).
+Любая ссылка в проекте нашей темы (кроме php файлов) должна иметь дополнительно этот текст:
+</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php bloginfo('template_directory');?&gt;/</rich_text>
+		<rich_text>
+Вы  не можете ссылаться на что-либо в WordPress странице без использования PHP:
+заменим 
+</rich_text>
+		<rich_text foreground="#0303aaaa2828">&lt;link href=&quot;blog.css&quot; rel=&quot;stylesheet&quot;&gt; </rich_text>
+		<rich_text>
+на 
+</rich_text>
+		<rich_text foreground="#0303aaaa2828">&lt;link href=&quot;</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php bloginfo('template_directory');?&gt;/</rich_text>
+		<rich_text foreground="#0303aaaa2828">blog.css&quot; rel=&quot;stylesheet&quot;&gt;</rich_text>
+		<rich_text>
+PS: это не самый правильный путь, но самый понятный. Правильное подклчение - см. function.php
+
+11) Т.к. некоторые части нашей темы должны повторятся в каждой странице, то следует выделить эти части:
+Сделаем из файла index.php  4 разных файла:  
+• </rich_text>
+		<rich_text foreground="#00000000ffff">header.php</rich_text>
+		<rich_text> → </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_header(); ?&gt; </rich_text>
+		<rich_text>
+• </rich_text>
+		<rich_text foreground="#00000000ffff">footer.php</rich_text>
+		<rich_text> →  </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_footer(); ?&gt;</rich_text>
+		<rich_text>
+• </rich_text>
+		<rich_text foreground="#00000000ffff">sidebar.php</rich_text>
+		<rich_text> →  </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_sidebar(); ?&gt;</rich_text>
+		<rich_text>
+• </rich_text>
+		<rich_text foreground="#00000000ffff">content.php</rich_text>
+		<rich_text> → </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_template_part( 'content', get_post_format() ); ?&gt;</rich_text>
+		<rich_text>
+</rich_text>
+		<rich_text foreground="#00000000ffff">index.php</rich_text>
+		<rich_text> и остальные 4 файла - см. вложение
+
+12)Основные замены в макете на функции WordPress:
+   tag                              CMS                               PHP
+&lt;title&gt; =&gt;          Setting &gt; Site Title =&gt;            </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php echo get_bloginfo( 'name' ); ?&gt;</rich_text>
+		<rich_text>
+&lt;h1&gt;   =&gt;          Setting &gt;  Tagline   =&gt;            </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php echo get_bloginfo( 'description' ); ?&gt;</rich_text>
+		<rich_text>
+
+13)Некоторые важные замены
+&lt;a&gt;     =&gt;  переход на главную страницу   </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;a href=&quot;&lt;?php bloginfo( 'wpurl' );?&gt;&quot;&gt; </rich_text>
+		<rich_text>...</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">  &lt;/a&gt;</rich_text>
+		<rich_text>
+
+14) Setting &gt;  Permalinks   =&gt;  Post name
+
+15)Posts and Pages
+• отредактировать navbar: заменить все ссылки, кроме главной страницы на </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php wp_list_pages( '&amp;title_li=' ); ?&gt;</rich_text>
+		<rich_text>
+• сделать правки в css в случае необходимости
+• создать файл </rich_text>
+		<rich_text foreground="#00000000ffff">page.php</rich_text>
+		<rich_text>
+• поместить в него нужные ссылки или контент
+
+16)Динамическая вставка контента ( Loop ): 
+</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
+&lt;!-- </rich_text>
+		<rich_text foreground="#0303aaaa2828">contents of the loop</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy"> </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">--&gt;
+&lt;?php endwhile; endif; ?&gt;</rich_text>
+		<rich_text>
+•   вставим в index.php  content внутри loop 
+•   в  content.php заменим &lt;h2 class=&quot;blog-post-title&quot;&gt; на </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php the_title(); ?&gt;</rich_text>
+		<rich_text>
+•   в  content.php заменим &lt;p class=&quot;blog-post-meta&quot;&gt; на </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php the_date(); ?&gt;</rich_text>
+		<rich_text>
+•   в  content.php заменим &lt;a href=&quot;#&quot;&gt; на </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php the_author(); ?&gt;</rich_text>
+		<rich_text>
+•   и для создания loop добавим </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php the_content(); ?&gt;</rich_text>
+		<rich_text>
+
+17)заменим данные sidebar &gt; Archives
+ все li на одну строчку → </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php wp_get_archives( 'type=monthly' ); ?&gt;</rich_text>
+		<rich_text>
+
+18)заменим данные sidebar &gt; About
+&lt;p&gt; → </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php the_author_meta( 'description' ); ?&gt;</rich_text>
+		<rich_text>
+
+19)создадим отдельную страницу для просмотра одного поста  - </rich_text>
+		<rich_text foreground="#00000000ffff">single.php</rich_text>
+		<rich_text>
+скопируем содержимое </rich_text>
+		<rich_text foreground="#00000000ffff">page.php</rich_text>
+		<rich_text> и заменим </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">content</rich_text>
+		<rich_text> на </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">content-single</rich_text>
+		<rich_text>
+20)создадим </rich_text>
+		<rich_text foreground="#00000000ffff">content-single.php</rich_text>
+		<rich_text> и скопирум содержимое </rich_text>
+		<rich_text foreground="#00000000ffff">content.php</rich_text>
+		<rich_text>
+21)создадим ссылку на </rich_text>
+		<rich_text foreground="#00000000ffff">single.php</rich_text>
+		<rich_text> c помощью </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">the_permalink()</rich_text>
+		<rich_text> :  
+content.php → &lt;h2 class=&quot;blog-post-title&quot;&gt;  → </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;a href=&quot;&lt;?php </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a" weight="heavy">the_permalink()</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">; ?&gt;&quot;&gt;&lt;?php the_title(); ?&gt;&lt;/a&gt;</rich_text>
+		<rich_text>
+22)ограничим количество слов в постах на странице </rich_text>
+		<rich_text foreground="#00000000ffff">page.php</rich_text>
+		<rich_text>  
+Переходим в </rich_text>
+		<rich_text foreground="#00000000ffff">content.php</rich_text>
+		<rich_text> и делаем замену функции </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">the_content()</rich_text>
+		<rich_text background="#ffffff" foreground="#3c3c3c"> </rich_text>
+		<rich_text>на </rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">the_excerpt(); </rich_text>
+		<rich_text>
+
+23) Pagination
+</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">&lt;?php next_posts_link( '</rich_text>
+		<rich_text foreground="#0303aaaa2828">Older posts'</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a"> ); ?&gt;
+ &lt;?php previous_posts_link( '</rich_text>
+		<rich_text foreground="#0303aaaa2828">Newer posts'</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a"> ); ?&gt;</rich_text>
+		<rich_text>
+см. дополнение  
+
+24)Использовавние функций в WordPress
+создать файл</rich_text>
+		<rich_text foreground="#00000000ffff"> functions.php</rich_text>
+		<rich_text>   и использовать конструкцию вида
+</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">function custom_function() {</rich_text>
+		<rich_text>
+</rich_text>
+		<rich_text foreground="#0303aaaa2828">	//code</rich_text>
+		<rich_text>
+</rich_text>
+		<rich_text foreground="#a5a52a2a2a2a">}
+add_action( 'action', 'custom_function');
+ </rich_text>
+		<rich_text>
+и т.д.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 </rich_text>
-			<rich_text scale="h1">Пишем авторизацию пользователя на PHP</rich_text>
-			<rich_text>
+		<encoded_png char_offset="836">iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABHNCSVQICAgIfAhkiAAAAA1JREFUCJlj+P//PwMACPwC/oXNqzQAAAAASUVORK5CYII=</encoded_png>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="style.css" prog_lang="custom-colors" readonly="False" tags="" unique_id="149">
+			<rich_text>• уникальное название темы, 
+• описание, 
+• имя автора, 
+• сайт темы  
+• сайт автора, 
+• указать, что тема лицензирована GPL лицензией. 
+
+
+Эта информация будет отображаться при установке темы в админке WordPress 
+и использоваться при поиске темы в базе данных WordPress, когда эту тему туда добавим.
+
+Уникальное название темы: 
+• должно быть уникальным
+• не должно включать слова WordPress, theme и разный SEO спам
+• может включать слово wp
+
+Пример:
 </rich_text>
-			<rich_text link="webs http://true-coder.ru/php/pishem-avtorizaciyu-na-php.html#more-336">http://true-coder.ru/php/pishem-avtorizaciyu-na-php.html#more-336</rich_text>
+			<rich_text foreground="#0303aaaa2828">/*
+Theme Name: Simplest Site
+Theme URI: http://ILoveWordPress.com/
+Author: MyName
+Author URI: http://ILoveWordPress.com/
+Description: The 2016 simplest theme for WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: cool
+Text Domain: simplestsite
+
+This theme for install WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="index. php" prog_lang="custom-colors" readonly="False" tags="" unique_id="150">
+			<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_header(); ?&gt;   </rich_text>
+			<rich_text>
+  </rich_text>
+			<rich_text foreground="#0303aaaa2828">&lt;div class=&quot;row&quot;&gt;  </rich_text>
+			<rich_text>  
+    </rich_text>
+			<rich_text foreground="#0303aaaa2828">&lt;div class=&quot;col-sm-8 blog-main&quot;&gt; </rich_text>
+			<rich_text>   
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">      &lt;?php
+          if ( have_posts() ) : while ( have_posts() ) : the_post();
+              get_template_part( 'content', get_post_format() );
+          endwhile; endif;
+        ?&gt;</rich_text>
+			<rich_text>
+    </rich_text>
+			<rich_text foreground="#0303aaaa2828">&lt;/div&gt; &lt;!-- /.blog-main --&gt;</rich_text>
+			<rich_text>    
+    </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_sidebar(); ?&gt;</rich_text>
+			<rich_text>   
+  </rich_text>
+			<rich_text foreground="#0303aaaa2828">&lt;/div&gt; &lt;!-- /.row --&gt;</rich_text>
+			<rich_text>  
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_footer(); ?&gt;</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="header.php" prog_lang="custom-colors" readonly="False" tags="" unique_id="158">
+				<rich_text foreground="#0303aaaa2828">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+
+	&lt;title&gt;Blog Template for Bootstrap&lt;/title&gt;
+	</rich_text>
+				<rich_text>
+	</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">&lt;?php wp_head();?&gt;</rich_text>
+				<rich_text>
+</rich_text>
+				<rich_text foreground="#0303aaaa2828">&lt;/head&gt;
+
+&lt;body&gt;
+	
+	&lt;div class=&quot;container&quot;&gt;
+
+		&lt;div class=&quot;blog-header&quot;&gt;
+			&lt;h1 class=&quot;blog-title&quot;&gt;The Bootstrap Blog&lt;/h1&gt;
+			&lt;p class=&quot;lead blog-description&quot;&gt;The official example template of creating a blog with Bootstrap.&lt;/p&gt;
+		&lt;/div&gt;</rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="css" prog_lang="custom-colors" readonly="False" tags="" unique_id="159">
+					<rich_text>.blog-nav li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;	
+}
+.blog-nav li a {
+    color: #fff;
+}</rich_text>
+				</node>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="content.php" prog_lang="custom-colors" readonly="False" tags="" unique_id="156">
+				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="content-single.php " prog_lang="custom-colors" readonly="False" tags="" unique_id="161">
+					<rich_text></rich_text>
+				</node>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="sidebar.php" prog_lang="custom-colors" readonly="False" tags="" unique_id="155">
+				<rich_text></rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="footer.php" prog_lang="custom-colors" readonly="False" tags="" unique_id="157">
+				<rich_text foreground="#0303aaaa2828">/div&gt; &lt;!-- /.container --&gt;
+
+		&lt;footer class=&quot;blog-footer&quot;&gt;
+
+        &lt;a href=&quot;#&quot;&gt;Back to top&lt;/a&gt;
+
+    &lt;/footer&gt;</rich_text>
+				<rich_text>
+
+    </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">&lt;?php wp_footer(); ?&gt; </rich_text>
+				<rich_text foreground="#0303aaaa2828">
+  &lt;/body&gt;
+&lt;/html&gt;</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="page.php" prog_lang="custom-colors" readonly="False" tags="" unique_id="151">
+				<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_header(); ?&gt;
+      &lt;div class=&quot;row&quot;&gt;
+          &lt;h2&gt;Эта строка будет на каждой новой странице. &lt;/h2&gt;
+          &lt;?php
+             if ( have_posts() ) : while ( have_posts() ) : the_post();
+                 get_template_part( '</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">content</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">', get_post_format() );
+             endwhile; endif;
+           ?&gt;
+
+      &lt;/div&gt;&lt;!-- /.row --&gt;
+  &lt;?php get_footer(); ?&gt;
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="single.php" prog_lang="custom-colors" readonly="False" tags="" unique_id="160">
+				<rich_text foreground="#a5a52a2a2a2a">&lt;?php get_header(); ?&gt;
+      &lt;div class=&quot;row&quot;&gt;
+          &lt;h2&gt;Эта строка будет на каждой новой странице. &lt;/h2&gt;
+          &lt;?php
+             if ( have_posts() ) : while ( have_posts() ) : the_post();
+                 get_template_part( '</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">content-single'</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">, get_post_format() );
+             endwhile; endif;
+           ?&gt;
+
+      &lt;/div&gt;&lt;!-- /.row --&gt;
+  &lt;?php get_footer(); ?&gt;</rich_text>
+				<rich_text>
+</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="add path " prog_lang="custom-colors" readonly="False" tags="" unique_id="153">
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">&lt;?php bloginfo('template_directory');?&gt;/</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="function.php" prog_lang="custom-colors" readonly="False" tags="" unique_id="154">
+			<rich_text foreground="#a5a52a2a2a2a">  function custom_function() {</rich_text>
+			<rich_text>
+  	//code
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">  }
+  add_action( 'action', 'custom_function');</rich_text>
+			<rich_text>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  Использование функций
+  &lt;?php
+//  правильное подключенте файлов
+function my_blog_function() {
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.0.0' );
+	wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/blog.css' );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.1.1', true );
+
+}
+add_action( 'wp_enqueue_scripts', 'my_blog_function');
+
+
+// правильное подключентеGoogle Fonts
+function my_blog_function_google_fonts() {
+				wp_register_style('OpenSans', '</rich_text>
+			<rich_text link="webs http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');">http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');</rich_text>
+			<rich_text>
+				wp_enqueue_style( 'OpenSans');
+		}
+
+add_action('wp_print_styles', 'my_blog_function_google_fonts');
+
+//Fix the WordPress Title  remove title from  header.php
+add_theme_support( 'title-tag' );
+
+?&gt;
+</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="the list used function in this example" prog_lang="custom-colors" readonly="False" tags="" unique_id="163">
+				<rich_text>bloginfo () -
+get_bloginfo () - 
+
+the_post() -
+have_post() -
+get_post_format() -
+
+
+get_template_part() -
+
+get_sidebar() -
+
+the_title() - 
+the_date()  - 
+the_author() - 
+the_author_meta() - 
+
+the_content() -
+
+wp_get_archives() - 
+wp_list_pages() -
+
+
+the_permalink(); - 
+
+the_excerpt() - ограничение поста 55 словами
+
+next_posts_link()
+previous_posts_link()- </rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="pagination" prog_lang="custom-colors" readonly="False" tags="" unique_id="162">
+			<rich_text>  вставить между</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">  endwhile; ?&gt; </rich_text>
+			<rich_text>и </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">&lt;?php endif;?&gt;
+  
+  &lt;nav&gt;
+  	&lt;ul class=&quot;</rich_text>
+			<rich_text foreground="#0303aaaa2828">pager</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">&quot;&gt;
+  		&lt;li&gt;&lt;?php next_posts_link( '</rich_text>
+			<rich_text foreground="#0303aaaa2828">Previous</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">' ); ?&gt;&lt;/li&gt;
+  		&lt;li&gt;&lt;?php previous_posts_link( '</rich_text>
+			<rich_text foreground="#0303aaaa2828">Next</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">' ); ?&gt;&lt;/li&gt;
+  	&lt;/ul&gt;
+  &lt;/nav&gt;</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="links" prog_lang="custom-colors" readonly="False" tags="" unique_id="164">
+			<rich_text>
+Уроки WordPress
+</rich_text>
+			<rich_text link="webs https://codex.wordpress.org/%D0%A3%D1%80%D0%BE%D0%BA%D0%B8_WordPress">https://codex.wordpress.org/%D0%A3%D1%80%D0%BE%D0%BA%D0%B8_WordPress</rich_text>
+			<rich_text>
+
+Русский Кодекс
+</rich_text>
+			<rich_text link="webs https://codex.wordpress.org/Category:Russian_Codex">https://codex.wordpress.org/Category:Russian_Codex</rich_text>
+			<rich_text>
+
+English 
+</rich_text>
+			<rich_text link="webs https://codex.wordpress.org/">https://codex.wordpress.org/</rich_text>
+			<rich_text>
+
+Цикл WordPress
+</rich_text>
+			<rich_text link="webs https://codex.wordpress.org/%D0%A6%D0%B8%D0%BA%D0%BB_WordPress">https://codex.wordpress.org/%D0%A6%D0%B8%D0%BA%D0%BB_WordPress</rich_text>
 			<rich_text>
 
 
+Дизайн и раскладка блога
 </rich_text>
-			<rich_text scale="h1">Пишем регистрацию на PHP и JavaScript — Часть 1: PHP</rich_text>
+			<rich_text link="webs https://codex.wordpress.org/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD_%D0%B8_%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%B1%D0%BB%D0%BE%D0%B3%D0%B0">https://codex.wordpress.org/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD_%D0%B8_%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%B1%D0%BB%D0%BE%D0%B3%D0%B0</rich_text>
+			<rich_text>
+
+
+Создание тем
+</rich_text>
+			<rich_text link="webs https://codex.wordpress.org/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D1%82%D0%B5%D0%BC">https://codex.wordpress.org/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D1%82%D0%B5%D0%BC</rich_text>
+			<rich_text>
+
+Хорошие примеры  (english):
+</rich_text>
+			<rich_text link="webs https://github.com/taniarascia/startwordpress">https://github.com/taniarascia/startwordpress</rich_text>
 			<rich_text>
 </rich_text>
-			<rich_text link="webs http://true-coder.ru/php/pishem-registraciyu-na-php-i-javascript-chast-1-php.html#more-163">http://true-coder.ru/php/pishem-registraciyu-na-php-i-javascript-chast-1-php.html#more-163</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="Графика" prog_lang="custom-colors" readonly="False" tags="" unique_id="95">
@@ -7283,8 +8507,20 @@ JavaScript, HTML, CSS
 </rich_text>
 		<rich_text justification="left"></rich_text>
 		<encoded_png char_offset="311">iVBORw0KGgoAAAANSUhEUgAAASwAAADfCAIAAADDbnkhAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4nOy9eXBdR3ov9n3dfc7dL4CLlQBBkARAUCTBfRMpUaJG4sxos0bxLHYce5w343LKeam4nPfq1curyvLq5Y+k4qqU7diOU3Zij59TNcmMZ9c2WjjkcJVIANwBrgCxAxd3P+f08uWPxj28XMThaCMl8Vco8tyz9Onu019/X39b47/9139SV1d35MiR8fHxF1988ZeHDk3OTG3fsWPVqlUHDhxQSm3btm10dPTdd99dsWJFZ2fn/v37W1pannnmmcuXLx84cAAAENEY89iu3Q3pOinlm2++2dXVtXHjxrf3v7OQz3/52S+PjY0dP3786aefvn79+vnz55944olMJnPt2rWrV6/u2bNnYWbuyJEjzz//vDHm4MGDs7OzCgwyBgDLli3r7u5+6623tNa/+Zu/+cYbbywsLPT398fj8WPHjiEifFAwxv7u7/6uvr6eMc5ZhDF+5Mjhd999t6mpKZlMCSEA6AMXfo8wxiCySqVcWJidmpw8deoUERERABimgQexODY1N8xM5SplEuiSNh93lQAAEePxeKalYXJqolwuc86JCAAZMST2CVTg/aAIkmmnq7s+n5+5PjaL1EBKMLrpM3FNsZJKFVVdmaLAJFI2AteaOHOFEMIYE94nQWC8ZUn3xvq2bkkuernRkZP52WFX5SNaOxor5EJEGCpv3rq67M2UK9lIXYRFRKlUIjLpdHp6emb6atn1mgEAERljRPSffPWrUzNzSikhBGNMCNHW1jb43vGhoSFE1FoDAOecoVNbbXx022YA0FozxowxiGgQAiUdxzHGBEEQjUallI7jaK211nboc86VUr29vc3NzZzzqampkQvDAhkAGGM454wxZbQGsg/aWiql7L+2BDvgUBkisq9DRKkUdx2q0gARcc5tseF7AcC2+QN/UcbYX/7lXzY0NCAywSORSOS9995TSrW3t2cymUgk8mEKv0cQkdY6l8vNz0yePXPmRz/6UTitGAbAlDYVzpEMJ3I5IX788wIALI4VAQRkO9l2BSOG9MFnvY8AzNEg3ahvyFOSCdagA2Kga28hBCSIeybmGTSkHeZHmB/lBBA2BABAoCQ0GJcYFdG6QKMwUgc5h1UE+UITIxYY4o4wFLhR9INC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</encoded_png>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="XAMPP" prog_lang="custom-colors" readonly="False" tags="" unique_id="165">
+			<rich_text>Устанока XAMPP
+</rich_text>
+			<rich_text link="webs https://premium.wpmudev.org/blog/setting-up-xampp/">https://premium.wpmudev.org/blog/setting-up-xampp/</rich_text>
+			<rich_text>
+!!! skype и xampp работают на одном порту - 80. Смените порт 
+в контрольной панели XAMPP: Config (Apache) → apache(httpd.conf) ищем и заменяем Listen 80 на Listen 8080 (или другой номер)
+</rich_text>
+		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="NodeJS" prog_lang="custom-colors" readonly="False" tags="" unique_id="127">
 		<rich_text link="webs https://nodejs.org/en/download/">https://nodejs.org/en/download/</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="http-server" prog_lang="custom-colors" readonly="False" tags="" unique_id="147">
+			<rich_text link="webs https://www.npmjs.com/package/http-server">https://www.npmjs.com/package/http-server</rich_text>
+		</node>
 	</node>
 </cherrytree>
