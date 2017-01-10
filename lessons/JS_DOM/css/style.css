@@ -1,0 +1,46 @@
+body {
+  background: hsla(225, 10%, 10%, 0.1);
+
+}
+
+.wrapper {
+  width: 60rem;
+  height: 60rem;
+  margin: auto;
+  background: hsla(225, 50%, 50%, 0.2);
+  border: 1px solid transparent;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header,
+.footer  {
+  height: 10rem;
+  margin: auto;
+  background: hsla(225, 50%, 50%, 0.2);
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.article {
+  height: 40rem;
+  margin: auto;
+  background: hsla(135, 70%, 70%, 0.2);
+  padding-left: 1.5rem;
+  border: 1px solid transparent;
+}
+
+ul {
+text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin-left: 1rem;
+  background: hsla(225, 30%, 30%, 0.2);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
