@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inset Function</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/inset.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+      <h1>Вложенные функции.</h1>
+      <h3>Ка­ж­дая функ­ция име­ет соб­ст­вен­ную ло­каль­ную об­ласть ви­ди­мо­сти,
+         по­это­му мо­жет быть не­сколь­ко вло­жен­ных уров­ней ло­каль­ных об­лас­тей
+          ви­ди­мо­сти.</h3>
+  <pre>
+<!--    <code>
+      var scope = "global scope";
+      function checkScope() {
+          var scope = "local scope";
+          function next() {
+              var scope = "next scope";
+              return scope;
+          }
+          return next();
+      }
+      checkScope();
+    </code>
+  </pre>
+-->
+
+  <pre>
+    <code>
+      var scope = "global scope";
+      console.log("global = ", scope);
+      function checkScope() {
+          var scope = "local scope";
+          console.log("checkScope() = ", scope);
+          function next() {
+              var scope = "next scope";
+              console.log("next() = ", scope);
+              return console.log(scope);
+          }
+          return next();
+      }
+      console.log("global before checkScope() = ", scope);
+      checkScope();
+      console.log("global after checkScope() = ", scope);
+
+    </code>
+  </pre>
+
+  </div>
+</body>
+</html>

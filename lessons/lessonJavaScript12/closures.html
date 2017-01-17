@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Сlosures</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/closures.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+      <h1>Замыкание.</h1>
+      <ul>
+        <li>Во время выполнения функции используется цепочка областей видимости,
+           которая действовала в момент ее определения.</li>
+        <li>Каждый раз, когда интерпретатор JavaScript вызывает функцию, он
+          создает <b>новый объект</b> для хранения локальных переменных этой
+          функции, и этот объект добавляется в цепочку областей видимости</li>
+        <li>Если функция определяет вложенную функцию и возвращает ее или
+            сохраняет в свойстве какого-либо объекта, то образуется внешняя
+            ссылка на вложенную функцию. </li>
+      </ul>
+
+  </div>
+</body>
+</html>

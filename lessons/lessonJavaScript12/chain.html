@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chain</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+      <h1>Цепочка функций.</h1>
+      <h3>Для создания цепочки функций нужно обязательно использовать return.</h3>
+      <h3>Если функция ничего не возвращает, то достаточно вернуть this.</h3>
+      <pre>
+        <code>
+          function setId(tag, id) {
+            document.getElementsByTagName(tag)[0].id = id;
+            return this;
+          }
+
+          function setColor(id, color) {
+            document.getElementById(id).style.color = color;
+            return this;
+          }
+
+
+          setId("h1", "headline").setColor("headline", "red");
+
+        </code>
+      </pre>
+  </div>
+  <script src="js/chain.js"></script>
+</body>
+</html>

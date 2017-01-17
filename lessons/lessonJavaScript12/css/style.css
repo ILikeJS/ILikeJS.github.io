@@ -8,4 +8,19 @@ body {
   height: 1200px;
   margin: auto;
   background: hsla(225, 50%, 50%, 0.2);
+  padding: 50px 20px 30px 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-indent: 10px;
+  text-align: justify;
+}
+
+code {
+  color: #A32B3B;
+  font-weight: bold;
 }

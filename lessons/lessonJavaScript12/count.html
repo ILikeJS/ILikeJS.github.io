@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Count</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/count.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+      <h1>Счетчик.</h1>
+      <h3></h3>
+  <pre>
+    <code>
+      var count = 0;
+      var next = ++count;
+
+      /* =========================================== */
+
+      function getCount() {
+        var i = 0;
+        return ++i;
+      }
+
+      /* =========================================== */
+
+      getCounter.i = 0;
+      function getCounter() {
+        return ++getCounter.i;
+      }
+
+        /* =========================================== */
+
+        // getProtectedCounter.i = 10;
+
+        var getProtectedCounter = (function () {
+          var i = 0;
+          return function () { return i++; };
+        }());
+
+        /* ============================================ */
+
+        var newCount = getProtectedCounter;
+
+        /* ============================================ */
+
+        var newAnonimCount = (function () {
+          var i = 0;
+          return function () { return i++; };
+        }());
+
+    </code>
+  </pre>
+  </div>
+</body>
+</html>

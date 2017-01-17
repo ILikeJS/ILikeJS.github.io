@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Объект</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/obj.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+      <h1>Объект: свойства и методы.</h1>
+      <h3></h3>
+  <pre>
+    <code>
+      var a = 1;
+      var b = 2;
+
+      var obj = {
+         a0: 10,
+         a1: 20,
+         foo: function () {
+           return (a + b) * (this.a0 + this.a1);
+         },
+         toString: function () {
+           console.log("\n" + "a = " + a, " b = " + b, " a0 = " + this.a0,  " a1 = " +
+           this.a1);
+         }
+
+      };
+
+
+      obj.toString();
+      console.log("obj.foo() = " + obj.foo());
+
+
+      a = 3;
+      b = 4;
+      obj.toString();
+      console.log("obj.foo() = " + obj.foo());
+
+
+
+      obj.a0 = -10;
+      obj.a1 = -20;
+      obj.toString();
+      console.log("obj.foo() = " + obj.foo());
+
+    </code>
+  </pre>
+
+  </div>
+</body>
+</html>

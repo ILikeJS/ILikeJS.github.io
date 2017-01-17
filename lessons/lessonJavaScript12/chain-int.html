@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inset Function</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/chain-internal.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+      <h1>Вложенные функции.</h1>
+      <h3>Ка­ж­дая функ­ция име­ет соб­ст­вен­ную ло­каль­ную об­ласть ви­ди­мо­сти,
+         по­это­му мо­жет быть не­сколь­ко вло­жен­ных уров­ней ло­каль­ных об­лас­тей
+          ви­ди­мо­сти.</h3>
+  <pre>
+    <code>
+
+      function setWrap() {
+        var a = 1;
+        console.log("setWarap.a = " + a);
+        function setWrapNext() {
+          var b = 2;
+          return console.log("setWarapNext.b = " + b);
+        }
+        return setWrapNext();
+      }
+      setWrap();
+
+
+    </code>
+  </pre>
+  </div>
+</body>
+</html>
