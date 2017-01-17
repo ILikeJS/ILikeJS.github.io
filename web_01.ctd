@@ -2123,6 +2123,350 @@ Data-vocabulary.org</rich_text>
 			</node>
 		</node>
 	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="JQuery" prog_lang="custom-colors" readonly="False" tags="" unique_id="221">
+		<rich_text weight="heavy">Запрос  - querying.</rich_text>
+		<rich_text>
+
+</rich_text>
+		<rich_text scale="h3" weight="heavy">Поведение web-page. Язык сценариев.</rich_text>
+		<rich_text>
+
+</rich_text>
+		<rich_text scale="h3" weight="heavy">jQuery — библиотека JavaScript, предназначенная для динамического 
+изменения DOM.  </rich_text>
+		<rich_text>
+
+Например:
+• Динамическое включение элементов в веб-страницу без ее полной перезагрузки.
+• Изменение элементов меню при наведении на них указателя мыши.
+• Оповещение пользователя о незаполненных полях формы.
+• Поддержка движения и переходов в тексте и графике.
+• Загрузка данных с сервера в тот момент, когда они понадобятся пользователю.
+
+</rich_text>
+		<rich_text justification="left"></rich_text>
+		<rich_text>
+
+
+</rich_text>
+		<rich_text scale="h2">jQuery( ... ) === $( ... )</rich_text>
+		<rich_text>;
+внутри скобок
+</rich_text>
+		<rich_text weight="heavy">• CSS selector  </rich_text>
+		<rich_text>// те же что и в CSS</rich_text>
+		<rich_text weight="heavy">
+• HTML
+• objectJS
+</rich_text>
+		<rich_text>
+</rich_text>
+		<rich_text justification="left"></rich_text>
+		<rich_text>
+
+Селекторы CSS выбирают элементы для применения </rich_text>
+		<rich_text weight="heavy">стилей</rich_text>
+		<rich_text>; 
+селекторы jQuery выбирают элементы для добавления нового </rich_text>
+		<rich_text weight="heavy">поведения</rich_text>
+		<rich_text>.
+
+</rich_text>
+		<rich_text weight="heavy">Пример функций</rich_text>
+		<rich_text>
+$(&quot;id&quot;).click(function(){});
+$(&quot;id&quot;).hide();
+$(&quot;id&quot;).show();
+$(&quot;id&quot;).focus();
+$(&quot;id&quot;).css(&quot; background-color&quot;:&quot;red&quot;);
+$(&quot;id&quot;).toggle();
+
+</rich_text>
+		<rich_text weight="heavy">Выполнение кода после загрузки страницы</rich_text>
+		<rich_text>
+$(document).ready(function(){ 
+    код 
+});</rich_text>
+		<table char_offset="482" col_max="300" col_min="40">
+			<row>
+				<cell>document.getElementsByTagName(&quot;p&quot;)[0]</cell>
+				<cell>$(&quot;p&quot;)</cell>
+			</row>
+			<row>
+				<cell>.innerHTML=&quot;text&quot;</cell>
+				<cell>.html(&quot;text&quot;)</cell>
+			</row>
+			<row>
+				<cell>JS</cell>
+				<cell>jQuery</cell>
+			</row>
+		</table>
+		<table char_offset="584" col_max="300" col_min="40">
+			<row>
+				<cell>h1</cell>
+				<cell>$(&quot;h1&quot;)</cell>
+			</row>
+			<row>
+				<cell>.my_class</cell>
+				<cell>$(&quot;.my_class&quot;)</cell>
+			</row>
+			<row>
+				<cell>#my_id</cell>
+				<cell>$(&quot;#my_id&quot;)</cell>
+			</row>
+			<row>
+				<cell>selector CSS</cell>
+				<cell>selector jQuery</cell>
+			</row>
+		</table>
+		<node custom_icon_id="0" foreground="" is_bold="False" name=" DOM attributes of elements" prog_lang="custom-colors" readonly="False" tags="" unique_id="223">
+			<rich_text>﻿</rich_text>
+			<rich_text link="webs http://api.jquery.com/category/attributes/">http://api.jquery.com/category/attributes/</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.addClass()
+﻿
+.attr()                </rich_text>
+			<rich_text>//﻿ gets the attribute </rich_text>
+			<rich_text weight="heavy">value</rich_text>
+			<rich_text> for only the </rich_text>
+			<rich_text weight="heavy">first element</rich_text>
+			<rich_text> in the matched set</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+			<rich_text>﻿</rich_text>
+			<rich_text foreground="#00000000ffff">Returns: String</rich_text>
+			<rich_text>   //﻿ get the value </rich_text>
+			<rich_text weight="heavy">for each</rich_text>
+			<rich_text> element individually, use a looping construct 
+                          // such as jQuery's </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.each()</rich_text>
+			<rich_text> or </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.map()</rich_text>
+			<rich_text> method</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+
+.hasClass()
+</rich_text>
+			<rich_text foreground="#00000000ffff">Returns: Boolean</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.addClass(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">className</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">)</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#00000000ffff">Returns: jQuery</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.addClass(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">function</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">)</rich_text>
+			<rich_text>  //</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">$( &quot;ul li&quot; ).addClass(function( index ) {  return &quot;item-&quot; + index;});</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#00000000ffff">Returns: jQuery</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.removeClass(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">className</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">)</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#00000000ffff">Returns: jQuery</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.removeClass(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">function</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">)</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#00000000ffff">Returns: jQuery</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.toggleClass() </rich_text>
+			<rich_text> //﻿Add or remove one or more classes from each element in the set of matched elements</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+			<rich_text foreground="#00000000ffff">﻿﻿Returns: jQuery</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+
+.html()               </rich_text>
+			<rich_text>       // get</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+			<rich_text foreground="#00000000ffff">﻿Returns: String </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+.html(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">htmlString</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">)   </rich_text>
+			<rich_text>// set</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+			<rich_text foreground="#00000000ffff">﻿Returns: jQuery</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy"> </rich_text>
+			<rich_text weight="heavy">
+
+.prop()  </rich_text>
+			<rich_text>вместо .attr()  или .val()  </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+			<rich_text foreground="#00000000ffff">Returns: nothing </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+.val()                    </rich_text>
+			<rich_text>//﻿ ﻿Get the current value of the first element in the set of matched elements 
+</rich_text>
+			<rich_text foreground="#00000000ffff">Returns: String or Number or Array</rich_text>
+			<rich_text>     // or set the value of every matched element.</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">
+</rich_text>
+			<rich_text>                            // ﻿F﻿or selects, checkboxes and radio buttons  </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">:selected</rich_text>
+			<rich_text> and </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">:checked 
+
+.removeAttr()
+﻿
+.removeClass()
+﻿
+.removeProp()
+﻿
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="effects" prog_lang="custom-colors" readonly="False" tags="" unique_id="224">
+			<rich_text weight="heavy">Base</rich_text>
+			<rich_text>
+﻿
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.toggle()</rich_text>
+			<rich_text>  ﻿       // Display or hide the matched elements.
+
+﻿</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.show()</rich_text>
+			<rich_text>  ﻿       // Display ﻿the matched elements.
+
+﻿</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.hide()</rich_text>
+			<rich_text>  ﻿       // ﻿Hide ﻿the matched element
+
+==============================================
+Methods adjust the </rich_text>
+			<rich_text weight="heavy">opacity</rich_text>
+			<rich_text> of elements.
+
+﻿</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.fadeToggle(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">option</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">)</rich_text>
+			<rich_text>  ﻿       // Display or hide the matched elements ﻿ by animating their opacity.
+</rich_text>
+			<rich_text foreground="#00000000ffff">return jQuery</rich_text>
+			<rich_text>
+﻿
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.fadeToggle(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">[duration][,easing][,complete]</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">)</rich_text>
+			<rich_text>  
+</rich_text>
+			<rich_text foreground="#00000000ffff">return jQuery</rich_text>
+			<rich_text>
+﻿</rich_text>
+			<rich_text weight="heavy">duration</rich_text>
+			<rich_text> // ﻿default: </rich_text>
+			<rich_text weight="heavy">400</rich_text>
+			<rich_text> - ﻿how long the animation will run.
+﻿﻿</rich_text>
+			<rich_text weight="heavy">easing</rich_text>
+			<rich_text> // ﻿default: ﻿</rich_text>
+			<rich_text weight="heavy">swing</rich_text>
+			<rich_text> - ﻿﻿which easing function to use for the transition.
+﻿﻿</rich_text>
+			<rich_text weight="heavy">queue</rich_text>
+			<rich_text> // ﻿default: </rich_text>
+			<rich_text weight="heavy">true</rich_text>
+			<rich_text> -﻿ to place the animation in the effects queue iIf false, the animation will begin immediately)
+﻿</rich_text>
+			<rich_text weight="heavy">complete</rich_text>
+			<rich_text>  // ﻿A function that is called once the animation on an element is complete.
+﻿</rich_text>
+			<rich_text weight="heavy">start</rich_text>
+			<rich_text>     //  ﻿A function to call when the animation on an element begins.  v1.8
+    </rich_text>
+			<rich_text style="italic">promise</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text weight="heavy">done</rich_text>
+			<rich_text>     // ﻿A function to be called when the animation on an element completes   v1.8
+﻿</rich_text>
+			<rich_text weight="heavy">fail</rich_text>
+			<rich_text>         // ﻿A function to be called when the animation on an element fails to complete  v1.8
+﻿</rich_text>
+			<rich_text weight="heavy">always</rich_text>
+			<rich_text>    // ﻿A function to be called when the animation on an element completes or stops without completing v1.8
+
+﻿
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.fadeIn()</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> </rich_text>
+			<rich_text> // ﻿Display the matched elements by fading them to opaque.
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.fadeOut()</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> </rich_text>
+			<rich_text> // ﻿Hide the matched elements by fading ﻿to transparent.
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.fadeTo()</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> </rich_text>
+			<rich_text> // ﻿﻿Adjust the opacity of the matched elements.
+
+==============================================
+Methods ﻿ sliding of elements.
+﻿
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.slideDown()</rich_text>
+			<rich_text>        //﻿Display the matched elements with a sliding motion.
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.slideUp()</rich_text>
+			<rich_text>             //﻿ ﻿Hide the matched elements with a sliding motion.
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.slideToogle()</rich_text>
+			<rich_text>       //﻿ ﻿Display or hide the matched elements with a sliding motion.
+
+===============================================
+﻿
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.delay()</rich_text>
+			<rich_text>           // ﻿Set a timer to delay execution of subsequent items in the queue.
+﻿
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.stop()</rich_text>
+			<rich_text>             // ﻿Stop the currently-running animation on the matched elements.
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.finish()</rich_text>
+			<rich_text>             // ﻿﻿Stop the currently-running animation, remove all queued animations, and complete all animations for the matched elements.
+
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">.animate()</rich_text>
+			<rich_text>      // ﻿﻿Perform a custom animation of a set of CSS properties.
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="selectors" prog_lang="custom-colors" readonly="False" tags="" unique_id="222">
+			<rich_text link="webs http://api.jquery.com/category/selectors/">http://api.jquery.com/category/selectors/</rich_text>
+			<rich_text>
+
+</rich_text>
+		</node>
+	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CSS" prog_lang="custom-colors" readonly="False" tags="" unique_id="9">
 		<rich_text>
 
@@ -8442,6 +8786,28 @@ var c;           /* 7 */
 			<rich_text>, видимые только в области видимоси функции.
 
 </rich_text>
+			<rich_text weight="heavy">;</rich_text>
+			<rich_text>  Не нужна  в function declarations
+function foo() </rich_text>
+			<rich_text foreground="#800000">{</rich_text>
+			<rich_text> ... </rich_text>
+			<rich_text foreground="#800000">}</rich_text>
+			<rich_text>
+
+
+</rich_text>
+			<rich_text weight="heavy">;</rich_text>
+			<rich_text> Обязательна в function expressions
+var add = function add () </rich_text>
+			<rich_text foreground="#800000">{</rich_text>
+			<rich_text> ... </rich_text>
+			<rich_text foreground="#800000">}</rich_text>
+			<rich_text>;        // Что будет если разные имена? IE ;-)
+var add = function () </rich_text>
+			<rich_text foreground="#800000">{</rich_text>
+			<rich_text> ... </rich_text>
+			<rich_text foreground="#800000">}</rich_text>
+			<rich_text>;</rich_text>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Function" prog_lang="custom-colors" readonly="False" tags="" unique_id="166">
 			<rich_text scale="h2">Функции в JS - это ОБЪЕКТЫ высшего порядка.</rich_text>
@@ -9252,6 +9618,321 @@ elem.﻿</rich_text>
 				<rich_text>  – адрес ссылки
 </rich_text>
 			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Events" prog_lang="custom-colors" readonly="False" tags="" unique_id="225">
+				<rich_text>﻿﻿</rich_text>
+				<rich_text weight="heavy">Событие</rich_text>
+				<rich_text> – это сигнал от браузера о том, что что-то произошло. 
+
+События </rich_text>
+				<rich_text weight="heavy">документа</rich_text>
+				<rich_text>:
+﻿• </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">DOMContentLoaded </rich_text>
+				<rich_text>– когда HTML загружен и обработан, DOM документа полностью построен и доступен.
+
+﻿События </rich_text>
+				<rich_text weight="heavy">мыши</rich_text>
+				<rich_text>:
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">﻿• click</rich_text>
+				<rich_text> – происходит, когда кликнули на элемент левой кнопкой мыши
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">• contextmenu </rich_text>
+				<rich_text>– происходит, когда кликнули на элемент правой кнопкой мыши
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">• mouseover</rich_text>
+				<rich_text> – возникает, когда на элемент наводится мышь
+• </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">mousedown</rich_text>
+				<rich_text> и </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">mouseup</rich_text>
+				<rich_text> – когда кнопку мыши нажали или отжали
+• </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">mousemove</rich_text>
+				<rich_text> – при движении мыши
+
+﻿</rich_text>
+				<rich_text weight="heavy">Клавиатурные</rich_text>
+				<rich_text> события:
+﻿• </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">keydown</rich_text>
+				<rich_text> – когда посетитель нажимает клавишу
+• </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">keyup</rich_text>
+				<rich_text> – когда посетитель отпускает клавиш
+
+﻿События на </rich_text>
+				<rich_text weight="heavy">элементах</rich_text>
+				<rich_text> </rich_text>
+				<rich_text weight="heavy">управления</rich_text>
+				<rich_text>:
+﻿• </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">submit</rich_text>
+				<rich_text> – посетитель отправил форму &lt;form&gt;
+• </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">focus</rich_text>
+				<rich_text> –  посетитель фокусируется на элементе, например нажимает на &lt;input&gt;
+
+﻿События </rich_text>
+				<rich_text weight="heavy">CSS</rich_text>
+				<rich_text>:
+﻿</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">transitionend</rich_text>
+				<rich_text> – когда CSS-анимация завершена.</rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Обработчик событий" prog_lang="custom-colors" readonly="False" tags="" unique_id="226">
+					<rich_text foreground="#7f7f7f7f7f7f">﻿ </rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">невозможность</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f"> повесить несколько обработчиков на одно событие
+ ﻿</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">addEventListener</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f"> работает всегда, а </rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">DOM-свойство</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f"> – нет.</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text scale="h3">1)﻿ </rich_text>
+					<rich_text scale="h3" weight="heavy">атрибут HTML</rich_text>
+					<rich_text>
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">﻿onclick=&quot;...&quot;</rich_text>
+					<rich_text> 
+// ﻿&lt;input value=&quot;Нажми меня&quot; </rich_text>
+					<rich_text weight="heavy">onclick=&quot;</rich_text>
+					<rich_text>alert('Клик!')</rich_text>
+					<rich_text weight="heavy">&quot;</rich_text>
+					<rich_text> type=&quot;button&quot;&gt;
+// &lt;input value=&quot;Нажми меня&quot; </rich_text>
+					<rich_text weight="heavy">onclick=</rich_text>
+					<rich_text>MyFun() type=&quot;button&quot;&gt; </rich_text>
+					<rich_text weight="heavy"> с () !!!</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text scale="h3">2) </rich_text>
+					<rich_text scale="h3" weight="heavy">свойство DOM объекта</rich_text>
+					<rich_text>
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">﻿elem.onclick = function</rich_text>
+					<rich_text>
+// ﻿elem.onclick = function() { alert( 'Спасибо' ); };
+// elem.onclick = nameFun;  </rich_text>
+					<rich_text weight="heavy">без () !!!</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text scale="h3">3) </rich_text>
+					<rich_text scale="h3" weight="heavy">this</rich_text>
+					<rich_text>
+﻿</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f">Внутри обработчика события </rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">this</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f"> ссылается на </rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">текущий</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f"> </rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">элемент</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f">, то есть на тот, </rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">на котором он сработал</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f">.</rich_text>
+					<rich_text>
+// ﻿&lt;button onclick=&quot;alert(this.innerHTML)&quot;&gt;Нажми меня&lt;/button&gt;
+
+==========================================================
+</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">можно</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f"> повесить несколько обработчиков на одно событие
+﻿</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">addEventListener</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f"> работает всегда, а </rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">DOM-свойство</rich_text>
+					<rich_text foreground="#7f7f7f7f7f7f"> – нет.</rich_text>
+					<rich_text>
+
+4) ﻿</rich_text>
+					<rich_text scale="h3" weight="heavy">addEventListener </rich_text>
+					<rich_text scale="h3">и</rich_text>
+					<rich_text scale="h3" weight="heavy"> removeEventListener</rich_text>
+					<rich_text>
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">﻿element.</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">addEventListener</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">(event, handler[, phase]);</rich_text>
+					<rich_text>
+</rich_text>
+					<rich_text weight="heavy">event</rich_text>
+					<rich_text>    - ﻿имя события
+</rich_text>
+					<rich_text weight="heavy">handler</rich_text>
+					<rich_text> - ﻿ссылка на функцию по имени, которую надо поставить обработчиком
+</rich_text>
+					<rich_text weight="heavy">phase</rich_text>
+					<rich_text>    - необязательный аргумент, «фаза»
+
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">﻿element.</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">removeEventListener</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">(event, handler[, phase]);</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Поток" prog_lang="custom-colors" readonly="False" tags="" unique_id="227">
+					<rich_text>• ﻿</rich_text>
+					<rich_text weight="heavy">В</rich_text>
+					<rich_text> каждом </rich_text>
+					<rich_text weight="heavy">окне</rich_text>
+					<rich_text> выполняется только </rich_text>
+					<rich_text weight="heavy">один главный поток</rich_text>
+					<rich_text>, 
+• ﻿выполняет команды </rich_text>
+					<rich_text weight="heavy">последовательно</rich_text>
+					<rich_text>, 
+• может делать только </rich_text>
+					<rich_text weight="heavy">одно дело</rich_text>
+					<rich_text> </rich_text>
+					<rich_text weight="heavy">одновременно</rich_text>
+					<rich_text> и 
+• </rich_text>
+					<rich_text weight="heavy">блокируется</rich_text>
+					<rich_text> при выводе </rich_text>
+					<rich_text weight="heavy">модальных</rich_text>
+					<rich_text> </rich_text>
+					<rich_text weight="heavy">окон</rich_text>
+					<rich_text>, таких как alert.
+
+
+Дополнительный поток - ﻿для сетевых коммуникаций и прочие, 
+но они не независимы друг от друга и неуправляемы .
+
+</rich_text>
+					<rich_text weight="heavy">﻿Web Workers</rich_text>
+					<rich_text> - дополнительный JS процесс, </rich_text>
+					<rich_text weight="heavy">не имеет доступ к</rich_text>
+					<rich_text> </rich_text>
+					<rich_text weight="heavy">DOM</rich_text>
+					<rich_text>.
+
+﻿Когда происходит </rich_text>
+					<rich_text weight="heavy">событие</rich_text>
+					<rich_text>, оно </rich_text>
+					<rich_text weight="heavy">попадает в очередь</rich_text>
+					<rich_text>.
+
+Синхронные события - вложенные события
+// ﻿button.onclick = function() { text.value += ' -&gt;в onclick '; ﻿text.focus(); ﻿text.value += ' из onclick-&gt; '; };
+// ﻿text.onfocus = function() { text.value += ' !focus! '; };
+
+Сделать событие асинхронным можно через ﻿</rich_text>
+					<rich_text weight="heavy">setTimeout(</rich_text>
+					<rich_text>func, 0</rich_text>
+					<rich_text weight="heavy">)</rich_text>
+					<rich_text>
+// ﻿button.onclick = function() { text.value += ' -&gt;в onclick ';  </rich_text>
+					<rich_text weight="heavy">﻿setTimeout(</rich_text>
+					<rich_text>function() { ﻿text.focus(); ﻿}, 0</rich_text>
+					<rich_text weight="heavy">); </rich_text>
+					<rich_text>﻿text.value += ' из onclick-&gt; '; };
+// ﻿text.onfocus = function() { text.value += ' !focus! '; };</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Объект события ( event )" prog_lang="custom-colors" readonly="False" tags="" unique_id="228">
+					<rich_text>﻿Браузер записывает в «объект события» ( </rich_text>
+					<rich_text weight="heavy">event</rich_text>
+					<rich_text> ), который передаётся первым аргументом в обработчик
+
+/*
+﻿elem.onclick = function(</rich_text>
+					<rich_text weight="heavy">event</rich_text>
+					<rich_text>) {
+  ﻿event.type;                 // click
+  ﻿event.currentTarget;   // elem
+  ﻿event.clientX;              // координаты курсора в момент клика
+  event.clientY;              // координаты курсора в момент клика
+}
+*/</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Всплытие" prog_lang="custom-colors" readonly="False" tags="" unique_id="229">
+					<rich_text>• ﻿При наступлении </rich_text>
+					<rich_text weight="heavy">события</rich_text>
+					<rich_text> ﻿на </rich_text>
+					<rich_text weight="heavy">элемент</rich_text>
+					<rich_text>е он помечается как «целевой» (</rich_text>
+					<rich_text weight="heavy">event.target</rich_text>
+					<rich_text>).
+• ﻿Событие сначала </rich_text>
+					<rich_text weight="heavy">двигается вниз</rich_text>
+					<rich_text>:  </rich_text>
+					<rich_text weight="heavy">window</rich_text>
+					<rich_text> -&gt; document-&gt; html -&gt; body -&gt; ... -&gt; </rich_text>
+					<rich_text weight="heavy">event.target</rich_text>
+					<rich_text>
+// сработают обработчики </rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">﻿addEventListener(...., </rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">true</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">)</rich_text>
+					<rich_text>
+• Событие достигает цели и затем пооднимается вверх </rich_text>
+					<rich_text weight="heavy">event.target</rich_text>
+					<rich_text> -&gt; ... -&gt; body -&gt; html -&gt; - document -&gt; </rich_text>
+					<rich_text weight="heavy">window</rich_text>
+					<rich_text>
+// сработают обработчики </rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">﻿.</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">on</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">* </rich_text>
+					<rich_text>или</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a"> addEventListener(...., </rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">false</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">)</rich_text>
+					<rich_text>
+
+
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">﻿event.eventPhase</rich_text>
+					<rich_text> – на какой фазе сработал обработчик (</rich_text>
+					<rich_text weight="heavy">погружение</rich_text>
+					<rich_text> =</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">1</rich_text>
+					<rich_text>, </rich_text>
+					<rich_text weight="heavy">всплытие</rich_text>
+					<rich_text> = </rich_text>
+					<rich_text foreground="#a5a52a2a2a2a">3</rich_text>
+					<rich_text>).
+﻿
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">event.target</rich_text>
+					<rich_text> - ﻿самый глубокий элемент, который вызывает событие // ﻿</rich_text>
+					<rich_text weight="heavy">целевой</rich_text>
+					<rich_text> или </rich_text>
+					<rich_text weight="heavy">исходный</rich_text>
+					<rich_text>
+
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">﻿this</rich_text>
+					<rich_text> или ﻿</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">event.currentTarget</rich_text>
+					<rich_text> – это </rich_text>
+					<rich_text weight="heavy">текущий</rich_text>
+					<rich_text> элемент, до которого дошло всплытие
+
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">﻿event.stopPropagation()</rich_text>
+					<rich_text> - остановка всплытия
+
+</rich_text>
+					<rich_text foreground="#a5a52a2a2a2a" weight="heavy">﻿event.stopImmediatePropagation()</rich_text>
+					<rich_text> -  остановка всплытия и ﻿остановка обработки событий на текущем элементе</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Делегирование" prog_lang="custom-colors" readonly="False" tags="" unique_id="230">
+					<rich_text scale="h3">﻿</rich_text>
+					<rich_text scale="h3" weight="heavy">Один обработчик</rich_text>
+					<rich_text scale="h3"> на </rich_text>
+					<rich_text scale="h3" weight="heavy">общего предка</rich_text>
+					<rich_text scale="h3"> множества элементов 
+и через ﻿ </rich_text>
+					<rich_text scale="h3" weight="heavy">event.target </rich_text>
+					<rich_text scale="h3">иметь доступ к элемету с событием.</rich_text>
+					<rich_text>
+
+</rich_text>
+				</node>
+			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Object" prog_lang="custom-colors" readonly="False" tags="" unique_id="177">
 			<rich_text scale="h2">﻿В JavaScript объект это неупорядоченный список свойств и методов.
@@ -9473,58 +10154,21 @@ for(</rich_text>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="reserved words" prog_lang="custom-colors" readonly="False" tags="" unique_id="185">
 			<rich_text>abstract 
-boolean 
-break 
-byte
-case 
-catch 
-char 
-class
-const 
-continue 
-debugger 
-default
-delete 
-do 
-double 
-elsee
-num 
-export 
-extends 
-final
-finally 
-float 
-for 
-function
+boolean break byte
+case catch char class const continue 
+debugger default delete do double 
+elsee export extends
+final  finally float  for function
 goto 
-if 
-implements 
-importin 
-instanceof 
-int 
-interface
+if  implements  importin instanceof  int  interface
 long 
-native 
-new 
-package
-private 
-protected 
-public 
+native  new  num
+package  private  protected  public 
 return
-short 
-static 
-super switch
-synchronized 
-this 
-throw 
-throws
-transient 
-try 
-typeof 
-varvoid 
-volatile 
-while 
-with</rich_text>
+short static super switch synchronized 
+this  throw  throws  transient  try  typeof 
+var void volatile 
+while with</rich_text>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Array" prog_lang="custom-colors" readonly="False" tags="" unique_id="178">
 			<rich_text></rich_text>

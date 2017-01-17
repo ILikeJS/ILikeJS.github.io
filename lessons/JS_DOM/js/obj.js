@@ -1,5 +1,4 @@
-// 1 constant: dom element
-// 2 variable: element.value
+
 var page = {
     header: "Header",
     article: {

@@ -80,14 +80,14 @@ function addObj(obj) {
 var doc = document.body;
 
 //CREATE ELEMENT
-// doc.appendChild(addObj(page));
+doc.appendChild(addObj(page));
 
 //CLONE NODE
 // var myClone = addObj(page).cloneNode(true);
 // doc.appendChild(myClone);
 
 //CLONE NODE FRAGMENT
-var frag = document.createDocumentFragment();
-frag.appendChild(addObj(page).cloneNode(true));
-var myClone = frag.cloneNode(true);
-doc.appendChild(myClone);
+// var frag = document.createDocumentFragment();
+// frag.appendChild(addObj(page).cloneNode(true));
+// var myClone = frag.cloneNode(true);
+// doc.appendChild(myClone);

@@ -129,6 +129,8 @@
   wrp.appendChild(hdr);
   wrp.appendChild(art);
   wrp.appendChild(ftr);
+
+  // add to DOM
   doc.appendChild(wrp);
 
 })();

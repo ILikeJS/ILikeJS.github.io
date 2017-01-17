@@ -61,6 +61,7 @@
   var elem = document.createElement('div');
   elem.className = 'wrapper';
   elem.innerHTML = text;
+  // add to DOM
   document.body.appendChild(elem);
 
 })();
