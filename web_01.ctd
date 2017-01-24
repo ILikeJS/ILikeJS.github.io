@@ -2460,6 +2460,19 @@ Methods ﻿ sliding of elements.
 
 </rich_text>
 		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="events" prog_lang="custom-colors" readonly="False" tags="" unique_id="233">
+			<rich_text foreground="#a5a52a2a2a2a" scale="h2">on()</rich_text>
+			<rich_text>
+
+
+</rich_text>
+			<rich_text scale="h1">Mouse Events</rich_text>
+			<rich_text>
+
+.click()
+
+</rich_text>
+		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="selectors" prog_lang="custom-colors" readonly="False" tags="" unique_id="222">
 			<rich_text link="webs http://api.jquery.com/category/selectors/">http://api.jquery.com/category/selectors/</rich_text>
 			<rich_text>
@@ -8812,27 +8825,127 @@ var add = function () </rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Function" prog_lang="custom-colors" readonly="False" tags="" unique_id="166">
 			<rich_text scale="h2">Функции в JS - это ОБЪЕКТЫ высшего порядка.</rich_text>
 			<rich_text>
-- можно получить ссылку и присвоить переменной, элементу массива и свойству объекта
-- можно создать с помощью литералов
-- можно передать в качестве аргумента другим функциям
-- можно возвращать  в качестве значений из функции
-- могут обладать свойствами, которые допускается создавать и присваивать динамически
-- можно вызывать
-
-
-
-
-Function Declaration
-</rich_text>
-			<rich_text foreground="#a0a02020f0f0">function foo() {</rich_text>
-			<rich_text> 
-    /* do something */ 
-</rich_text>
-			<rich_text foreground="#a0a02020f0f0">}</rich_text>
+Определяются:
+ 1)</rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40">инструкцией </rich_text>
+			<rich_text weight="heavy">function</rich_text>
+			<rich_text> 
+ 2)</rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40">конструктором </rich_text>
+			<rich_text weight="heavy">Function</rich_text>
 			<rich_text>
 
 
-Named Function Expression
+</rich_text>
+			<rich_text scale="h2">Cуществует ли функция?   </rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text scale="h3"> </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" scale="h3" weight="heavy">typeof</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" scale="h3"> window.myFoo</rich_text>
+			<rich_text scale="h3">  // </rich_text>
+			<rich_text scale="h3" weight="heavy">function</rich_text>
+			<rich_text scale="h3"> or </rich_text>
+			<rich_text scale="h3" weight="heavy">undefined</rich_text>
+			<rich_text>
+
+
+</rich_text>
+			<rich_text weight="heavy">Объект</rich_text>
+			<rich_text> со скрытым свойством </rich_text>
+			<rich_text weight="heavy">CALL</rich_text>
+			<rich_text>
+
+Функция всегда </rich_text>
+			<rich_text weight="heavy">возвращает значение</rich_text>
+			<rich_text>:
+• </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">undefined</rich_text>
+			<rich_text> 
+• </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">this</rich_text>
+			<rich_text> (для </rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40"> </rich_text>
+			<rich_text>конструктора, вызванного с ключевым словом</rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40"> </rich_text>
+			<rich_text weight="heavy">new </rich_text>
+			<rich_text>)
+• </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">return</rich_text>
+			<rich_text> (все что находится после этого слова) 
+
+
+</rich_text>
+			<rich_text weight="heavy">Function Declaration</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">function foo() { </rich_text>
+			<rich_text>    /* do something */  </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">}</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text foreground="#ffff00000000">!!! </rich_text>
+			<rich_text style="italic">функция может измениться с Declaration на Expression если </rich_text>
+			<rich_text>
+• становится </rich_text>
+			<rich_text weight="heavy">частью выражения</rich_text>
+			<rich_text> ( </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">+function foo() {}</rich_text>
+			<rich_text> или </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">(function foo() {})</rich_text>
+			<rich_text> )
+•</rich_text>
+			<rich_text foreground="#3b3c40"> </rich_text>
+			<rich_text>становится </rich_text>
+			<rich_text weight="heavy">вложенным элементом</rich_text>
+			<rich_text> внутри 
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">var x = 0;</rich_text>
+			<rich_text> // исходный
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">function foo() { </rich_text>
+			<rich_text>// исходный
+  </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">x = 1;</rich_text>
+			<rich_text>            // не исходный
+ </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> function bar() {} </rich_text>
+			<rich_text> // исходный
+  </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">while (x &lt; 10) {</rich_text>
+			<rich_text>
+   </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">  function car() {} </rich_text>
+			<rich_text> // не исходный
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">  }
+}</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#ffff00000000">!!!</rich_text>
+			<rich_text>
+
+
+</rich_text>
+			<rich_text weight="heavy">Named Function Expression</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40">наследует текущую область видимости, то есть создаёт замыкание.</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#a0a02020f0f0">var </rich_text>
+			<rich_text foreground="#a0a02020f0f0" weight="heavy">foo</rich_text>
+			<rich_text foreground="#a0a02020f0f0"> = </rich_text>
+			<rich_text foreground="#a0a02020f0f0" weight="heavy">bro</rich_text>
+			<rich_text foreground="#a0a02020f0f0"> function() { </rich_text>
+			<rich_text>   // bro  - </rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40">имя доступно только внутри самой функции</rich_text>
+			<rich_text>
+/* do something */ 
+</rich_text>
+			<rich_text foreground="#a0a02020f0f0">}</rich_text>
+			<rich_text>
 </rich_text>
 			<rich_text foreground="#a0a02020f0f0">var foo = function() { </rich_text>
 			<rich_text>
@@ -8841,11 +8954,20 @@ Named Function Expression
 			<rich_text foreground="#a0a02020f0f0">}</rich_text>
 			<rich_text>
 
-
+</rich_text>
+			<rich_text weight="heavy">new Function (arg, stringFoo)  </rich_text>
+			<rich_text>// нет имени</rich_text>
+			<rich_text weight="heavy">
+</rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40">не наследует ничего, кроме глобальной области видимости </rich_text>
+			<rich_text>
 Параметры
 </rich_text>
 			<rich_text foreground="#a0a02020f0f0">function foo(parametr) {</rich_text>
-			<rich_text> 
+			<rich_text>    // foo - </rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40"> </rich_text>
+			<rich_text foreground="#3b3c40">имя доступно в той области видимости, где функция была определена.</rich_text>
+			<rich_text>
     /* do something */ 
 </rich_text>
 			<rich_text foreground="#a0a02020f0f0">}</rich_text>
@@ -8865,9 +8987,58 @@ Named Function Expression
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="побитовые операторы" prog_lang="custom-colors" readonly="False" tags="" unique_id="170">
-			<rich_text>• ﻿аргументы всегда 32-разрядные целые числа
-• представлены в 2-ой системе
+			<rich_text scale="h1">Bitwise operators</rich_text>
+			<rich_text>
 
+• ﻿аргументы всегда 32-разрядные целые числа
+• представлены в 2-ой системе
+• старший бит слева
+• округление (~~ или ^0)
+• </rich_text>
+			<rich_text background="#ffffff" foreground="#333333">выполняются после сравнений </rich_text>
+			<rich_text>(~~1.2) == 1
+• </rich_text>
+			<rich_text foreground="#252525" style="italic">two’s complement</rich_text>
+			<rich_text>  - способ записи положительных и отрицательных чисел для процессора
+ </rich_text>
+			<rich_text foreground="#990055">1</rich_text>
+			<rich_text foreground="#999999">;</rich_text>
+			<rich_text>  </rich_text>
+			<rich_text foreground="#708090">// 00000000000000000000000000000001</rich_text>
+			<rich_text>
+ </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">2</rich_text>
+			<rich_text foreground="#999999">;</rich_text>
+			<rich_text>  </rich_text>
+			<rich_text foreground="#708090">// 00000000000000000000000000000010</rich_text>
+			<rich_text>
+ </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">4</rich_text>
+			<rich_text foreground="#999999">;</rich_text>
+			<rich_text>  </rich_text>
+			<rich_text foreground="#708090">// 00000000000000000000000000000100</rich_text>
+			<rich_text>
+ </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">8</rich_text>
+			<rich_text foreground="#999999">;</rich_text>
+			<rich_text>  </rich_text>
+			<rich_text foreground="#708090">// 00000000000000000000000000001000</rich_text>
+			<rich_text>
+ 0;  </rich_text>
+			<rich_text foreground="#708090">// 00000000000000000000000000000000</rich_text>
+			<rich_text>
+-1;  </rich_text>
+			<rich_text foreground="#708090">// 11111111111111111111111111111111</rich_text>
+			<rich_text>
+-2;  </rich_text>
+			<rich_text foreground="#708090">// 11111111111111111111111111111110</rich_text>
+			<rich_text>
+-4;  </rich_text>
+			<rich_text foreground="#708090">// 11111111111111111111111111111100</rich_text>
+			<rich_text>
+-8;  </rich_text>
+			<rich_text foreground="#708090">// 11111111111111111111111111111000</rich_text>
+			<rich_text>
 
 ﻿• AND(и) ( &amp; )
 • OR(или) ( | )
@@ -8880,7 +9051,105 @@ Named Function Expression
 • RIGHT SHIFT(правый сдвиг) ( &gt;&gt; )
 • ZERO-FILL RIGHT SHIFT(правый сдвиг с заполнением нулями) ( &gt;&gt;&gt; )
 
+n = (~n + 1)
 </rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="chmod" prog_lang="custom-colors" readonly="False" tags="" unique_id="232">
+				<rich_text background="#f8f9fa" foreground="#000000" weight="heavy">Три варианта записи прав пользователя</rich_text>
+				<rich_text>
+</rich_text>
+				<rich_text justification="left"></rich_text>
+				<rich_text>
+
+
+</rich_text>
+				<rich_text weight="heavy">644</rich_text>
+				<rich_text> (-rw-r--r--)Все пользователи имеют право чтения; владелец может редактировать
+
+660 (-rw-rw----)Владелец и группа могут читать и редактировать; остальные не имеют права выполнять никаких действий
+
+</rich_text>
+				<rich_text weight="heavy">664</rich_text>
+				<rich_text> (-rw-rw-r--)Все пользователи имеют право чтения; владелец и группа могут редактировать
+
+666 (-rw-rw-rw-)Все пользователи могут читать и редактировать
+
+700 (-rwx------)Владелец может читать, записывать и запускать на выполнение; никто другой не имеет права выполнять никакие действия
+
+744 (-rwxr--r--)Каждый пользователь может читать, владелец имеет право редактировать и запускать на выполнение
+
+</rich_text>
+				<rich_text weight="heavy">755</rich_text>
+				<rich_text> (-rwxr-xr-x)Каждый пользователь имеет право читать и запускать на выполнение; владелец может редактировать
+
+</rich_text>
+				<rich_text weight="heavy">777 </rich_text>
+				<rich_text>(-rwxrwxrwx)Каждый пользователь может читать, редактировать и запускать на выполнение</rich_text>
+				<table char_offset="38" col_max="400" col_min="40">
+					<row>
+						<cell>000</cell>
+						<cell>0</cell>
+						<cell>---</cell>
+						<cell>нет</cell>
+						<cell>нет</cell>
+					</row>
+					<row>
+						<cell>001</cell>
+						<cell>1</cell>
+						<cell>--x</cell>
+						<cell>выполнение</cell>
+						<cell>чтение файлов и их свойств</cell>
+					</row>
+					<row>
+						<cell>010</cell>
+						<cell>2</cell>
+						<cell>-w-</cell>
+						<cell>запись</cell>
+						<cell>нет</cell>
+					</row>
+					<row>
+						<cell>011</cell>
+						<cell>3</cell>
+						<cell>-wx</cell>
+						<cell>запись и выполнение</cell>
+						<cell>всё, кроме чтения списка файлов</cell>
+					</row>
+					<row>
+						<cell>100</cell>
+						<cell>4</cell>
+						<cell>r--</cell>
+						<cell>чтение</cell>
+						<cell>чтение имён файлов</cell>
+					</row>
+					<row>
+						<cell>101</cell>
+						<cell>5</cell>
+						<cell>r-x</cell>
+						<cell>чтение и выполнение</cell>
+						<cell>доступ на чтение</cell>
+					</row>
+					<row>
+						<cell>110</cell>
+						<cell>6</cell>
+						<cell>rw-</cell>
+						<cell>чтение и запись</cell>
+						<cell>чтение имён файлов</cell>
+					</row>
+					<row>
+						<cell>111</cell>
+						<cell>7</cell>
+						<cell>rwx</cell>
+						<cell>все права</cell>
+						<cell>все права</cell>
+					</row>
+					<row>
+						<cell>двоичная</cell>
+						<cell>восьмеричная</cell>
+						<cell>символьная</cell>
+						<cell>права на файл</cell>
+						<cell>права на директорию</cell>
+					</row>
+				</table>
+			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="add" prog_lang="custom-colors" readonly="False" tags="" unique_id="171">
 			<rich_text>Секрет создания больших JavaScript-приложений кроется не в создании огром­ных приложений как таковых, а в том, что нужно разбить ваше приложение на ряд практически независимых компонентов.
@@ -9622,6 +9891,22 @@ elem.﻿</rich_text>
 				<rich_text>﻿﻿</rich_text>
 				<rich_text weight="heavy">Событие</rich_text>
 				<rich_text> – это сигнал от браузера о том, что что-то произошло. 
+</rich_text>
+				<rich_text weight="heavy">тип события</rich_text>
+				<rich_text> - строка с описанием (&quot;keydown&quot;)
+</rich_text>
+				<rich_text weight="heavy">цель события</rich_text>
+				<rich_text> - объект в котором возникло событие (или с которым это событие связано)
+</rich_text>
+				<rich_text weight="heavy">обработчик события</rich_text>
+				<rich_text> - функция которая обрабатывает событие
+</rich_text>
+				<rich_text weight="heavy">объект события</rich_text>
+				<rich_text> - объ­ект, свя­зан­ный с оп­ре­де­лен­ным со­бы­ти­ем и со­дер­жа­щий ин­фор­ма­цию об этом событии. 
+Объекты со­бы­тий пе­ре­да­ют­ся функ­ции об­ра­бот­чи­ка со­бы­тия в ви­де ар­гу­мен­та
+elem.addEventListener('click', function(e) {  /* e - объект события */  }, false);
+
+
 
 События </rich_text>
 				<rich_text weight="heavy">документа</rich_text>
@@ -9678,7 +9963,7 @@ elem.﻿</rich_text>
 				<rich_text>:
 ﻿</rich_text>
 				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">transitionend</rich_text>
-				<rich_text> – когда CSS-анимация завершена.</rich_text>
+				<rich_text> – когда CSS-анимация завершена. (</rich_text>
 				<node custom_icon_id="0" foreground="" is_bold="False" name="Обработчик событий" prog_lang="custom-colors" readonly="False" tags="" unique_id="226">
 					<rich_text foreground="#7f7f7f7f7f7f">﻿ </rich_text>
 					<rich_text foreground="#7f7f7f7f7f7f" weight="heavy">невозможность</rich_text>
@@ -10246,6 +10531,195 @@ myNewObj.toString();
 /*
 name Di
 */</rich_text>
+		</node>
+		<node custom_icon_id="12" foreground="" is_bold="True" name="this" prog_lang="custom-colors" readonly="False" tags="" unique_id="231">
+			<rich_text scale="h2" weight="heavy">THIS</rich_text>
+			<rich_text scale="h2"> в </rich_text>
+			<rich_text link="node 52" scale="h2">JavaScript</rich_text>
+			<rich_text scale="h2"> определяется </rich_text>
+			<rich_text scale="h2" weight="heavy">во время вызова функции</rich_text>
+			<rich_text scale="h2">.</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40">может иметь разное значение при каждом вызове функции</rich_text>
+			<rich_text>
+метод </rich_text>
+			<rich_text weight="heavy">bind</rich_text>
+			<rich_text> определяет </rich_text>
+			<rich_text weight="heavy">this</rich_text>
+			<rich_text> вне зависимости от способа вызова функции
+
+</rich_text>
+			<rich_text weight="heavy">В зависимости от оператора</rich_text>
+			<rich_text> JS при вызове </rich_text>
+			<rich_text weight="heavy">this</rich_text>
+			<rich_text> вернет разные значения.
+
+Вне функций </rich_text>
+			<rich_text weight="heavy">this</rich_text>
+			<rich_text> </rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40">ссылается на глобальный объект </rich_text>
+			<rich_text>// с '</rich_text>
+			<rich_text weight="heavy">use strict</rich_text>
+			<rich_text>'; и без него
+
+</rich_text>
+			<rich_text scale="h3">1) ﻿</rich_text>
+			<rich_text scale="h3" weight="heavy">Простой вызов функции</rich_text>
+			<rich_text scale="h3">  </rich_text>
+			<rich_text scale="h3" weight="heavy">- оператор ()</rich_text>
+			<rich_text>
+ вернет </rich_text>
+			<rich_text weight="heavy">window</rich_text>
+			<rich_text> (при '</rich_text>
+			<rich_text weight="heavy">use strict</rich_text>
+			<rich_text>'; - ‘</rich_text>
+			<rich_text weight="heavy">undefined</rich_text>
+			<rich_text>’)
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">  
+   var a = function a () {console.log(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">this</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">);};
+  </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy"> a()</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">;</rich_text>
+			<rich_text> // </rich_text>
+			<rich_text weight="heavy">window</rich_text>
+			<rich_text>
+
+   </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">(function () {console.log(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">this</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">);})</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">()</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">;</rich_text>
+			<rich_text>  // </rich_text>
+			<rich_text weight="heavy">window</rich_text>
+			<rich_text>
+
+
+</rich_text>
+			<rich_text scale="h3">2) ﻿</rich_text>
+			<rich_text scale="h3" weight="heavy">Метод объекта - оператор . или [] </rich_text>
+			<rich_text>
+вернет объект, от которого получена функция
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">var foo = {
+  bar: function (){
+    console.log(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">this</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">);
+  }
+};
+foo.bar(); </rich_text>
+			<rich_text> // foo</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">
+
+var baz = {};
+baz.bar = foo.bar;</rich_text>
+			<rich_text> // baz</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">
+
+baz.bar();  
+
+var fooBar = foo.bar;
+fooBar();  </rich_text>
+			<rich_text>// window
+
+</rich_text>
+			<rich_text scale="h3">3-1) </rich_text>
+			<rich_text scale="h3" weight="heavy">﻿Конструктор -  оператор new()</rich_text>
+			<rich_text>
+ вернет создаваемый объект или  __proto__: Object
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">   var a = function a () {
+       console.log(this);
+       console.log(this.__proto__ === a.prototype);
+   };
+    new a(); </rich_text>
+			<rich_text>// Object, true           __proto__: Object
+
+</rich_text>
+			<rich_text scale="h3">3-2) </rich_text>
+			<rich_text scale="h3" weight="heavy">﻿new</rich_text>
+			<rich_text scale="h3"> </rich_text>
+			<rich_text scale="h3" weight="heavy">Function</rich_text>
+			<rich_text>
+ new Function в области видимости только глобального объекта: this === window
+ При попытке обратиться к локальным переменным - ошибка
+
+
+</rich_text>
+			<rich_text scale="h3">4) </rich_text>
+			<rich_text scale="h3" weight="heavy">Стрелочные функции  
+</rich_text>
+			<rich_text weight="heavy"> this </rich_text>
+			<rich_text>привязан к окружению
+ 
+</rich_text>
+			<rich_text scale="h3"> 5)</rich_text>
+			<rich_text scale="h3" weight="heavy">Обработчик событий</rich_text>
+			<rich_text>
+ ссы­ла­ет­ся на целевой объ­ект события
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> elem.addEventListener('click', function(</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">event</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">) {  /* </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">event</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> - целевой объект события */  }, false);</rich_text>
+			<rich_text>
+ 
+</rich_text>
+			<rich_text scale="h3"> 6) </rich_text>
+			<rich_text scale="h3" weight="heavy">Инлайновый обработчик событий </rich_text>
+			<rich_text>
+  вернет DOM элемент в котором находится обработчик
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">&lt;button onclick=&quot;console.log(this.tagName;)&gt;Show this&lt;/button&gt; </rich_text>
+			<rich_text> 
+  
+</rich_text>
+			<rich_text scale="h3">  7) </rich_text>
+			<rich_text scale="h3" weight="heavy">bind</rich_text>
+			<rich_text>
+  </rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40"> </rich_text>
+			<rich_text foreground="#3b3c40">создаёт новую функцию, которая при вызове устанавливает в качестве контекста выполнения </rich_text>
+			<rich_text>this</rich_text>
+			<rich_text background="#ffffff" foreground="#3b3c40"> </rich_text>
+			<rich_text foreground="#3b3c40">предоставленное значение. В метод также передаётся набор аргументов, которые будут установлены перед переданными в привязанную функцию аргументами при её вызове.</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">function </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">f()</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">{
+    return this.a;
+}
+
+var </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">g</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> = </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">f.bind({a:&quot;text&quot;});</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">
+console.log(g()); </rich_text>
+			<rich_text>         // text</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">
+
+var o = {
+  </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">a:37,</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">
+ </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy"> f:f,</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a"> 
+  </rich_text>
+			<rich_text foreground="#a5a52a2a2a2a" weight="heavy">g:g</rich_text>
+			<rich_text foreground="#a5a52a2a2a2a">
+ };
+console.log(o.f(), o.g()); </rich_text>
+			<rich_text>// 37, text
+</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="PHP" prog_lang="custom-colors" readonly="False" tags="" unique_id="84">

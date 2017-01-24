@@ -1,0 +1,21 @@
+body {
+  background: hsla(225, 10%, 10%, 0.1);
+
+}
+
+.wrapper {
+  width: 960px;
+  height: 1200px;
+  margin: auto;
+  background: hsla(225, 50%, 50%, 0.2);
+  border: 1px solid transparent;
+}
+
+h1 {
+  text-align: center;
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}

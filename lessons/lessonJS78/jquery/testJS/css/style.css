@@ -1,0 +1,26 @@
+body {
+  background: hsla(225, 10%, 10%, 0.1);
+
+}
+
+.wrapper {
+  width: 960px;
+  height: 1200px;
+  margin: auto;
+  background: hsla(225, 50%, 50%, 0.2);
+  border: 1px solid transparent;
+}
+
+h1 {
+  text-align: center;
+}
+
+#change_me {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  font: 24px arial;
+}
+#move_up #move_down #color #disappear {
+  padding: 5px;
+}
