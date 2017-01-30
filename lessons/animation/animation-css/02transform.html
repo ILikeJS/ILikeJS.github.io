@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TransFROM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="css/02transform.css">
+</head>
+
+<body>
+    <div class="wrapper">
+      <h1>Комбинация свойств и точка отсчета (transform-origin)</h1>
+        <div class="comb">
+          <span class="point0">0</span>
+          <span class="point1">0</span>
+          <span class="point2">0</span>
+            <div class="combination">
+                <p>translate(100px,10px)
+                  <br> scale(1.5)
+                  <br> skew(5deg, 5deg)
+                  <br> rotate(30deg)
+                </p>
+            </div>
+            <div class="combination LT">
+                <p>transform-origin: LEFT TOP;
+                  <br>translate(100px,10px)
+                  <br> scale(1.5)
+                  <br> skew(5deg, 5deg)
+                  <br> rotate(30deg)
+                </p>
+            </div>
+            <div class="combination RB">
+                <p>transform-origin: RIGHT BOTTOM;
+                  <br>translate(100px,10px)
+                  <br> scale(1.5)
+                  <br> skew(5deg, 5deg)
+                  <br> rotate(30deg)
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

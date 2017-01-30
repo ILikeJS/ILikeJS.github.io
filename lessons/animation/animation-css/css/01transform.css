@@ -1,0 +1,198 @@
+body {
+  background: hsla(225, 10%, 10%, 0.1);
+
+}
+
+.wrapper {
+  width: 1280px;
+  height: 1600px;
+  margin: auto;
+  background: hsla(225, 50%, 50%, 0.2);
+  border: 1px solid transparent;
+}
+
+.box,
+.boxSc,
+.boxTs,
+.boxSk {
+  width: 200px;
+  height: 200px;
+  margin: 0 15px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.box {
+    background-color: hsla(40, 50%, 50%, 0.5);
+}
+
+.boxSc {
+    background-color: hsla(80, 50%, 50%, 0.5);
+}
+
+.boxTs {
+    background-color: hsla(160, 50%, 50%, 0.5);
+}
+
+.boxSk{
+    background-color: hsla(240, 50%, 50%, 0.5);
+}
+
+p {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 24px;
+}
+
+.rotate {
+  background-color: hsla(40, 40%, 40%, 0.2);
+  margin: 20px auto;
+}
+
+.scale {
+  background-color: hsla(80, 40%, 40%, 0.2);
+  margin: 20px auto;
+}
+
+.translate {
+  background-color: hsla(160, 40%, 40%, 0.2);
+  margin: 20px auto;
+}
+
+.skew {
+  background-color: hsla(240, 40%, 40%, 0.2);
+  margin: 20px auto;
+}
+.comb {
+  background-color: hsla(320, 40%, 40%, 0.2);
+  margin: 20px auto
+}
+/* -----------------------------------------------------------------------*/
+.d000 {
+    transform: rotate(0deg);
+}
+
+.d040 {
+    transform: rotate(40deg);
+}
+
+.d080 {
+    transform: rotate(80deg);
+}
+
+.d160 {
+    transform: rotate(160deg);
+}
+
+.d240 {
+    transform: rotate(240deg);
+}
+
+/* -----------------------------------------------------------------------*/
+.s005,
+.sX15,
+.sY12,
+.s-1,
+.s1-1,
+.s-11
+{
+  transform: scale(0.5);
+  cursor: pointer;
+  background-color: hsla(80, 60%, 60%, 0.5);
+}
+
+.s000 {
+  transform: scale(1);
+}
+
+.s010 {
+  transform: scale(1.1);
+}
+
+.s250 {
+  transform: scale(2.5);
+}
+
+.s008 {
+  transform: scale(0.8);
+  cursor: pointer;
+  background-color: hsla(80, 60%, 60%, 0.5);
+}
+
+.s008:hover {
+  transform: scale(1.5);
+}
+
+.s005:hover {
+  transform: scale(0.5, 2);
+}
+
+.sX15:hover {
+  transform: scaleX(1.5);
+  cursor: pointer;
+  background-color: hsla(80, 60%, 60%, 0.5);
+}
+
+.sY12:hover {
+  transform: scaleY(1.2);
+  cursor: pointer;
+  background-color: hsla(80, 60%, 60%, 0.5);
+}
+
+.s-1:hover {
+  transform: scale(-1);
+  cursor: pointer;
+  background-color: hsla(80, 60%, 60%, 0.5);
+}
+
+.s1-1:hover {
+  transform: scale(1, -1);
+  cursor: pointer;
+  background-color: hsla(80, 60%, 60%, 0.5);
+}
+
+.s-11:hover {
+  transform: scale(-1, 1);
+  cursor: pointer;
+  background-color: hsla(80, 60%, 60%, 0.5);
+}
+
+/* -----------------------------------------------------------------------*/
+.t100x100y {
+  background-color: hsla(160, 60%, 60%, 0.5);
+}
+
+.t100x100y:hover {
+  transform: translate(100px, 100px);
+  cursor: pointer;
+}
+
+.tX100 {
+    transform: translateX(100px);
+}
+
+.tY100{
+    transform: translateY(100px);
+}
+
+/* -----------------------------------------------------------------------*/
+.skew5000 {
+   transform: skew(50deg, 0);
+}
+
+.skew0050 {
+  transform: skew(0, 50deg);
+}
+
+.skewX10 {
+  transform: skewX(10deg);
+}
+
+.skewY10 {
+  transform: skewY(10deg);
+}
+
+.skew2510 {
+  transform: skew(25deg, 10deg);
+}
+/* -----------------------------------------------------------------------*/

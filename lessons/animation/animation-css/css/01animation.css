@@ -1,0 +1,86 @@
+body {
+    background                : hsla(225, 10%, 10%, 0.1);
+}
+
+.wrapper {
+    width                     : 1280px;
+    height                    : 1600px;
+    margin                    : auto;
+    background                : hsla(225, 50%, 50%, 0.2);
+    border                    : 1px solid transparent;
+    animation-name: backgroundGlow;
+    animation-duration: 20s;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 0 15px;
+  vertical-align: text-bottom;
+  background-color: hsla(225, 40%, 90%, 0.8);
+}
+
+.uno,
+.dos {
+    display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 24px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideDown {
+    from { height: 0; }
+    50% { height: 400px;}
+    to   { height: 200px;}
+}
+
+@keyframes slideUp {
+    from { height: 200px; }
+    50% { height: 400px;}
+    to { height: 100px; }
+}
+
+
+@keyframes backgroundGlow {
+    /*from { background-color      : red; }*/
+    0% { background-color      : red; }
+    25%, 75% { background-color: orange; }
+    100% { background-color    : hsla(225, 50%, 50%, 0.2);}
+    /*to { background-color    : hsla(225, 50%, 50%, 0.2);}*/
+}
+
+.uno:hover {
+	 animation-name: fadeIn;
+	 animation-duration: 2s;
+}
+
+.dos:hover {
+	 animation-name: fadeOut;
+	 animation-duration: 2s;
+   /*animation-direction: alternate;*/
+   /*animation-iteration-count: 2;*/
+}
+
+.tres:hover {
+  animation-name: slideUp;
+  animation-duration: 2s;
+}
+
+.cuatro:hover {
+  animation-name: slideUp;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}

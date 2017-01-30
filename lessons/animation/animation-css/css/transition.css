@@ -1,0 +1,71 @@
+body {
+    background                : hsla(225, 10%, 10%, 0.1);
+}
+
+.wrapper {
+    width                     : 1280px;
+    height                    : 1600px;
+    margin                    : auto;
+    background                : hsla(225, 50%, 50%, 0.2);
+    border                    : 1px solid transparent;
+}
+
+.box,
+.navButton {
+  padding                   : 10px 20px;
+  margin                    : 50px auto;
+  display                   : block;
+  width                     : 300px;
+  font-size                 : 24px;
+  border-top-right-radius   : 15px;
+  border-bottom-left-radius : 15px;
+  cursor                    : pointer;
+}
+
+.before {
+  background                : hsla(225, 20%, 80%, 0.2);
+}
+
+.before:hover {
+  background                : hsla(225, 80%, 80%, 0.8);
+}
+
+.navButton {
+    /* анимация на 1 сек */
+    transition-property       : background-color,
+                                color,
+                                transform,
+                                border-radius;
+    transition-duration       : 0.5s, 1s, 0.8s, 500ms;
+    transition-timing-function: cubic-bezier(.20, .96, .74, .07);
+    /*transition-delay          : .25s, 0.5s, 400ms, 250ms;*/
+    transition-delay          : 0.5s;
+}
+
+.gren {
+      background-color          : green;
+}
+
+.oran {
+  background-color              : orange;
+}
+
+.red {
+      background-color          : red;
+}
+
+
+.navButton:hover {
+    background-color          : blue;
+    color                     : #fff;
+    transform                 : scale(1.5);
+    border-top-left-radius    : 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius   : 0;
+    border-bottom-left-radius : 0;
+    /* не анимировано, т.к. не нужно */
+    box-shadow: 2px 2px 5px 5px hsla(100, 0%, 0%, 0.2);
+
+    /* life-hack for sub-menu*/
+    transition-delay          : 0s;
+}

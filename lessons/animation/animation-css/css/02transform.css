@@ -1,0 +1,89 @@
+body {
+  background: hsla(225, 10%, 10%, 0.1);
+
+}
+
+.wrapper {
+  width: 1280px;
+  height: 1600px;
+  margin: auto;
+  background: hsla(225, 50%, 50%, 0.2);
+  border: 1px solid transparent;
+}
+
+.box {
+    background-color: hsla(40, 50%, 50%, 0.5);
+}
+
+.boxSc {
+    background-color: hsla(80, 50%, 50%, 0.5);
+}
+
+.boxTs {
+    background-color: hsla(160, 50%, 50%, 0.5);
+}
+
+.boxSk{
+    background-color: hsla(240, 50%, 50%, 0.5);
+}
+
+.combination {
+  width: 250px;
+  height: 250px;
+  margin: 0 15px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  background-color: hsla(320, 50%, 50%, 0.5);
+}
+
+p {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 24px;
+}
+
+.combination p {
+  margin-top: 50px;
+}
+
+.comb {
+  position: relative;
+  background-color: hsla(320, 40%, 40%, 0.2);
+  margin: 20px auto
+}
+
+/* -----------------------------------------------------------------------*/
+.combination:hover {
+  transform: translate(100px, 10px) scale(1.5) skew(5deg, 5deg) rotate(30deg);
+}
+
+.LT:hover {
+  transform: translate(100px, 10px) scale(1.5) skew(5deg, 5deg) rotate(30deg);
+  transform-origin: left top;
+}
+
+.RB:hover {
+  transform: translate(100px, 10px) scale(1.5) skew(5deg, 5deg) rotate(30deg);
+  transform-origin: right bottom;
+}
+
+.point0 {
+  position: absolute;
+  top  :125px;
+  left :132px;
+  color: orange;
+}
+
+.point1 {
+  position: absolute;
+  top  :-8px;
+  left :295px;
+  color: orange;
+}
+
+.point2 {
+  position: absolute;
+  top  :243px;
+  left :829px;
+  color: orange;
+}
