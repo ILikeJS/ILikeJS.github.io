@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <script type="text/html" id="template">
+      <h1> <%=headline%></h1>
+      <ol>
+        <li><h2> <%=ask_00%></h2>
+          <label >
+            <input type="radio"> <%=variant_00.answer_00%>
+          </label>
+          <label >
+            <input type="radio"> <%=variant_00.answer_01%>
+          </label>
+          <label >
+            <input type="radio"> <%=variant_00.answer_02%>
+          </label>
+        </li>
+        <li><h2> <%=ask_01%></h2>
+        <label >
+          <input type="radio"> <%=variant_01.answer_00%>
+        </label>
+        <label >
+          <input type="radio"> <%=variant_01.answer_01%>
+        </label>
+        <label >
+          <input type="radio"> <%=variant_01.answer_02%>
+        </label>
+        </li>
+        <li><h2> <%=ask_02%></h2>
+        <label >
+          <input type="radio"> <%=variant_02.answer_00%>
+        </label>
+        <label >
+          <input type="radio"> <%=variant_02.answer_01%>
+        </label>
+        <label >
+          <input type="radio"> <%=variant_02.answer_02%>
+        </label>
+        </li>
+      </ol>
+
+    </script>
+
+  </div>
+  <script src="js/tmpl.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

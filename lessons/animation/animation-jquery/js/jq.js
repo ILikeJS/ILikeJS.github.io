@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var angle = 0,
-        // off = true,
+        off = true,
         box = $("#box"),
         stop = $("#stop");
 
@@ -15,9 +15,9 @@ $(document).ready(function() {
                 // opacity: "toggle",
               }, 50, function() {
                 // Animation complete.
-                // if (off) {
+                if (off) {
                 animate();
-              // }
+              }
             });
 
 
@@ -35,13 +35,14 @@ $(document).ready(function() {
     };
 
     box.click(function() {
-        animate();
+        // animate();
 
-        // off = true;
+        off = true;
     });
 
     stop.click(function() {
       box.stop();
+      // box.finish();
         // off = false;
 
         // HARD

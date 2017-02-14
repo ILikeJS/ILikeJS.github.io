@@ -39,6 +39,8 @@ body {
     transition-duration       : 0.5s, 1s, 0.8s, 500ms;
     transition-timing-function: cubic-bezier(.20, .96, .74, .07);
     /*transition-delay          : .25s, 0.5s, 400ms, 250ms;*/
+
+    /* life-hack for sub-menu 1*/
     transition-delay          : 0.5s;
 }
 
@@ -66,6 +68,6 @@ body {
     /* не анимировано, т.к. не нужно */
     box-shadow: 2px 2px 5px 5px hsla(100, 0%, 0%, 0.2);
 
-    /* life-hack for sub-menu*/
-    transition-delay          : 0s;
+    /* life-hack for sub-menu 2*/
+    transition-delay          : 1s;
 }

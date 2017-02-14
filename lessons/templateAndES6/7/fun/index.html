@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q>Функциональное</q>
+        <p>программирование на примере функций работы с массивом.
+        <p>ForEach(); Map(); Filter(); Reduce();</p>
+        <q>Зачем?!</q>
+        <b>Быстрее и понятнее <i>// React(skill++)</i></b></p>
+    </div>
+
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>Как создать ForEach()?</q>
+          <code>
+            &nbsp;&nbsp;<span class="fun">function</span> addOneForEach(<b>array</b>) {<br>
+ 		        &nbsp;&nbsp;&nbsp;&nbsp;for (var i = 0; i &lt; array.length; i++) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array[i]++;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;}
+        </code>
+        <p>Передаем массив как аргумент <br>
+          и мы что-то делаем на каждой итерации цикла.</p>
+        <p>А что если... </p>
+
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+      <q>Как создать ForEach()...</q>
+      <p>Перенести действие в аргумент?!</p>
+        <code>
+          &nbsp;&nbsp;<span class="fun">function</span> myForEach(<b>array</b>, <b>action</b> ) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;for (var i = 0; i &lt; array.length; i++) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;action (array[i]);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;myForEach([3,9,27], (a) =&gt; console.log (a = a + 1));<br>
+          &nbsp;&nbsp;//4; 10; 28
+      </code>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <p>Ме­тод forEach()<br>
+          Для ка­ж­до­го ин­дек­са i функ­ция f<br> вы­зы­ва­ет­ся с тре­мя ар­гу­мен­та­ми:<br>
+          <b>f(мас­сив[i], i, мас­сив)</b><br>
+          <span class="red">Внимание: Ме­тод forEach() ни­че­го не воз­вра­ща­ет.</span></p>
+          <img src="./img/foreach.png" alt="foreach">
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+      <q>А если нам нужен новый массив?</q>
+      <p>Функция, которая не портит	переданный ей массив называется <b>чистой</b>.</p>
+      <p>Чистые функции: MAP, FILTER, REDUCE</p>
+      <h2>Вот как работает MAP()</h2>
+        <img src="img/map.jpg" alt="map" width="800" style="margin-left: -20px;">
+    </div>
+
+    <div class="step slide" data-x="2900" data-y="-1500">
+      <h2>Вот как работает FILTER()</h2>
+      <img src="img/filter.png" alt="map" width="800" style="margin-left: -20px;">
+    </div>
+
+
+    <div class="step slide" data-x="4000" data-y="-1500">
+      <h2>Они могут работать вместе MAP() + FILTER()</h2>
+        <img src="img/map&filter.png" alt="map" width="800" style="margin-left: -20px;">
+    </div>
+
+        <div class="step slide" data-x="5000" data-y="-1500">
+          <h2>А что если нам не нужен массив, а нужно<br> <b>одно, итоговое значение,</b><br> например сумма всего массива?</h2>
+           <q>Значит пришло время вызвать REDUCE()!</q>
+            <img src="img/reduce.png" alt="map" width="800" style="margin-left: -20px;">
+        </div>
+
+        <div class="step slide" data-x="6000" data-y="-1500">
+           <q>Вы не любите REDUCE()? Вы просто не умеете его готовить!</q>
+            <img src="img/reduce1.png" alt="map" width="800" style="margin-left: -20px;">
+        </div>
+
+
+        <div class="step slide" data-x="7000" data-y="-1500">
+           <h1>Reduce за 5 минут:</h1>
+            <img src="img/reduce3.png" alt="map" width="800" style="margin-left: -20px;">
+        </div>
+
+        <div class="step slide" data-x="8000" data-y="-1500">
+           <q>Задание:</q>
+            <p>Напишите для массива</p>
+              <b>var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];</b>
+            <p>функцию, которая бы возвращала произведение четных чисел</p>
+            <p>напечатайте ответ в чат</p>
+            <br>
+            <p>PS проверка на четнось: <b>(a % 2) === 0</b></p>
+        </div>
+        <div  class="step" data-x="10000" data-y="-3000" data-scale="1">
+            <p>Ответ<br></p>
+            <img src="img/reduce4.png" alt="map" width="800" style="margin-left: -20px;">
+        </div>
+
+
+</div>
+<!--
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div> -->
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

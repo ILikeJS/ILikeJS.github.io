@@ -1,0 +1,141 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+
+  <div class="step slide" data-x="-2000" data-y="-1500" id="bag">
+    <p>Возьмет array-like object из DOM</p>
+
+    <p>&nbsp;&nbsp;<b>let lis = document.querySelectorAll('ul.fancy li');</b></p><br>
+    <p>И заменим текст на новый: <b>li.innerHTML = "I'm fancy Li!"</b></p>
+    <p>&nbsp;&nbsp;// lis.map(x =&gt; x.innerHTML = "I'm fancy Li!"); // Error</p><br>
+    <p>&nbsp;&nbsp;// <b>map, filter</b>  - не работают с array-like object</p>
+    <br>
+  </div>
+
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q class="fff">Вот если бы эти функции могли работать с DOM, как в jQuery...</q>
+        <p class="fff">Мечты, мечты...</p>
+    </div>
+
+
+
+      <div class="step slide" data-x="1000" data-y="-1500" >
+
+         <p>ES6 принес новые функции!</p><br>
+         <p><b>Array.from </b></p><br>
+         <p>превратит в Array и можно применять MAP()</p>
+         <p>&nbsp;&nbsp;<b>Array.from(lis).map(x =&gt; x.innerHTML = `I'm fancy Li!`);</b></p><br><br>
+         <p>https://jsfiddle.net/575LpgLx/1/</p>
+
+    </div>
+
+
+        <div class="step slide" data-x="2000" data-y="-1500" >
+          <p>Вы хотите получить массив, <br>в каждой ячейке которого будет <br>текст из списка элементов DOM?</p><br>
+          <p><b>let texts = document.querySelectorAll('ul.fancy li');</b></p><br>
+          <p>Решение одной функцией!</p><br>
+           <p>&nbsp;&nbsp;<b>let names = Array.from(texts, s =&gt; s.textContent);</b></p>
+        </div>
+
+
+    <div class="step slide fff" data-x="3000" data-y="-1500" id="two">
+      <p>Так возможно, потому что Array.from имеет второй (необязательный) параметр - MAP()</p>
+        <p>&nbsp;&nbsp;<b>let lis = document.querySelectorAll('ul.fancy li');</b></p><br>
+       <p>&nbsp;&nbsp;<b>Array.from(lis, (x, i) =&gt; x.innerHTML = `I'm fancy Li ${i++}!`);</b></p><br>
+       <p>https://jsfiddle.net/4vpc6fe9/</p>
+    </div>
+
+    <div id="title" class="step" data-x="4000" data-y="-3000" data-scale="1">
+
+        <p>Все еще сложно?</p>
+        <pre>
+        Посмотрите на эти примеры:
+        пропуск заполняется undefined
+        Array.from([0,,2])                   //      [ 0, undefined, 2 ]
+
+        А значит можно создать и заполнить массив
+        Array.from(new Array(5), () =&gt; 'a'); //    [ 'a', 'a', 'a', 'a', 'a' ]
+        Array.from(new Array(5), (x,i) =&gt; i);//    [ 0, 1, 2, 3, 4 ]
+       </pre>
+
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="-1500" >
+      <p>Для  Array.from существут вспомогательные методы
+        <br><b>keys, values, entries</b> <br></p><br>
+       <p>Они очень просты и очень полезны</p>
+       <pre>
+         Array.from([ 'a', 'b' ].keys()); //  [ 0, 1 ]
+         Array.from([ 'a', 'b' ].values()); //  [ 'a', 'b' ]
+         Array.from([ 'a', 'b' ].entries()); //  [ [ 0, 'a' ], [ 1, 'b' ] ]
+       </pre>
+    </div>
+    <div class="step slide" data-x="6000" data-y="-1500" >
+       <pre>А теперь задача
+         <br>
+         &lt;ul id="ul-id"&gt;
+             &lt;li&gt;&lt;label&gt;&lt;input type="radio"&gt;Red&lt;/label&gt;&lt;/li&gt;
+             &lt;li&gt;&lt;label&gt;&lt;input type="radio"&gt;Blue&lt;/label&gt;&lt;/li&gt;
+             &lt;li&gt;&lt;label&gt;&lt;input type="radio"&gt;Green&lt;/label&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+       <br>
+
+        var paint = ["Red", "Blue", "Green"];
+        let lis = document.querySelectorAll('label');
+      <b>  Array.from(lis, (x, i) =&gt; x.setAttribute('style', <br></b>
+<b> // Поправьте код, чтобы текст подсветился своим цветом:
+"background-color: paint[0]; color: #000;"));</b>
+       </pre>
+    </div>
+
+
+        <div class="step slide" data-x="7500" data-y="-2500" >
+          <p>Правильный ответ</p>
+         <pre>
+    <b>Array.from(lis, (x, i) =&gt; x.setAttribute('style',</b>
+    <b> `background-color: ${paint[i]}; color: #000;`));</b>
+    1)Обратные кавычки
+    2)${paint[i]} - переменная и использование параметра i
+         </pre>
+         <q>Спасибо за внимание!</q>
+        </div>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/test.js"></script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

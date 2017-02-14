@@ -1,0 +1,11 @@
+var elem = document.getElementById("wrp");
+var el0 = document.createElement('h1');
+var el1 = document.createElement('h1');
+var el2 = document.createElement('h1');
+var el3 = document.createElement('h1');
+var el4 = document.createElement('h1');
+elem.appendChild(el0);
+elem.appendChild(el1);
+elem.appendChild(el2);
+elem.appendChild(el3);
+elem.appendChild(el4);

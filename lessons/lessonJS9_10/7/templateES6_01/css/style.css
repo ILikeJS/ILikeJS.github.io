@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 1200px;
+  height: 1000px;
+  background-color: hsla(100, 50%, 50%, 0.2);
+  border: 1px solid hsla(100, 50%, 50%, 0);;
+}
+
+h1, h2 {
+  text-align: center;
+}
