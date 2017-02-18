@@ -12294,6 +12294,85 @@ time.</rich_text>
 			<rich_text>;
 </rich_text>
 		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="OOP" prog_lang="custom-colors" readonly="False" tags="" unique_id="266">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="inherit" prog_lang="custom-colors" readonly="False" tags="" unique_id="267">
+				<rich_text>Parent() и Child():
+
+// родительский конструктор
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">function</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a"> </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">Parent</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">(</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">name</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">) {
+  </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">this.name</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a"> = name || ‘Adam’;
+}</rich_text>
+				<rich_text>
+
+// добавление дополнительной функциональности в прототип
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">Parent.prototype.</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">say = </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" style="italic">function</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a"> () {
+ </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy"> return this.</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">name;
+};</rich_text>
+				<rich_text>
+
+// пустой дочерний конструктор
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">function Child</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">(name) {}
+</rich_text>
+				<rich_text>
+// наследование
+
+// </rich_text>
+				<rich_text foreground="#1c7271511c72" weight="heavy">inherit</rich_text>
+				<rich_text> - не часть языка!
+
+2 варианта реализации </rich_text>
+				<rich_text foreground="#1c7271511c72" weight="heavy">inherit</rich_text>
+				<rich_text>
+
+// 1-й             свойство prototype должно ссылаться на объект,  а не на функцию, поэтому </rich_text>
+				<rich_text weight="heavy">new P ();
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">function</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a"> </rich_text>
+				<rich_text foreground="#1c7271511c72" weight="heavy">inherit</rich_text>
+				<rich_text> (C, P) {
+  </rich_text>
+				<rich_text weight="heavy">C.prototype</rich_text>
+				<rich_text> = </rich_text>
+				<rich_text weight="heavy">new</rich_text>
+				<rich_text> </rich_text>
+				<rich_text weight="heavy">P</rich_text>
+				<rich_text>();
+}</rich_text>
+				<rich_text>
+
+// 2-й  заимствование конструктора
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">function</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a"> </rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">Child</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">(a, c, b, d) {
+</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a" weight="heavy">Parent.apply(this, arguments);</rich_text>
+				<rich_text foreground="#a5a52a2a2a2a">
+}</rich_text>
+				<rich_text>
+
+!!! Главное правило при использовании конструкторов – повторно используемые члены должны добавляться в прототип.</rich_text>
+			</node>
+		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="PHP" prog_lang="custom-colors" readonly="False" tags="" unique_id="84">
 		<rich_text>Необходимый минимум знаний для верстки.

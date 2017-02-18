@@ -1,0 +1,148 @@
+code {
+  color: hsl(250, 30%, 30%);
+}
+
+.fun {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.red {
+  color: red;
+}
+
+.re {
+  text-decoration: line-through;;
+}
+
+.toCenter {
+  text-align: center;
+}
+/*
+#id {
+  background-image: url(../img/id.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+}
+*/
+.h100{
+  height: 950px;
+  width: 960px;
+}
+
+li {
+  position: relative;
+  width: 800px;
+  padding: 80px 10px;
+
+}
+
+li:nth-of-type(1){
+  background: url(../img/list.jpg) no-repeat;
+  background-position-x:  left;
+  background-position-y:  center;
+  padding-left: 220px;
+}
+
+li:nth-of-type(1) > p:before {
+  content: "var request = new XMLHttpRequest();";
+  position: absolute;
+  top: 120px;
+  left: 220px;
+  color: red;
+}
+
+li:nth-of-type(2){
+  background: url(../img/list-text.jpg) no-repeat;
+  background-position-x:  right;
+  background-position-y:  center;
+}
+
+li:nth-of-type(2) > p:before {
+  content: 'request.open("GET", "http://google.com");';
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  color: red;
+}
+
+li:nth-of-type(3){
+  background: url(../img/call-back.jpg) no-repeat;
+  background-position-x:  left;
+  background-position-y:  center;
+    padding-left: 220px;
+}
+
+li:nth-of-type(3) > p:before {
+  content: "  request.onreadystatechange => function() {...};";
+  position: absolute;
+  top: 120px;
+  left: 220px;
+  color: red;
+}
+
+li:nth-of-type(4){
+  background: url(../img/send.jpg) no-repeat;
+  background-position-x:  right;
+  background-position-y:  center;
+}
+
+li:nth-of-type(4) > p:before {
+  content: "  request.send(null)";
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  color: red;
+}
+
+.xtp {
+  margin-top: 10%;
+  font-size: 100px;
+  text-shadow: 4px 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+#spinner {
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+@-webkit-keyframes spinner {
+  from { -webkit-transform: rotateY(0deg);    }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+
+/* all other browsers */
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+#ff {
+  color: #fff;
+}
+.fon {
+  ground-color: hsla(0, 10%, 10%, 0.5);
+}
+/* http://www.the-art-of-web.com/css/3d-transforms/ */

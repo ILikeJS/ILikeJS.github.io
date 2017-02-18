@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>Promise</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q><b> "To be</b> or not <b>to be"</b></q>
+        <p>У.Шекспир</p>
+        <p>Из неопубликованной документации к объетку Promise</p>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <p>Объект Promise - это Гамлет в мире JS.</p>
+        <p>Он ожидает события.</p>
+        <p>А потом принимает решение, которое невозможно изменить.</p>
+        <p>Но режисеры, как и программисты, любят Гамлета/Promise не за это.</p>
+        <p>А за то, что спектакли по одной пьесе / экземпляры объекта Promise</p>
+        <p>могут идти один за другим!</p>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <pre>
+      <h1>экземпляр объекта Promise ждет события, чтобы выбрать:</h1>
+      const promise =
+      new Promise ((resolve, reject) =&gt; {
+        if ('куплю билет') {
+           resolve(театр("Гамлет"))
+        }else{
+           reject(сериал("Игра престолов"))
+        }
+      }
+        </pre>
+        <h2>А вот инструкция "Что делать" на любой выбор:</h2>
+        <pre>
+          promise.then(
+            data =&gt; "Гамлет: интриги, дуэль, яд",
+            error =&gt; "Игра престолов: интриги, дуэль, яд"
+          );
+        </pre>
+    </div>
+
+    <div  class="step slide" data-x="2000" data-y="-3000" >
+        <p>У объекта Promise есть два основных метода:</p>
+        <p>Promise.resolve() - возвращает обещанное, например значение или объект.</p>
+        <p>Promise.reject() - возвращает объект Promise, который был отклонен по указанной причине.</p>
+    </div>
+
+
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <p>Hello World с Promise</p>
+        <p>https://jsfiddle.net/gysh6a4o/</p>
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>Promise <strong>это окончательный </strong> <br/>
+
+         <strong>выбор!</strong> https://jsfiddle.net/4mz7gxL5/</p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="-2100" data-rotate="180" data-scale="1">
+        <p>Кто первый? <b>Promise. <i class="red">race</i>(promiceHorse1, promiceHorse2);</b> <span class="thoughts">Это то, о чем вы подумали!</span></p>
+        <p>Метод вернет первое, что придет к <b class="re">финишу</b> <i class="red">race</i></p>
+        <i >https://jsfiddle.net/ook4q1mc/</i>
+    </div>
+
+    <div  class="step slide" data-x="7000" data-y="-5000" >
+        <p>Даже среди категоричных promise метод <i class="red"> Promise.all(list)</i> выделялся. </p>
+        <p>list = [promise1, promise1, ..., promiseN]</p><br>
+        <p>Он соглашался вернуть <b>resolve</b> только если все promise в его списке также вернули <b>resolve</b>!</p><br>
+        <p>Даже одного <b>reject</b> от кого-то из <b>list</b>  было достаточно и для его <b>reject</b>!</p><br>
+        <p>И он нетерпелив! Как только получит первый <b>reject</b> - все, остальные могут не отвечать. </p>
+        <p class="small">Proof: https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/all</p>
+        <img src="img/all.jpg" alt="all">
+    </div>
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+      <p>Метод <b>fetch</b> на смену XMLHttpRequest</p>
+      <p>есть полифиллы (и не один)</p>
+    </div>
+
+
+    <div  class="step slide" data-x="3500" data-y="-2850" >
+        <p>Очень простой синтаксис</p><br>
+        <pre>
+          // url (required), options (optional)<br>
+               <i class="red">fetch</i>('https://goit.ua', {
+                 method: 'get'
+               })<i class="red">then</i>(function(response) {
+
+               }).<i class="red">catch</i>(function(err) {
+	            // Error :(
+            });
+        </pre>
+    </div>
+
+    <div  class="step slide" data-x="6700" data-y="-3300" >
+        <p>Если добавить return, то получим цепочку обработки событий</p>
+        <pre>
+        // url (required), options (optional)
+             fetch('https://goit.ua', {
+               method: 'get'
+             }).<b>then</b>(function(response) {
+                ... return <i class="red">anyValue</i>;
+              }).<b>then</b>(function (<i class="red">anyValue</i>){
+                 ...
+              })
+             }).catch(function(err) {
+            // Error :(
+          });
+      </pre>
+    </div>
+
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>want to know more?</p>
+        <q><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Mozilla</a>, </q>
+        <p>https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch</p>
+        <q><a href="https://habrahabr.ru/post/252941/">Введение в fetch</a>, </q>
+        <p>https://habrahabr.ru/post/252941/</p>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>Задание на дом: сделать пример https://jsfiddle.net/4p98fpax/ </p>
+        <p>c Promise</p>
+        <p>c fetch</p>
+        <p>PS это задание не оценивается. Выполянять только при наличии желания и времени.</p>
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="7200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p>Спасибо за внимание!</p>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+
+
+<script src="js/impress.js"></script>
+<script src="js/libDOM.js"></script>
+<script src="js/main.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

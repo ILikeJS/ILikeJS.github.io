@@ -1,0 +1,151 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>XMLHttpReqest</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+<!--
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div> -->
+
+<div id="impress">
+
+    <div id="bored" class="step slide fon" data-x="0000" data-y="-1500">
+        <q id="ff">Объект, изменивший интернет.</q>
+        <p class="xtp red" id="spinner">XMLHttpReqest</p>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <h1>В браузеры заложено умение отправлять <b>HTTP запрос</b>.</h1><br>
+        <p><span class="red">&lt;input type="submit"&gt;</span> отправит запрос с содержимим <span class="red">&lt;form&gt;</span></p><br>
+        <p><span class="red">location="https://goit.ua";</span> откроет в текущем окне заданный <b>url</b></p><br>
+        <p>Но все это будет сделано с перезагрузкой страницы!</p>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+        <h1>Существуют и неочевидные пути </h1><br>
+        <h2><b class="red">AJAX</b></h2><br>
+        <p>Надеюсь, Вы помните о замещаемом элементе IMG?</p>
+        <p><span class="red">&lt;img src=""&gt; </span>отправляет запрос на сервер, получает в ответ изображение</p><br>
+        <p><span class="red">&lt;script src=""&gt;</span> может делать то же самое</p><br>
+        <p><b>Без перезагрузки страницы!</b></p>
+    </div>
+
+        <div class="step slide" data-x="3000" data-y="-1500">
+            <h1><b>Сложности</b> работы по извлечению данных <br>заставили разработчиков придумать более удобный <b class="red">API</b>.</h1><br>
+            <p>Позвольте представить - объект <span class="red">XMLHttpReqest</span>.</p><br>
+            <p><b>Экземпляр</b> этого объекта отправляет <b>запрос</b> на сервер, <br>получает <b>ответ</b> <br>и применяет к ответу <b>call-back функцию</b>.</p><br>
+            <p>И конечно, все это без перезагрузки страницы!</p>
+        </div>
+
+
+    <div class="step slide h100" data-x="4000" data-y="-1500">
+          <p><span class="re">Утреняя</span> Умственная зарядка:</p>
+          <ol>
+            <li><p>Делай раз: Создай экземпляр объекта.</p> </li>
+            <li><p>Делай два: Подготовь текст запроса серверу.</p></li>
+            <li><p>Делай три: Подготовь обработку ответа сервера.</p></li>
+            <li><p>Делай четыре: Отправь запрос серверу.</p></li>
+          </ol>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="-1500">
+        <span class="try">А сервер</span>
+        <h1>ответит<sup>?!</sup></h1>
+        <img src="img/ia.jpg" alt="">
+        <span class="footnote"><sup>*</sup> to be continue</span>
+    </div>
+
+    <div id="its" class="step" data-x="6000" data-y="-1500" data-rotate="180" >
+        <p>Плохая новость: <br><strong>случится может всякое</strong> <br/>
+        Хорошая новость:<br/>
+        <strong>объект готов ко всему.</strong></p>
+
+    </div>
+
+    <div id="big" class="step" data-x="7000" data-y="-1500" >
+        <p><span class="red">Универсальное </span><b>request.onreadystatechange = callback</b> <span class="thoughts red">событие</span></p>
+        <p>любое изменение состояние объекта вызовет созданную нами функцию callback </p>
+    </div>
+
+    <div id="tiny" class="step" data-x="8000" data-y="-150" >
+       <h1><b class="red">&nbsp;&nbsp; request.readyState</b></h1>
+        <p>а какие бывают <b>состояния </b></p>
+        <p>?</p>
+    </div>
+
+    <div class="step slide" data-x="9000" data-y="-1850" >
+        <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
+        <pre>
+          0	UNSENT	Объект был создан.
+                     <i class="red">open() ещё не вызывался.</i>
+          1	OPENED
+                     <i class="red">open() был вызван.</i>
+          2	HEADERS_RECEIVED
+                    <i class="red">send() был вызван, </i>
+                               <i class="red">доступны заголовки (headers) и статус.</i>
+          3	LOADING
+                  <i class="red">Загрузка;</i>
+                               <i class="red">responseText содержит частичные данные.</i>
+          4	DONE
+                   <i class="red">Операция полностью завершена.</i>
+        </pre>
+        <p>Дождитесь request.readyState === 4 и можете работать!</p>
+        <p>Данные с сервера могут быть <b>XML, JSON, бинарные и  т.п.</b></p>
+    </div>
+
+    <div id="imagination" class="step" data-x="10000" data-y="-1500">
+        <p>А также <b>мы сами</b> можем вмешаться в <b class="imagination">процесс:</b></p>
+        <p>request.abort(); </p>
+        <p class="red">request.readyState == 0</p>
+        <p>request.timeout = 2000;  </p>
+        <p class="red">request.timeout =&gt; callback</p>
+    </div>
+
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>Want to know more?</p>
+        <q>use the source, Luke!</q>
+        <p class="red">https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest</p>
+        <p class="red">http://xmlhttprequest.ru/</p>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>Try, Luke!</p>
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">А сейчас мы напишем</span> <span class="you">сode</span> <span class="noticed"></span> <span class="its">виджета</span> <span class="in"></span> <b>"Курс обмена валют"<sup>*</sup></b>?</p>
+        <span class="footnote">* Да, это API Приватбанка ;)</span>
+        <p class="red">https://jsfiddle.net/4p98fpax/</p>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script src="js/libDOM.js"></script>
+<!-- <script src="js/main.js"></script> -->
+<script src="js/xml.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Хранение данных на стороне клиента</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-6000" data-y="-1500">
+        <q>Зачем хранить  <b>данные клиента?</b></q>
+        <br>
+        <ol>
+          <li>Идентификация сессии</li>
+          <li>Браузерные игры</li>
+          <li>Высоконагруженные порталы</li>
+          <li>Образовательные приложения (тесты)</li>
+          <li>Автозаполнение</li>
+        </ol>
+    </div>
+
+    <div class="step slide" data-x="-5000" data-y="-1500">
+       <h1>Какие существуют системы хранения данных?</h1>
+       <ol>
+         <li><b>Cookie:</b> поддержка всеми браузерами 100%. Недостаток: отключается пользователем</li>
+         <li><b>Web Strorage:</b> поддержка современными браузерами 94,75%. Рекомендуемое к использованию</li>
+         <li><b>Indexed DB:</b> поддержка современными браузерами ~84% кроме OperaMini</li>
+         <li><b>Web SQL:</b> поддержка современными браузерами 81%. Недостаток: не поддерживается (и не будут)  FF, Edge, IE, OperaMini</li>
+       </ol>
+    </div>
+
+    <div class="step slide" data-x="-4000" data-y="-1500">
+      <p><span class="code">console.log("Cookie следят за этим браузером ?", navigator.cookieEnabled === true)</span></p>
+      <p>Ответ сайта: <span class="code" id="spy"></span></p>
+      <p> А что записано в cookie для этого сайта: <span class="code">console.log("document.cookie")</span> ?</p>
+      <p>Ответ сайта: <span class="code" id="txt"></span></p>
+      <p>Этот сайт с отсутствующим cookie.</p>
+      <p>Давайте посмотрим что можно с этим сделать.</p>
+
+    </div>
+
+
+    <div  class="step slide" data-x="-3000" data-y="-1500" >
+      <h1>Осторожно: cookie имеют ограничение на размер файла в 4Кб.</h1>
+      <h1>CRUD</h1>
+      <p><b>Create:</b>  <span class="code">document.cookie = "user_name=Bart";</span></p>
+      <p><b>Read:  </b>  <span class="code">document.cookie</span></p>
+      <p><b>Update:</b>  <span class="code">document.cookie = "user_name=Bart Simpson";</span></p>
+      <p><b>Delete:</b>  <span class="code">document.cookie = "user_name=Bart;max-age=-1"; </span></p>
+
+    </div>
+
+    <div class="step slide" data-x="850" data-y="-2000" data-rotate="90">
+        <h1>Вот как это выглядит на странице браузера в web-inspector:</h1>
+        <img src="img/terminal.jpg" alt="terminal cookie" width="800px">
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="2">
+        <p>Неудобно,  <b>зависимость от USER</b> <span class="thoughts">всего 4Кб</span></p>
+    </div>
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>localeStorage <b>and</b> localeSession</p>
+    </div>
+
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p> -->
+        <p><b class="positioning">C</b><b class="scaling">localStorage.<i class="red">setItem(name, value)</i></b></p>
+        <p><b class="positioning">R</b><b class="scaling">localStorage.<i class="red">getItem(name)</i></b></p>
+        <p><b class="positioning">U</b><b class="scaling">Снова localStorage.<i class="red">setItem(name, value)</i></b></p>
+        <p><b class="positioning">D</b><b class="scaling">localStorage.<i class="red">removeItem(name)</i></b></p>
+    </div>
+
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>Изучение  <b>работы</b> с базами данных <b class="imagination">это отдельный курс.</b></p>
+        <p>Кроме CRUD необходимо еще много других skill</p>
+    </div>
+</div>
+
+
+
+<script src="js/impress.js"></script>
+<script src="js/libDOM.js"></script>
+<script src="js/test.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

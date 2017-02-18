@@ -1,0 +1,40 @@
+code {
+  color: hsl(250, 30%, 30%);
+}
+
+.fun {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.red {
+  color: red;
+}
+
+.re {
+  text-decoration: line-through;;
+}
+
+.toCenter {
+  text-align: center;
+}
+/*
+#id {
+  background-image: url(../img/id.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+}
+*/
+#big {
+  background-image: url(../img/race.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+  width: 800px;
+}
+
+.small{
+  font-size: 14px;
+}
