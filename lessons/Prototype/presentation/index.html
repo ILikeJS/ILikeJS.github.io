@@ -1,0 +1,464 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>Topic</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+
+
+    <div id="impress">
+
+        <div class="step slide" data-x="-8000" data-y="-1500" id="eight">
+            <p>Переменные при присвоении могут получать данные </p>
+            <p class="red">по значению</p>
+            <pre>
+              var a = 2;
+              var b = a;
+              a = 3;
+
+              // 3 или 2 ?
+              b == 3; <span class="hide red">false</span>
+              b == 2; <span class="hide red">true</span>
+            </pre>
+            <p class="red">по ссылке</p>
+            <pre>var arr = [2, 9];
+                 var brr = arr;
+                 arr[0] = 3;
+
+                 // 3 или 2 ?
+                 brr[0] == 3; <span class="hide red">true</span>
+                 brr[0] == 2; <span class="hide red">false</span>
+            </pre>
+        </div>
+
+        <div class="step slide" data-x="-7000" data-y="-1500">
+            <p><b>Объект</b> - это <b><i>ссылочный тип</i></b>, способный хранить свойства и методы.</p>
+            <br>
+            <p>Для удобства работы с объектами требуется нечто, что позволяло бы <i>легко манипулировать данными:</i></p>
+            <br>
+            <p>- делать независимые <b>clone</b> со всеми значениями источника</p>
+            <p>- устанавливать <b>зависимости</b> одних объектов от других</p>
+            <p>- изменять содержимое независимой копий, <b>не изменяя источник</b></p>
+            <br>
+              <p>Все эти идеи лежат в основе <b>OOП</b> - <br>Объектно Ориентированного Программирования</p>
+        </div>
+
+        <div class="step slide" data-x="-6000" data-y="-1500">
+            <p>Принципы ООП:</p>
+            <br>
+            <p><i class="red">Абстракция</i> - что выбрать объектом/классом?</p><br>
+            <p><i class="red">Наследование</i> - как сделать копии другого объекта/класса?</p><br>
+            <p><i class="red">Инкапсуляция</i> - как сделать копии максимально независимыми?</p><br>
+            <p><i class="red">Полиморфизм</i> - как копии реализовать индивидуальное отличие?</p>
+        </div>
+
+        <div class="step slide" data-x="-5000" data-y="-1500">
+            <p>Пример ООП: абстракция, наследование и полиморфизм</p>
+            <pre>
+            <i class="red">// абстракция</i>
+            <b>function Family () {};</b>
+            Family.prototype.surname = "Simpson";
+
+            var boy = new Family ();
+            var girl = new Family ();
+            girl.nick = "Lise";
+            boy.nick = "Bart";
+
+            <i class="red">// Simpson - наследование</i>
+            boy.surname;     // Simpson
+            girl.surname;    // Simpson
+
+            <i class="red">// Bart и Lise- полиморфизм</i>
+            boy.nick;        // Bart
+            girl.nick;       // Lise
+          </pre>
+        </div>
+
+        <div class="step slide" data-x="-4000" data-y="-1500">
+            <p><i class="red">Инкапсулция</i> - реализуется с помощью функций, т.к. они обладают возможностью создавать ограниченную область видимости и реализуют замыкания.</p>
+            <pre>
+              // функция - конструктор
+              <b>function Family () {</b>
+                 this.surname = 'Simpson';
+                 <b>// var использует область видимости функции</b>
+                  <span class="red">var cardNumber = '123 456 789 000';</span>
+                  this.getCardNumber = function () {
+                      return cardNumber;
+                 };
+              }
+
+              var boy = new Family ();
+              boy.surname;                       // Simpson
+              <span class="red">boy.cardNumber;            // undefined</span>
+              boy.getCardNumber();      // 123 456 789 000
+            </pre>
+        </div>
+
+        <div class="step slide" data-x="-3000" data-y="-1500">
+            <p><b>JavaScript</b> практически единственный массовый язык программирования, реализующий <i class="red">прототипное наследование.</i></p>
+            <p>Прототипное наследование может имитировать <i class="red">классическое наследование.</i> Обратное - весьма затруднительно.</p>
+            <p>Классическое - происходит от слова "класс" и ни имеет других смыслов.</p>
+            <p>В классическом наследовании реальные объекты являются копией некоторого шаблона - класса, не являющегося объектом.</p>
+            <p>В прототипном наследовании реальные объекты являются копией других объектов-прототипов (или null).</p>
+            <p>В обеих вариантах (классическом и прототипном) для создания объекта используется <i class="red">функция-конструктор.</i></p>
+        </div>
+        <div class="step slide" data-x="-2500" data-y="-4500" id="classic">
+        </div>
+        <div class="step slide" data-x="-1500" data-y="-4500" id="prototip">
+        </div>
+        <div class="step slide" data-x="-2000" data-y="-1500">
+            <p>Прототипное наследование похоже на HTML+CSS</p>
+            <br>
+            <p>Вложенные элементы <b>наследуют</b> свойство CSS предка <i>color</i>.</p>
+            <p>Мы можем <b>переопределить</b> color для любого потомка.</p>
+            <p>Если у <b>элемента</b> есть потомки, то изменятся и они.</p>
+            <p>Проблема двух равноправных предков (diamond inheritance) исключена.</p>
+            <br>
+            <p>Пример <a href="https://jsfiddle.net/g4m2kppv/1/">https://jsfiddle.net/g4m2kppv/1/ </a></p>
+             <br>
+            <p>JS - <b class="red">объект-прототип</b> является тем же, что и <b>родительский</b> элемент для HTML/CSS.</p>
+        </div>
+
+        <div class="step slide" data-x="-1000" data-y="-1500">
+          <p> Идея протипного наследования <b><i>элементарна</i></b>.</p>
+          <br>
+          <p> Пример реализации <b><i>НЕ В JavaScript</i></b></p>
+          <p> <b class="code">objectA = objectB</b> // objectA получил <b class="blue">ссылку</b> на objectB</p>
+          <p> <b class="code">objectC := objectD</b> // objectC стал <b class="blue">клоном</b> objectD</p>
+          <br>
+          <p> Проблема в том, что маркетологи потребовали от <b><i>JavaScript</i></b> синтаксиса, максимально похожего на <b><i>Java</i></b></p>
+          <p> На разработку было 10 дней, поэтому получилось на первый взгляд понятно, но с множеством скрытых механизмов.</p>
+          <p> Хорошая новость: Знание всех этих механизмов для <b><i>Junior</i></b> не требуется.</p>
+          <p> Плохая новость: требуется знание о существовании этих механизмов.</p>
+        </div>
+        <div class="step slide" data-x="-2500" data-y="-6500">
+          <img src="img/notake.jpg" alt="no take">
+          <a href="https://www.youtube.com/watch?v=7TGHRRpHaZU">The expert</a>
+          <p><i>"Нельзя вот так просто взять и клонировать объект!"</i></p>
+          <p class="small">Маркетинг отделу разработки.</p>
+          <p>Для сходства с Java требуется:
+            <br>1) <b><i>класс</i></b> - описание объекта (свойство и методы), но без присвоенных значений. Чертеж
+            <br>2) <b><i>конструктор</i></b> - метод, который присваивает значения свойствам и методам класса
+            <br>3) <b><i>оператор new</i></b>, который создает пустой объект на основе имени класса и вызывает конструктор для заполнения данными</p>
+          <p>Для прототипного наследования нужен просто <b><i>объект-прототип.</i></b></p>
+        </div>
+
+        <div class="step slide" data-x="-1500" data-y="-6500" >
+          <p class="right"><b><i>Рецепт ООП по JavaScript:</i></b></p>
+          <p class="center">Часть 1-я, прототипоподобная: <i class="small">objectC := objectD</i></p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;По команде создаем пустой объект.</p>
+          <p> В скрытом <i class="small">(от маркетинга)</i> свойстве <b class="blue">[[Prorotype]]</b>
+            делаем место под ссылку на объект-прототип <b>prototype</b>. </p>
+          <p>Создаем метод для записи в [[Prototype]] с названием <b class="blue">"constructor"</b></p>
+          <p>Метод помещаем в <b>объект</b> <b class="blue">prototype</b></p>
+          <p class="center">Часть 2-я, Javaподобная.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Создаем функцию - класс.</p>
+          <p><b class="blue">Функция-класс</b> хранит свойства и умеет заполнять ими объект.</p>
+          <p>Оператор <b class="blue">new</b> дает команду создать пустой объект на основе функции-класса.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Часть 3-я (невидимая). Соеденим все вместе:</p>
+          <p><b>prototype</b> прячем в функции-классе</p>
+          <p>Метод <b>"constructor"</b> прячем в <b>prototype</b> </p>
+          <p><b class="blue">[[Prorotype]]</b> <b class="red">&lt;=link</b> <b class="blue">"constructor"</b> <b>prototype</b>.</p>
+        </div>
+
+        <div class="step slide" data-x="-500" data-y="-6500" id="proto">
+          <p>В итоге, получилась неожиданно мощный инструмент:
+            <br>1)с копированием данных от предка
+            <br>2)с возможностью переопределить данные, сохраняя в запасе данные предка по ссылке</p>
+        </div>
+        <div class="step slide" data-x="0" data-y="-1500" id="constr0">
+          <p class="small">"А можно поме-е-дленее? Я записываю...<span class=""></span>"</p>
+          <p>Можно: любая <i class="red">функция является также объектом</i>, в который можно добавлять свойства и методы.</p>
+          <br>
+          <pre class="code">
+            var Foo = function () {};
+            Foo.a = 2;
+            Foo.b = 3;
+            Foo.add = function (x, y) { return x + y;};
+            Foo.add(Foo.a, Foo.b);  // 5
+          </pre>
+        </div>
+
+
+        <div class="step slide" data-x="1000" data-y="-1500" id="constr1">
+          <p>Любая функция по умолчанию имеет свойство <i class="red">prototype</i> в качестве
+            значения которого выступает объект с одним методом - <i class="red">constructor</i></p>
+        </div>
+        <div class="step slide" data-x="1000" data-y="-5500" >
+          <pre class="code">
+            function <b>Foo</b> () {
+              <b>example</b>: {
+                text0: "Я <b><i>свойство</i></b> объекта <b class="red">example</b>",
+                text1: "<b class="red">example</b> - <b><i>свойство</i></b> функции Foo",
+              }
+            }
+          </pre>
+          <pre class="code">
+            function <b>Foo</b> () {
+              <b>prototype</b>: {
+                text0: "Я <b><i>свойство</i></b> объекта <b class="red">prototype</b>",
+                text1: "<b class="red">prototype</b> - <b><i>свойство</i></b> функции Foo",
+              }
+            }
+          </pre>
+          <div class="small">
+          <p>Заявление:</p>
+          <p>text0: "Прошу меня переопределить в метод constructor"</p>
+          <p>Резолюция: "Переопределить."</p>
+          <p>Подпись: JS</p>
+        </div>
+        </div>
+
+        <div class="step slide" data-x="2000" data-y="-1500" id="constr2">
+          <p>Чтобы реализовать наследование мы должны сделать запись в
+            объект-<b>prototype</b> функции-класса.</p>
+        </div>
+
+        <div class="step slide" data-x="3000" data-y="-1500" id="constr3">
+          <p><b>Новый объект</b>, созданный на основании функции-класса, получит
+            именованое свойство, хранящийся в <b>объекте</b> функции-класса.</p>
+        </div>
+
+        <div class="step slide" data-x="4000" data-y="-1500" id="constr4">
+          <p>Если объект изменит значение свойства, то тем самым создаст новое свойство внутри объекта.</p>
+          <p>cсылочный тип =&gt; по значению.</p>
+        </div>
+
+        <div class="step slide" data-x="5000" data-y="-1500" id="constr5">
+          <p>Можно наследовать свойства и методы от любого объекта, например от того, который изменил значение свойства из прототипа.</p>
+          <p>Метод Object.create(target) упростит наследование:</p>
+        </div>
+
+        <div class="step slide" data-x="6000" data-y="-1500" id="constr6">
+          <p>"А что будет, если добавить, а потом отнять?"</p>
+          <p>В большой <i class="re">семье</i> цепочке наследования будь бдителен:</p>
+          <br>
+          <pre class="code">
+    function Family () {}; Family.prototype.surname = "Simpson";
+    var boy = new Family ();  boy.surname;            <i class="red">//"Simpson"</i>
+
+    // можно переопределить свойство объекта
+    boy.surname = "Fry"; boy; <i class="red">            //Object { surname: "Fry" }</i>
+
+    var girl = new Family (); girl.surname;             <i class="red">//"Simpson"</i>
+    var nextBoy = Object.create(boy); nextBoy.surname;  <i class="red">//"Fry"</i>
+    delete nextBoy.surname;            <i class="red">//true</i>
+    nextBoy.surname;                         <i class="red">//"Fry"</i>
+    delete boy.surname;                    <i class="red">//true</i>
+
+    // не потеряв данных предка
+    nextBoy.surname;                        <i class="red">//"Simpson"</i>
+
+          </pre>
+        </div>
+
+        <div class="step slide" data-x="7000" data-y="-1500" id="itog">
+          <p>Цепочка прототипов.</p>
+          <p>Собственные свойства (Own Properties)</p>
+          <p>Свойства прототипа (Prototype Propertie)</p>
+          <img src="img/chain3.png" alt="chain" id="chain2">
+        </div>
+
+        <div class="step slide" data-x="8000" data-y="-1500" id="attention">
+          <p>Метод <i class="red">__proto__</i> позволяет изменить ссылку объекта и указать от кого теперь наследовать свойства.</p>
+          <p>Этот метод официально признан в <b>ES6</b> но производители браузеров <i class="red">НЕ РЕКОМЕНДУЮТ</i> его использование.</p>
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/proto">LINK: FireFox</a>
+        </div>
+
+
+        <div class="step slide" data-x="9000" data-y="-1500" id="chain">
+            <p>Производительность:</p>
+            <p>Длинная цепочка поиска увеличивает время работы программы.</p>
+            <p>А хранение всех данных в каждом объекте занимает больше место в памяти.</p>
+            <p>Важно искать баланс.</p>
+        </div>
+        <div class="step slide" data-x="10000" data-y="-1500" id="fools">
+            <p>Схема сылок __proto__ и prototype</p>
+            <p>На основе схемы взятой <a href="http://bolinfest.com/javascript/misunderstood.html">здесь.</a></p>
+        </div>
+
+        <div class="step slide" data-x="11000" data-y="-1500">
+          <p>Классическое наследование с Object.create()</p>
+          <p class="small">Object.create(proto, args) создает новый объект</p>
+          <p class="small">1-й аргумент (обязательный) - объект-прототип или null</p>
+          <p class="small">2-й аргумент (необязательный) - свойства для нового объекта в расширенном синтаксисе (полиморфизм)</p>
+            <pre class="code small">
+              var mafia = { surname: "Simpson" };
+              // <b>var homer = new mafia (); =&gt; Exception: TypeError: mafia is not a constructor</b>
+              <i class="red"><b>Object.create</b>(mafia); homer.nick = 'Homer';</i>;
+              Или
+              <i class="red">var homer = <b>Object.create</b>(mafia, {
+                 <b>nick:</b> { </i>
+                   <i class="red">value: <b>"Homer",</b>
+                   writable: true,     // delete или смена значения
+                   enumerable: true,   // доступность для "for in"
+                   configurable: true  // смена значений writable, enumerable
+                }
+             });</i>
+             homer.nick + " " + homer.surname;   //  Homer Simpson
+            </pre>
+
+        </div>
+<div class="step slide" data-x="11000" data-y="-5500">
+  <p>Кое-что о скрытых свойствах объекта:</p>
+  <p>Метод freeze()</p>
+  <pre class="code">
+    const hot = {
+      foo: 'bar'
+    };
+    delete hot.foo;
+    hot.foo; // undefined
+
+    const cool = {
+      foo: 'bar'
+    };
+    // зафиксируем все свойства объекта
+    Object.freeze(cool);
+    delete cool.foo;
+    cool.foo; //  "bar"
+  </pre>
+  </div>
+  <div class="step slide" data-x="12000" data-y="-5500">
+  <p>Можно "заморозить" отдельное свойство: </p>
+  <p>Метод defineProperty</p>
+  <pre class="code">
+    Object.defineProperty(hot, 'foo', {
+      value: 'bar' ,
+      configurable: false
+    });
+    hot.foo; // bar
+    delete hot.foo;
+    hot.foo; // bar
+  </pre>
+  <p>Подробонее здесь:</p>
+  <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>
+</div>
+        <div class="step slide" data-x="12000" data-y="-1500">
+          <p>Копирование свойств из множетсва объектов -</p> <p class="right"><b>Object.assign()</b></p>
+          <pre class="code">
+            var <b><i>family</i></b> = {
+               <i class="blue">name</i>: "Adam",  // будет перезаписано
+               surname: "Simpson"
+            };
+            var <b>boy</b> = {
+               <i class="blue">name</i>: "Bart"
+            };
+
+            // порядок аргументов имеет значение
+            // свойства 1-го аргумента могут перезаписаться
+
+            var bart = <i class="red">Object.assign</i>(<b><i>family</i></b>, <b>boy</b>);
+            bart.<i class="blue">name</i> + " " + bart.surname;
+            //     Bart Simpson
+          </pre>
+        </div>
+<!-- <div class="step slide" data-x="12000" data-y="-5500">
+  <pre class="code">
+
+  </pre>
+</div> -->
+
+        <div class="step slide" data-x="13000" data-y="-1500">
+          <p>Constructor.call(proto, args) </p>
+          <pre class="code">
+
+            var Family = function (<b>surname</b>) {
+               <b>this.surname = surname || "Simpson";</b>
+            };
+
+            var Boy = function (name, <b>surname</b>) {
+               this.name = name || "Bart";
+               <b>Family.<i class="red">call</i>(this, surname);</b>
+            };
+
+            var bart = new Boy <b>()</b>;
+            bart.name + " " + bart.surname;
+            // Bart Simpson
+
+            var fry = new Boy <b>("Philip", "Fry")</b>;
+            fry.name + " " + fry.surname;
+            // Philip Fry
+
+          </pre>
+
+        </div>
+        <div class="step slide" data-x="14000" data-y="-1500">
+          <p>ES6 - имитация формы классического наследования</p>
+          <pre class="code">
+        <b class="red">class</b> <b><i>S</i>impleDate</b> {
+          <i class="red">constructor</i> (day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+          }
+        }
+        const today = <i class="red">new</i> <b><i>S</i>impleDate</b>(28, 2, 2017);
+
+        // наследование
+        <b class="red">class</b> <b><i>O</i>therDate</b> <b class="red">extends</b> <b><i>S</i>impleDate</b> {
+          <i class="red">constructor</i> (day, month, year) {
+            <b class="red">super</b>(day, month, year)
+          }
+        }
+        const tomorrow = <i class="red">new</i> <b><i>O</i>therDate</b>(01, 3, 2017)
+          </pre>
+        </div>
+        <div class="step slide" data-x="15000" data-y="-1500">
+          <p> Для закрепления материала - метод
+            <b><i class="red">hasOwnProperty()</i></b></p>
+        <pre class="code">
+          var Family = function() {};
+          Family.<b>prototype</b>.surname = 'Simpson';
+          var boy = new Family ();
+          boy.name = 'Bart';
+          var text = function (obj) {
+            var tmp = '';
+            for (n in obj)  tmp += ' ' + obj[n];
+            return tmp;
+          }
+          text(boy);  // Bart Simpson
+          var textPure = function (obj) {
+            var tmp = '';
+            for (var n in obj) {
+              if (<b>obj.hasOwnProperty(n))</b> tmp += ' ' + obj[n];
+            } return tmp;
+          };
+          textPure(boy); // Bart
+        </pre>
+        </div>
+<div class="step slide" data-x="16000" data-y="-1500">
+  <p><b>monkey patching</b></p><br>
+  <p>Так называется неверное применение модели прототипного наследования —
+    расширение прототипа Object.prototype или прототипов нативных
+    (т.е., базовых) объектов JavaScrip</p>
+    <br>
+    <p>Единственным оправданием для расширения базовых прототипов может быть
+      только эмуляция возможностей более новых движков JavaScript для более
+      старых.</p>
+    </div>
+    </div>
+
+
+
+    <script src="js/impress.js"></script>
+    <!-- <script src="js/libDOM.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/perfomance.js"></script> -->
+    <script>
+        impress().init();
+    </script>
+
+</body>
+
+</html>

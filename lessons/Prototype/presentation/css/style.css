@@ -1,0 +1,166 @@
+.code {
+  color: hsl(250, 30%, 30%);
+}
+
+.fun {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.red {
+  color: red;
+}
+
+.re {
+  text-decoration: line-through;;
+}
+
+.toCenter {
+  text-align: center;
+}
+/*
+#id {
+  background-image: url(../img/id.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+}
+*/
+#classic {
+  background-image: url(../img/classes_and_objects.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+}
+#prototip {
+  background-image: url(../img/proto_and_objects.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+}
+
+.hide {
+  opacity: 0.03;
+}
+
+.hide:hover {
+  opacity: 0.9;
+}
+
+#eight {
+  background-image: url(../img/links.png);
+  background-repeat: no-repeat;
+  background-position: 500px 20px  ;
+  background-size: auto;
+  /*width: 800px;*/
+}
+
+#constr0 {
+  background-image: url(../img/fooobj.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 80%;
+}
+
+#constr1 {
+  background-image: url(../img/foo.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 80%;
+}
+
+#constr2 {
+  background-image: url(../img/simps2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#constr3 {
+  background-image: url(../img/simps3.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#constr4 {
+  background-image: url(../img/simps4.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#constr5 {
+  background-image: url(../img/simps5.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#attention {
+  background-image: url(../img/attention.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#itog {
+  background-image: url(../img/simps6.png);
+  background-repeat: no-repeat;
+  background-position: center right;;
+  background-size: 45%;
+}
+
+#chain{
+  background-image: url(../img/chain.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 95%;
+}
+
+#proto{
+  background-image: url(../img/prototype.png);
+  background-repeat: no-repeat;
+  background-position: bottom;;
+  background-size: 40%;
+}
+
+#fools{
+  background-image: url(../img/fulls.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 80%;
+}
+
+#smile{
+  background-image: url(../img/smile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+
+#chain2 {
+  position: absolute;
+  width: 50%;
+  top: 250px;
+}
+
+.small {
+  font-size: 18px;
+}
+
+.blue {
+  color: blue;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
