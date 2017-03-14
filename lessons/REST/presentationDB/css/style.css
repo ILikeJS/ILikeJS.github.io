@@ -1,0 +1,125 @@
+.code {
+  color: hsl(250, 30%, 30%);
+}
+
+.fun {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.m100 {
+  float:right;
+  color: lightgrey;
+}
+
+.red {
+  color: red;
+}
+
+.grey {
+  color: darkblue;
+}
+
+.re {
+  text-decoration: line-through;;
+}
+
+.toCenter {
+  text-align: center;
+}
+
+.small {
+  font-size: 80%;
+  color: black;
+}
+/*
+#id {
+  background-image: url(../img/id.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+}
+*/
+.slide {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#slide_2 {
+  background-image: url(../img/restclient.png);
+}
+
+#slide_2_1 {
+  background-image: url(../img/header.png);
+}
+
+#slide_2_2 {
+  background-image: url(../img/rest_get.png);
+}
+
+#slide_2_3 {
+  background-image: url(../img/rest_post.png);
+}
+
+#slide_2_4 {
+  background-image: url(../img/rest_put.png);
+}
+
+#slide_5 {
+  background-image: url(../img/serverMDB.jpg);
+}
+
+#slide_6 {
+  background-image: url(../img/plane.jpg);
+}
+
+#slide_7 {
+  background-image: url(../img/plane2.jpg);
+}
+
+#slide_8 {
+  background-image: url(../img/db_name.jpg);
+}
+
+#slide_9 {
+  background-image: url(../img/user.jpg);
+}
+
+#slide_10 {
+  background-image: url(../img/connect.jpg);
+}
+
+
+#slide_12 {
+  background-image: url(../img/no.jpg);
+  background-position: center;
+}
+
+#slide_13 {
+  background-image: url(../img/routing.jpg);
+}
+
+#slide_15 {
+  background-image: url(../img/server.jpg);
+}
+
+#slide_16 {
+  background-image: url(../img/app.jpg);
+}
+
+#slide_17 {
+  background-image: url(../img/get.jpg);
+}
+
+#slide_18 {
+  background-image: url(../img/post.jpg);
+}
+
+#slide_19 {
+  background-image: url(../img/put.jpg);
+}
+
+#slide_20 {
+  background-image: url(../img/del.jpg);
+}

@@ -1,0 +1,235 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>Topic</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+
+<div id="impress">
+
+    <div id="slide_0" class="step slide" data-x="-32000" data-y="-1500">
+      <p>REST</p>
+      <br>
+      <p>Что такое <b class="red">REST</b>.</p>
+      <p>- Это <b><i>стиль архитектуры</i></b> для распределенных систем ( <b>www</b> )</p>
+      <p>- Термин REST был введен в 2000 году <b><i>Роем Филдингом</i></b>, одним из авторов HTTP-протокола</p>
+      <p>- Системы, поддерживающие REST, называются <b><i class="red">RESTful</i></b>-системами.</p>
+      <br>
+      <p>Почему RESP?</p>
+      <p>Архитектура для web-application популярна потому что:</p>
+      <p>- очень простой интерфейс управления информацией</p>
+      <p>- простота основана на уникальности идентификатора еденицы информации</p>
+      <p>- и <b>CRUD</b> на основе протокола HTTP.</p>
+      <p>- Уникальность информации состоит из URL строго заданного формата - <b>адреса http/https</b>.</p>
+      <p>- 4 команды <b>CRUD</b>: </p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;GET - R read (получить)</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;PUT - C create, U update (добавить, заменить)</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;POST - C create, U update, D delete (добавить, заменить, удалить)</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;DELETE - D delete (удалить)</p>
+
+    </div>
+
+    <div id="slide_1" class="step slide" data-x="-30000" data-y="-1500">
+      <p>REST</p>
+      <p> URL подобен <i>первичному ключу</i> для единицы данных</p>
+      <pre class="code">
+        ua/kiev/kreshatic/19/
+        GET /ua - получить список всех населенных пунктов
+        GET /ua/kiev/kreshatic - получить список всех зданий на Крещатике
+        PUT ua/kiev/kreshatic/9 - добавить здание на Крещатик
+        POST ua/kiev/kreshatic/19/ - изменить здание
+        DELETE ua/kiev/kreshatic/9 - удалить здание
+      </pre>
+      <br>
+      <p>Инструменты для создания тестовых запросов <br>( restclient + browserName):</p>
+      <br>
+      <p class="code">g postman rest client</p>
+      <br>
+      <p class="code">FireFox: https://addons.mozilla.org/uk/firefox/addon/restclient/</p>
+      <br>
+      <p class="code">Chrome: https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo</p>
+
+    </div>
+
+    <div id="slide_2" class="step slide" data-x="-28000" data-y="-1500">
+      <p>REST client</p>
+    </div>
+
+    <div id="slide_2_1" class="step slide" data-x="-26000" data-y="-1500">
+      <p>REST client: настройка заголовка</p>
+      <p>Для POST и PUT важно установить правильный заголовок, например для JSON:</p>
+      <p>name: Content-Type</p>
+      <p>value: application/json</p>
+    </div>
+
+    <div id="slide_3" class="step slide" data-x="-24000" data-y="-1500">
+      <p>REST и JSON</p>
+      <p><b>REST</b> запросы отлично работают с <b>JSON</b>.</p>
+      <p> Для создания web-application и проверки REST запростов можно использовать <i class="red">тестовый json-server</i></p>
+      <p class="small">Подробнее здесь: https://github.com/typicode/json-server</p>
+      <br>
+      <p>CLI</p>
+      <p>Install global</p>
+      <pre class="code">
+        <i>npm install -g json-server</i>
+      </pre>
+      <p>Install local</p><pre class="code">
+        <i>mkdir project
+        cd project
+        npm init
+        npm install json-server --save-dev
+        touch db.json
+        json-server --watch db.json --port 3333
+      </i>
+      </pre>
+      <p>Создан и запущее json-server с пустой базой данной db.json</p>
+    </div>
+
+    <div id="slide_4" class="step slide" data-x="-22000" data-y="-1500">
+      <p>REST и CRUD</p>
+      <p>Теперь мы можем имитировать отправку REST запросов к базе данных со
+        страницы нашего приложения.</p>
+        <br>
+      <p>Работа с реальной базой данной немного сложнее, но этот пример позволит
+      отладить логику приложения до подключения БД.</p>
+    </div>
+
+
+    <div id="slide_2_2" class="step slide" data-x="-20000" data-y="-1500">
+      <p>REST client: GET</p>
+      <p>Не нуждается в дополнительной информации в заголовке</p>
+    </div>
+
+    <div id="slide_2_3" class="step slide" data-x="-18000" data-y="-1500">
+      <p>REST client: POST</p>
+      <p>При работе с базой данных обязательно создавать id для каждой новой записи</p>
+    </div>
+
+
+    <div id="slide_2_4" class="step slide" data-x="-16000" data-y="-1500">
+      <p>REST client: PUT update</p>
+      <p>id используется для update в URL и в JSON</p>
+    </div>
+
+
+    <div id="slide_5" class="step slide" data-x="-14000" data-y="-1500">
+      <p>REST работа с сервером баз данных MongoDB</p>
+      <p>Зарегистрируемся и получим бесплатный аккаунт с 500Mb сервера MongoDB:</p>
+      <a href="https://mlab.com/">https://mlab.com/</a>
+    </div>
+
+    <div id="slide_6" class="step slide" data-x="-12000" data-y="-1500">
+      <p>REST выбираем план и создаем БД</p>
+    </div>
+    <div id="slide_7" class="step slide" data-x="-10000" data-y="-1500">
+      <p>REST выбираем план и создаем БД</p>
+    </div>
+
+    <div id="slide_8" class="step slide" data-x="-8000" data-y="-1500">
+      <p>REST выбираем план и создаем БД</p>
+    </div>
+    <div id="slide_9" class="step slide" data-x="-6000" data-y="-1500">
+      <p>REST url создаем пользователя</p>
+    </div>
+
+    <div id="slide_10" class="step slide" data-x="-4000" data-y="-1500">
+      <p>REST url для обращения к БД</p>
+      <img src="img/urlToBD.jpg" alt="url to BD" width="700">
+    </div>
+    <div id="slide_11" class="step slide" data-x="-2000" data-y="-1500">
+      <p>REST основные комманды MongoDB</p>
+      <p>On-line тренажер для работы с MongoDB</p>
+      <a href="https://www.tutorialspoint.com/mongodb_terminal_online.php">
+        https://www.tutorialspoint.com/mongodb_terminal_online.php
+      </a>
+      <ol class="code">
+        <li>mongo</li>
+        <li>mongo</li>
+        <li>show dbs   <i class="m100">// db_name</i></li>
+        <li>use <i class="grey">db_name</i></li>
+        <li>db.ceateCollections("<i class="grey">family</i>", {size: <i class="grey">10000</i>})</li>
+        <li>show collections  <i class="m100">// family</i></li>
+        <li>db.<i class="grey">family</i>.find() <i class="m100">// покажет всю коллекцию</i></li>
+        <li>db.<i class="grey">family</i>.insert(<i class="grey">{surname: "Simpson", name: "Lise", age: 7}</i>)</li>
+        <li>db.<i class="grey">family</i>.save(<i class="grey">{surname: "Simpson", name: "Bart", age: 9}</i>)</li>
+        <li>db.<i class="grey">family</i>.save(<i class="grey">{surname: "Simpson", name: "Bart", age: 10, hobby: "play"}</i>)</li>
+        <li>db.<i class="grey">family</i>.find() <i class="m100">// покажет всю коллекцию</i></li>
+        <li>db.<i class="grey">family</i>.find({name: "Bart"}) <i class="m100">// покажет выборку</i></li>
+        <li>db.<i class="grey">family</i>.update({age: 9}, {$set: {age: 10}}) </li>
+        <li>db.<i class="grey">family</i>.findOne({name: "Bart"}) </li>
+        <li>db.<i class="grey">family</i>.remove({name: "Lise"}) </li>
+        <li>db.<i class="grey">family</i>.find({$and: [{name: "Bart"},{name: "Lise"}]}) </li>
+        <li>db.<i class="grey">family</i>.remove({$not: {hobby: /[a-z]/}}) </li>
+      </ol>
+      <p>https://docs.mongodb.com/manual/reference/</p>
+    </div>
+
+    <div id="slide_12" class="step slide" data-x="0" data-y="-1500">
+      <p>REST</p>
+      <q>Нельзя так просто взять и работать по url с DB</q>
+    </div>
+
+    <div id="slide_13" class="step slide" data-x="2000" data-y="-1500">
+      <p>REST маршрутизация</p>
+    </div>
+
+    <div id="slide_14" class="step slide" data-x="4000" data-y="-1500">
+      <p>REST маршрутизация</p>
+      <q>Express</q>
+      <pre class="code">// package.json
+        "dependencies": {
+          "body-parser": "^1.17.1",
+          "express": "^4.15.2",
+          "mongodb": "^2.2.24"
+        }
+      </pre>
+    </div>
+
+    <div id="slide_15" class="step slide" data-x="6000" data-y="-1500">
+      <p>REST маршрутизация Express</p>
+        <pre class="code">// server.js </pre>
+    </div>
+
+    <div id="slide_16" class="step slide" data-x="8000" data-y="-1500">
+      <p>REST маршрутизация Express</p>
+        <pre class="code">// app_routes.js </pre>
+    </div>
+
+    <div id="slide_17" class="step slide" data-x="10000" data-y="-1500">
+      <p>REST маршрутизация Express: GET</p>
+        <pre class="code">// get.js </pre>
+    </div>
+
+    <div id="slide_18" class="step slide" data-x="12000" data-y="-1500">
+      <p>REST маршрутизация Express: POST</p>
+        <pre class="code">// post.js </pre>
+    </div>
+
+    <div id="slide_19" class="step slide" data-x="14000" data-y="-1500">
+      <p>REST маршрутизация Express: PUT</p>
+        <pre class="code">// put.js </pre>
+    </div>
+
+    <div id="slide_20" class="step slide" data-x="16000" data-y="-1500">
+      <p>REST маршрутизация Express: DELETE</p>
+        <pre class="code">// del.js </pre>
+    </div>
+
+</div>
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

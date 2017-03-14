@@ -1,0 +1,34 @@
+{
+  "family": [
+    {
+      "name": "Bart",
+      "surname": "Simpson",
+      "age": "12",
+      "id": 0
+    },
+    {
+      "name": "Lise",
+      "surname": "Simpson",
+      "age": "8",
+      "id": 1
+    },
+    {
+      "name": "Homer",
+      "surname": "Simpson",
+      "age": 38,
+      "id": 2
+    },
+    {
+      "name": "Marge",
+      "surname": "Simpson",
+      "age": 37,
+      "id": 3
+    },
+    {
+      "name": "Mag",
+      "surname": "Simpson",
+      "age": "1",
+      "id": 4
+    }
+  ]
+}
