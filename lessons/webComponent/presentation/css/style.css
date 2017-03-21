@@ -1,0 +1,172 @@
+.code {
+  color: hsl(250, 30%, 30%);
+  font-family: monospace;
+  font-size: 80%;
+}
+
+.comment {
+  color: #555;
+}
+
+.fun {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.small {
+  font-size: 12px;
+  font-style: oblique;
+  color: #ccc;
+}
+.middle {
+  font-size: 24px;
+  font-weight: bold;
+}
+.red {
+  color: red;
+}
+
+.re {
+  text-decoration: line-through;;
+}
+
+.toCenter {
+  text-align: center;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+.top50 {
+  margin-top: 50px;
+}
+
+.indent{
+  text-indent: 15px;
+}
+/*
+#id {
+  background-image: url(../img/id.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+}
+*/
+
+#slide_02 {
+  background-image: url(../img/periodic.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  width: 800px;
+}
+
+#slide_06 {
+  background-image: url(../img/wc_caniuse_template.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  width: 800px;
+}
+
+#slide_07 {
+  background-image: url(../img/nofind.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  width: 800px;
+}
+
+#slide_08 {
+  background-image: url(../img/content.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  width: 800px;
+}
+
+#slide_14 {
+  background-image: url(../img/wc_custom_elem.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 65%;
+}
+
+#slide_16 {
+  background-image: url(../img/shadow_show.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100%;
+}
+
+#slide_17 {
+  background-image: url(../img/shadow_show2.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100%;
+}
+
+#slide_18 {
+  background-image: url(../img/shadow_show3.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 70%;
+}
+
+#slide_19 {
+  background-image: url(../img/incapsule1.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 75%;
+}
+
+#slide_20 {
+  background-image: url(../img/incapsule.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 85%;
+}
+
+#slide_21 {
+  background-image: url(../img/import1.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+#slide_22 {
+  background-image: url(../img/import.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+#slide_23 {
+  background-image: url(../img/progress.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+#slide_24 {
+  background-image: url(../img/progress1.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+#slide_25 {
+  background-image: url(../img/lib.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+#slide_27 {
+  background-image: url(../img/x-tag.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 80%;
+}

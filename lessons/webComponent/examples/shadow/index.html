@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shadow Dom</title>
+  <style>
+   h1 {color: green; font-size: 24px;} 
+   h1.red {color: red; font-size: 42px;}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+	<h1 id="hello">Hello World</h1>
+	<h1>Hello native HTML</h1> 
+
+    <script>
+      var parent = document.getElementById("hello");
+      var shadow = parent.attachShadow({mode: 'open'}); 
+      var div = document.createElement('div');
+      var style = document.createElement('style');
+      style.innerHTML = "h1.red {color: blue; font-size: 36px;}";
+      div.innerHTML = "<h1 class='red'>Hello Shadow DOM World</h1>";   
+      shadow.appendChild(style);  
+      shadow.appendChild(div); 
+    </script>
+  </div>
+</body>
+</html>

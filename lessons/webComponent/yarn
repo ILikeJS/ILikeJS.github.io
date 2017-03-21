@@ -1,0 +1,19 @@
+// install  https://yarnpkg.com/en/docs/install
+
+//linux
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+
+//Starting a new project
+yarn init
+
+//Adding a dependency
+yarn add [package]
+
+
+//Upgrading a dependency
+yarn upgrade [package]
+
+//Removing a dependency
+yarn remove [package]

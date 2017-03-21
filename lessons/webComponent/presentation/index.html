@@ -1,0 +1,249 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>Topic</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div id="impress">
+
+    <div id="slide_01" class="step slide" data-x="-20000" data-y="-1500">
+      <h1>Web Components</h1>
+      <p class="top50 indent">Зачем: </p>
+        <p class="top50 indent">Web Components - строительные блоки веба.
+          Компании-разработчики создают Web Components как часть своего
+          проекта (т.к. те могут подключаться к любыми фреймверкам), а также
+          производят компоненты на продажу другим девелоперам.</p>
+          <p class="top50 indent">Что это:</p>
+          <p class="top50 indent">
+            Изолированное, независимое от документа внедрения приложение,
+            легко применяемое и не требующее внешних библиотек.
+          </p>
+    </div>
+
+    <div id="slide_02" class="step slide" data-x="-19000" data-y="-1500">
+      <h1>Web Components</h1>
+
+    </div>
+
+    <div id="slide_03" class="step slide" data-x="-18000" data-y="-1500">
+      <h1>Web Components: эволюция</h1>
+      <img src="./img/evolution.jpg" alt="evolution html" class="top50">
+      <p>Atoms: elements of HTML, CSS, JavaScript</p>
+      <p>Moleculs: web components</p>
+      <p>Organisms: web applications</p>
+
+    </div>
+
+    <div id="slide_04" class="step slide" data-x="-17000" data-y="-1500">
+       <h1>Web Components</h1>
+       <p class="top50">4 технологии, создающие Web Components</p>
+       <p class="top50">Template</p>
+       <p>Custom Elements</p>
+       <p>Shadow Dom</p>
+       <p>Import HTML</p>
+    </div>
+
+    <div id="slide_05" class="step slide" data-x="-16000" data-y="-1500">
+      <h1>Web Components: &lt;template&gt;</h1>
+      <p class="top50">"HTML элемент &lt;template&gt; — это механизм для отложенного рендера
+        клиентского контента, который не отображается во время загрузки,
+        но может быть инициализирован при помощи JavaScript."</p>
+        <p class="top50"> Содержимое: </p>
+        <ol>
+          <li class="indent">не рендерится</li>
+          <li class="indent">не доступно из вне (HTML, JS, CSS не видят id, class и т.п.)</li>
+          <li class="indent">нет побочных эффектов (скрипты не выполняются, контент не подгружается)</li>
+        </ol>
+        <p>&lt;template&gt; может находится в любом месте html (body, table)</p>
+        <p class="small">https://developer.mozilla.org/ru/docs/Web/HTML/Element/template</p>
+    </div>
+
+    <div id="slide_06" class="step slide" data-x="-15000" data-y="-1500">
+      <h1>Web Components: актуальность в браузерах.</h1>
+
+    </div>
+
+    <div id="slide_07" class="step slide" data-x="-14000" data-y="-1500">
+      <h1>Web Components: особенности использования &lt;template&gt;</h1>
+      <p>Нет прямого доступа по селектору.</p>
+      <p class="small">https://www.w3.org/TR/html5/scripting-1.html#the-template-element</p>
+    </div>
+
+    <div id="slide_08" class="step slide" data-x="-13000" data-y="-1500">
+      <h1>Web Components: особенности использования &lt;template&gt;</h1>
+      <p>Атрибут <i class="red">content</i> тега &lt;template&gt;</p>
+
+    </div>
+
+    <div id="slide_09" class="step slide" data-x="-12000" data-y="-1500">
+       <h1>Web Components: Custom Elements</h1>
+       <p class="top50">Ранее в сравнении XML vs HTML можно было встретить:
+         <i> "При помощи XML можно определять
+         собственные наборы тегов и необходимые имена атрибутов."</i></p>
+     <p class="top50">Custom Elements позволяет делать тоже в HTML</p>
+     <p class="top50">Но для этого потребуется в JavaScript определить
+       наименование, поведение и атрибуты.</p>
+    <p class="top50">Важно соблюдать правила наименования: </p>
+    <p class="indent">1) Имя тега должно быть <b>через дефис</b> </p>
+    <p class="indent">2) Одно имя <b>объвляется один раз</b></p>
+    <p class="indent">3) Тег должен быть <b>парным</b></p>
+    <p class="small">https://developers.google.com/web/fundamentals/getting-started/primers/customelements</p>
+  </div>
+
+    <div id="slide_10" class="step slide" data-x="-11000" data-y="-1500">
+       <h1>Web Components: Custom Elements - наследование элементов.</h1>
+       <p class="top50">Можно наследовать любой элемент (в том числе и custom element).</p>
+       <pre class="top50 code">
+ class <b>MyTag</b> extends <b>HTMLElement</b> {
+    constructor() {
+        <i class="comment">// всегда первым в конструкторе идет этот метод.</i>
+        super();
+        <i class="comment">// code</i>
+      }
+}
+       </pre>
+       <p>или</p>
+       <pre class="top50 code">
+ class <b>MyButton</b> extends <b>HTMLButtonElement</b> {   ...
+          </pre>
+    </div>
+
+    <div id="slide_11" class="step slide" data-x="-10000" data-y="-1500">
+       <h1>Web Components: Custom Elements объявление и наименование.</h1>
+       <p class="top50">После объявления класса следует зарегестрировать элемент в браузере:</p>
+         <pre class="top50 code">
+window.customElements.define('my-div', MyTag, {extends: 'div'});
+       </pre>
+      <p>или</p>
+      <pre class="top50 code">
+window.customElements.define('my-btm', MyButton);
+    </pre>
+    </div>
+
+    <div id="slide_12" class="step slide" data-x="-9000" data-y="-1500">
+       <h1>Web Components: Custom Elements</h1>
+       <p>Список методов <b>lifecycle</b> Custom Elements </p>
+       <p>Эти методы поддерживаются браузерами, определяются в классе и не все обязательны.</p>
+       <ol class="top20 code">
+         <li class="top20">constructor() {  super(); /* code */ }</li>
+         <li class="comment top20">// вызываются при вставке/удалении  в/из DOM)</li>
+         <li>connectedCallback() { /* tempate */ } </li>
+         <li>disconnectedCallback() { ... } </li>
+         <li class="comment top20">// аттрибут изменен (а также добавлен или удален)</li>
+         <li>attributeChangedCallback(name, oldVal, newVal) { ... }</li>
+         <li class="comment top20">/* перемещение элемента в новый документ document.adoptNode(el)) */</li>
+         <li>adoptedCallback() { ... }</li>
+       </ol>
+    </div>
+
+    <div id="slide_13" class="step slide" data-x="-8000" data-y="-1500">
+       <h1>Web Components: Custom Elements</h1>
+       <p class="top20 intend">Атрибуты: чтобы получать уведомления об изменении атрибутов,
+         при инициализации элемента необходимо определить список наблюдаемых
+         атрибутов, разместив статический атрибут getsAttributes для класса
+         элемента, который возвращает массив имен атрибутов.</p>
+       <ol class="top20 code">
+         <li>static get observedAttributes() { return ['same_attr']; }</li>
+         <li>get same_attr () { ... }</li>
+         <li>set same_attr (val ) { ... }</li>
+         <li></li>
+      </ol>
+    </div>
+
+    <div id="slide_14" class="step slide" data-x="-7000" data-y="-1500">
+       <h1>Web Components: поддержка браузеров</h1>
+
+    </div>
+
+    <div id="slide_15" class="step slide" data-x="-6000" data-y="-1500">
+       <h1>Web Components: полифилл и поддержка браузеров </h1>
+       <a class="top20" href="https://github.com/webcomponents/custom-elements">Custom Elements (v1) Polyfill</a>
+       <p class="top20">Использование: <br>
+         https://github.com/WebComponents/webcomponentsjs<br>
+         https://www.webcomponents.org/polyfills</p>
+       <pre class="code">bower install --save webcomponents/webcomponentsjs</pre>
+       <p class="top20">или</p>
+       <pre class="code">&lt;script src="webcomponents-lite.min.js"&gt;&lt;/script&gt;</pre>
+       <img src="img/polifill.jpg" alt="polifill" width="800">
+    </div>
+
+    <div id="slide_16" class="step slide" data-x="-5000" data-y="-1500">
+       <h1>Web Components: <i>Shadow Dom</i></h1>
+       <p class="middle">Включаем просмотр в браузере Chrome: Ctrl+Shift+I =&gt; F1</p>
+    </div>
+
+    <div id="slide_17" class="step slide" data-x="-3500" data-y="-1500">
+       <h1>Web Components</h1>
+       <h1 class="middle"> <i>Shadow Dom стандартно используется в браузерах</i></h1>
+    </div>
+<!--
+    <div id="slide_18" class="step slide" data-x="-3000" data-y="-1500">
+       <h1>Web Components: <i>Shadow Dom - это инкапслуяция</i> </h1>
+    </div> -->
+
+    <div id="slide_19" class="step slide" data-x="-2500" data-y="-1500">
+      <h1>Web Components: <i>Shadow Dom - это инкапслуяция</i> </h1>
+    </div>
+
+    <div id="slide_20" class="step slide" data-x="-1000" data-y="-1500">
+      <h1>Web Components: <i>Shadow Dom - это инкапслуяция</i> </h1>
+    </div>
+
+    <div id="slide_21" class="step slide" data-x="0" data-y="-1500">
+       <h1>Web Components: import</h1>
+       <p class="middle">Требуется сервер http, Chrome (или полифилл для других браузеров)</p>
+    </div>
+
+    <div id="slide_22" class="step slide" data-x="1000" data-y="-1500">
+      <h1>Web Components: import</h1>
+       <p class="middle">Требуется сервер http, Chrome (или полифилл для других браузеров)</p>
+    </div>
+
+    <div id="slide_23" class="step slide" data-x="2000" data-y="-1500">
+       <h1>Web Components: пример нативной реализации</h1>
+    </div>
+
+    <div id="slide_24" class="step slide" data-x="3000" data-y="-1500">
+      <h1>Web Components: пример нативной реализации</h1>
+    </div>
+
+    <div id="slide_25" class="step slide" data-x="4000" data-y="-1500">
+       <h1>Web Components</h1>
+    </div>
+
+        <div id="slide_26" class="step slide" data-x="5000" data-y="-1500">
+           <h1>Web Components: <i>Poliner - проект Google</i> </h1>
+           <p>Требуется: git, node + npm&amp;ltest + bower</p>
+           <pre class="code">
+             npm install npm@latest -g
+             npm install -g bower
+             npm install -g polymer-cli@next
+             polymer init
+             // выбрать тип элемента или приложения
+             polymer serve
+           </pre>
+           <p><a href="https://www.polymer-project.org/2.0/docs/tools/polymer-cli">Подробнее </a></p>
+        </div>
+
+    <div id="slide_27" class="step slide" data-x="6000" data-y="-1500">
+      <h1>Web Components: <i>X-tag - проект Microsoft</i> </h1>
+    </div>
+</div>
+
+<script src="js/impress.js"></script>
+<script src="js/libDOM.js"></script>
+<script src="js/main.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

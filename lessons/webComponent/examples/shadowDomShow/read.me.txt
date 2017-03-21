@@ -1,0 +1,3 @@
+Открыть в Chrome
+Разрешить просмотр Shadow Dom (Ctrl+Shift+I  => F1 и далее кликнуть на чекбокс Shadow Dom)
+Далее отрыть index.html и убедиться в наличии #shadow root

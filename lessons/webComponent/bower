@@ -1,0 +1,35 @@
+/*
+ git, node & npm
+*/
+sudo nmp i bower -g
+
+// проверим версию (1.8.0)
+bower -v  
+
+/*
+ https://bower.io/
+*/
+
+// cоздадим bower.json
+bower init
+
+// Install packages, --save запишет зависимость в bower.json
+bower install --save jquery
+bower install --save normalize-css
+
+// Delete package
+bower uninstall --save jquery
+
+// dir bower_components add to .gitignore
+bower install
+
+// update с учетом semver major.minor.putch
+bower update
+
+// Search packages: https://bower.io/search/
+1)bower search jquery
+...
+2)https://bower.io/search/
+...
+
+
